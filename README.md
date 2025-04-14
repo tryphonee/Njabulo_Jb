@@ -1,25 +1,5 @@
 
 
-<p align="center">
-  <a href="https://files.catbox.moe/s7acjb.png">
-    <!-- Replace with your video URL for the first image -->
-    <video width="500" height="300" controls>
-      <source src="https://files.catbox.moe/q9r9eq.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </a>
-</p>
-
-<h1 align="center" style="font-size: 40px; font-family: Arial, sans-serif;">BWM XMD MADE BY IBRAHIM ADAMS</h1>
-
-<p align="center">
-  <marquee style="font-size: 24px; font-family: Arial, sans-serif;">The Ultimate Multi-Platform Bot Experience!</marquee>
-</p>
-
-  <!-- Recent Commits GIF Animation -->
-  <img src="https://files.catbox.moe/rk4gab.gif" alt="GitHub Activity Animation" width="800" style="border-radius: 10px;">
-</p>
-
 
 ---
 
@@ -27,7 +7,7 @@
 
 <p align="center">
   <!-- Repo Views -->
-  <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fdevibraah%2FBWM-XMD&count_bg=%2379C83D&title_bg=%23555555&icon=gitpod.svg&icon_color=%23E7E7E7&title=Views&edge_flat=false" alt="Repo Views Badge">
+  <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fdevibraah%2FVW-GOLF&count_bg=%2379C83D&title_bg=%23555555&icon=gitpod.svg&icon_color=%23E7E7E7&title=Views&edge_flat=false" alt="Repo Views Badge">
 
   <!-- Docker Size -->
   <img src="https://img.shields.io/docker/image-size/devibraah/bwmxmd?style=flat&logo=docker&label=Docker+Size" alt="Docker Size">
