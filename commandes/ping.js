@@ -6,9 +6,6 @@ const os = require("os");
 const moment = require("moment-timezone");
 const set = require(__dirname + "/../set");
 
-const AUDIO_URL = "https://files.catbox.moe/o6d4l7.mp3"; // New audio URL
-const THUMBNAIL_URL = "https://files.catbox.moe/omgszj.jpg"; // New image URL
-
 moment.tz.setDefault(`${set.TZ}`);
 
 const getTimeAndDate = () => {
@@ -26,9 +23,6 @@ fana({ nomCom: "ping", categorie: "General" }, async (dest, zk, commandeOptions)
 
     try {
         await zk.sendMessage(dest, { 
-            audio: { url: AUDIO_URL }, 
-            mimetype: 'audio/mp4', 
-            ptt: true, // Voice note form
             contextInfo: {
               isForwarded: true,
               forwardedNewsletterMessageInfo: {
@@ -40,9 +34,6 @@ fana({ nomCom: "ping", categorie: "General" }, async (dest, zk, commandeOptions)
                    externalAdReply: {
                     title: "🦋ɴᴊᴀʙᴜʟᴏ ᴊʙ🦋",
                     body: `↪️ 𝘁𝗶𝗺𝗲 𝗽𝗶𝗻𝗴: ${ping}ms\n📅 *Date:* ${date}\n⏰ *Time:* ${time}`,
-                    thumbnailUrl: THUMBNAIL_URL,
-                    mediaType: 1,
-                    renderSmallThumbnail: true // Small thumbnail rendering
                 }
             }
         }, { quoted: ms });
