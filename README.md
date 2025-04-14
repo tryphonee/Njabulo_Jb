@@ -1,41 +1,9 @@
 
 
-
----
-
-# 🚀 GitHub Repo Activity
-
-<p align="center">
-  <!-- Repo Views -->
-  <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fdevibraah%2FVW-GOLF&count_bg=%2379C83D&title_bg=%23555555&icon=gitpod.svg&icon_color=%23E7E7E7&title=Views&edge_flat=false" alt="Repo Views Badge">
-
-  <!-- Docker Size -->
-  <img src="https://img.shields.io/docker/image-size/devibraah/bwmxmd?style=flat&logo=docker&label=Docker+Size" alt="Docker Size">
-
-  <!-- Docker Pulls -->
-  <img src="https://img.shields.io/docker/pulls/devibraah/bwmxmd?style=flat&logo=docker&label=Docker+Pulls" alt="Docker Pulls">
-
-  <!-- Forks -->
-  <img src="https://img.shields.io/github/forks/devibraah/BWM-XMD?label=Forks&style=social" alt="Forks Badge">
-
-  <!-- Stars -->
-  <img src="https://img.shields.io/github/stars/devibraah/BWM-XMD?style=social" alt="Stars Badge">
-
-  <!-- Repo Size -->
-  <img src="https://img.shields.io/github/repo-size/devibraah/BWM-XMD?color=purple&label=Repo%20Size&style=plastic" alt="Repo Size">
-
-  <!-- License -->
-  <img src="https://img.shields.io/github/license/devibraah/BWM-XMD?color=purple&label=License&style=plastic" alt="License Badge">
-
-  <!-- Developer -->
-  <img src="https://img.shields.io/static/v1?label=Author&message=Ibrahim%20Adams&color=purple&style=plastic" alt="Developer Badge">
-</p>
----
-
 ## 🚀 Quick Start
 
 </a></p>
-- <a href="https://www.ibrahimadams.site/scanner"><img title="GET SESSION OPT 1" src="https://img.shields.io/badge/GET SESSION-h?color=pink&style=for-the-badge&logo=bmw" width="220" height="38.45"/></a></p>
+- <a href="https://www.ibrahimadams.site/scanner"><img title="GET SESSION OPT 1" src="https://img.shields.io/badge/GET SESSION-h?color=blui&style=for-the-badge&logo=VW" width="220" height="38.45"/></a></p>
 
 
 - <a href="https://www.ibrahimadams.site/Deploy"><img title="GET SESSION OPT 2" src="https://img.shields.io/badge/DEPLOY-h?color=red&style=for-the-badge&logo=bmw" width="220" height="38.45"/></a></p>
