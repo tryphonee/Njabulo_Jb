@@ -1,5 +1,4 @@
-ᴄʟɪᴄᴋ ᴡᴀ ʟᴏɢᴏ ᴛᴏ ᴊᴏɪɴ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 👇 
-<br> [![join](https://github.com/Alien-alfa/PublicBot/blob/main/wlogo.svg.png)](https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T)
+
   <div align="center"  >
 <h4 align="center">Plugins</h1>
 
