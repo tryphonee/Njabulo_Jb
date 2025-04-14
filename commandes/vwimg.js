@@ -7,7 +7,7 @@ fana({
   nomCom: "img",
   aliases: ["image", "images"],
   categorie: "Images",
-  reaction: "☘️"
+  reaction: "📸"
 }, async (dest, zk, commandeOptions) => {
   const { repondre, ms, arg } = commandeOptions;
 
@@ -33,12 +33,12 @@ fana({
     for (let i = 0; i < Math.min(results.length, 5); i++) {
       zk.sendMessage(dest, {
         image: { url: results[i].url },
-        caption: `*Downloaded by ${conf.BOT}*`,
+        caption: `DOWNLOAD AND ENJOY BY VW-GOLF`,
         contextInfo: {
          isForwarded: true,
          forwardedNewsletterMessageInfo: {
          newsletterJid: '120363345407274799@newsletter',
-         newsletterName: "NJABULO JB",
+         newsletterName: "vw-golf",
          serverMessageId: 143,
           }
         }
