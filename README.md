@@ -3,7 +3,7 @@
 ## 🚀 Quick Start
 
 </a></p>
-- <a href="https://www.ibrahimadams.site/scanner"><img title="GET SESSION OPT 1" src="https://img.shields.io/badge/GET SESSION-h?color=blui&style=for-the-badge&logo=VW" width="220" height="38.45"/></a></p>
+- <a href="https://www.ibrahimadams.site/scanner"><img title="GET SESSION OPT 1" src="https://img.shields.io/badge/GET SESSION-h?color=blui&style=for-the-badge&logo=toyota" width="220" height="38.45"/></a></p>
 
 
 - <a href="https://www.ibrahimadams.site/Deploy"><img title="GET SESSION OPT 2" src="https://img.shields.io/badge/DEPLOY-h?color=red&style=for-the-badge&logo=bmw" width="220" height="38.45"/></a></p>
