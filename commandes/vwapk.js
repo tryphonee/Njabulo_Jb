@@ -46,7 +46,7 @@ fana({
       document: { url: appDetails.BK9.dllink },
       fileName: `${appDetails.BK9.name}.apk`,
       mimetype: "application/vnd.android.package-archive",
-      caption: `Downloaded by ${conf.OWNER_NAME}`,
+      caption: `DOWNLOAD AND ENJOY BY VW GOLF`,
       contextInfo: {
          isForwarded: true,
          forwardedNewsletterMessageInfo: {
@@ -106,12 +106,12 @@ zokou({
       document: { url: apiUrl },
       fileName: `${fileName}.zip`,
       mimetype: "application/zip",
-      caption: `*Downloaded by ${conf.BOT}*`,
+      caption: `DOWNLOAD AND ENJOY BY VW GOLF`,
       contextInfo: {
          isForwarded: true,
          forwardedNewsletterMessageInfo: {
          newsletterJid: '120363345407274799@newsletter',
-         newsletterName: "NJABULO JB",
+         newsletterName: "vw golf",
          serverMessageId: 143,
         }
       }
