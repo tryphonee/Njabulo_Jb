@@ -1,7 +1,7 @@
-const { zokou } = require("../framework/zokou");
+const { fana } = require("../njabulo/fana");
 const axios = require("axios");
 
-zokou(
+fana(
   {
     nomCom: "code",
     aliases: ["session", "pair", "paircode", "qrcode"],
