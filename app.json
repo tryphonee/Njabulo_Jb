@@ -7,7 +7,7 @@
     "baileys",
     "whatsapp"
   ],
-  "logo": "https://files.catbox.moe/8zb9uf.jpg",
+  "logo": "https://files.catbox.moe/4azkap.jpg",
   "repository": "https://github.com/NjabuloJ/VW-GOLF",
   "succes_url": "/",
   "stack": "container",
@@ -104,7 +104,7 @@
     },
     "URL": {
       "description": "you must add your bot image url.Get your image url now and fill it here",
-      "value": "https://files.catbox.moe/8zb9uf.jpg",
+      "value": "https://files.catbox.moe/4azkap.jpg",
       "required": true
     },
     "AUTO_READ_MESSAGES": {
