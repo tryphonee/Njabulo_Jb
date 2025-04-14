@@ -1,5 +1,4 @@
----
-
+nj
   </a>
   <hr style="margin-top: 20px; margin-bottom: 20px;"/>
 </div>
@@ -44,7 +43,7 @@
 </table>
 
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&size=30&pause=800&color=FF0000&center=true&vCenter=true&width=815&height=60&lines=▭+▬+▭+▬+▭+▬+▭+▬+▭+▬+▭)](https://git.io/typing-svg)
+
 ---
 
 ## 📸 GARAGE VW-GOLF ENGINE V1
