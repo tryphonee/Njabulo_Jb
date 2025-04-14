@@ -1,15 +1,15 @@
 
-const { zokou} = require('../framework/zokou');
+const { fana } = require('../njabulo/fana');
 const axios = require('axios');
 const fs = require('fs-extra');
-const { mediafireDl } = require("../framework/dl/Function");
+const { mediafireDl } = require("../njabulo/dl/Function");
 const conf = require(__dirname + "/../set");
 
 
-zokou({
+fana({
   nomCom: 'apk',
   aliases: ['app', 'playstore'],
-  reaction: '☘️',
+  reaction: '📂',
   categorie: 'Download'
 }, async (groupId, client, commandeOptions) => {
   const { repondre, arg, ms } = commandeOptions;
@@ -51,17 +51,8 @@ zokou({
          isForwarded: true,
          forwardedNewsletterMessageInfo: {
          newsletterJid: '120363345407274799@newsletter',
-         newsletterName: "NJABULO JB",
+         newsletterName: "vw golf",
          serverMessageId: 143,
-         },
-         forwardingScore: 999, // Score to indicate it has been forwarded
-         externalAdReply: {
-           title: "ɳᴊᴀʙᴜʟᴏ ᴊʙ σғғɪᴄᴇ",
-           body: appDetails.BK9.name,
-           thumbnailUrl: 'https://files.catbox.moe/cs7xfr.jpg', // Add thumbnail URL if required 
-           sourceUrl: 'https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T', // Add source URL if necessary
-           mediaType: 1,
-           renderLargerThumbnail: true
         }
       }
     }, { quoted: ms });
@@ -122,15 +113,6 @@ zokou({
          newsletterJid: '120363345407274799@newsletter',
          newsletterName: "NJABULO JB",
          serverMessageId: 143,
-         },
-         forwardingScore: 999, // Score to indicate it has been forwarded
-         externalAdReply: {
-           title: `${conf.BOT} GIT CLONE`,
-           body: "njabulo jb",
-           thumbnailUrl: 'https://files.catbox.moe/cs7xfr.jpg', // Add thumbnail URL if required 
-           sourceUrl: 'https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T', // Add source URL if necessary
-           mediaType: 1,
-           renderLargerThumbnail: true
         }
       }
     }, { quoted: ms });
