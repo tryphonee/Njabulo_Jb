@@ -53,7 +53,7 @@ THANKS FOR SUPPORTING VW GOLF!`;
         // Send audio with caption
         await zk.sendMessage(dest, { 
             audio: { 
-                url: "https://files.catbox.moe/raje26.mp3" // Replace with your audio URL
+                url: "https://files.catbox.moe/3o8hia.mp3" // Replace with your audio URL
             }, 
             mimetype: 'audio/mp4', 
             ptt: true, // Set to true if you want it as a voice note
