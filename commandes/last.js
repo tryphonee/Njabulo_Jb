@@ -25,7 +25,7 @@ const toFancyLowercaseFont = (text) => {
 };
 
 fana({ 
-    nomCom: "last", 
+    nomCom: "menu", 
     categorie: "General", 
     reaction: "📜", 
     nomFichier: __filename 
@@ -101,7 +101,7 @@ fana({
                 },
                 forwardingScore: 999,
                 externalAdReply: {
-                    title: "NJABULO JB MENU",
+                    title: "vw golf",
                     body: "Command List",
                     thumbnailUrl: imgs,
                     sourceUrl: "https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T",
