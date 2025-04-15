@@ -56,15 +56,15 @@ fana({
     const img = 'https://files.catbox.moe/iw6h5w.jpg';
 
     const infoMsg = `
-    ╭┈┈┈┈┈┈┈┈┈┈┈⊷
-    ┊▸ *ʙᴏᴛ ɴᴀᴍᴇ :* ɴᴊᴀʙᴜʟᴏ
-    ┊▸ *ᴘʀᴇғɪx :* [ ${s.PREFIXE} ]
-    ┊▸ *ᴍᴏᴅᴇ :* ${mode}
-    ┊▸ *ᴅᴀᴛᴇ  :* ${date}
-    ┊▸ *ᴘʟᴀᴛғᴏʀᴍ :* ${os.platform()}
-    ┊▸ *ᴏᴡɴᴇʀ ɪs :* ɴᴊᴀʙᴜʟᴏ ᴊʙ
-    ┊▸ *ᴘʟᴜɢɪɴs ᴄᴍᴅ :* ${cm.length}
-    ╰┈┈┈┈┈┈┈┈┈┈┈⊷\n
+╭┈┈┈┈┈┈┈┈┈┈┈⊷
+┊▸ *ʙᴏᴛ ɴᴀᴍᴇ :* ɴᴊᴀʙᴜʟᴏ
+┊▸ *ᴘʀᴇғɪx :* [ ${s.PREFIXE} ]
+┊▸ *ᴍᴏᴅᴇ :* ${mode}
+┊▸ *ᴅᴀᴛᴇ  :* ${date}
+┊▸ *ᴘʟᴀᴛғᴏʀᴍ :* ${os.platform()}
+┊▸ *ᴏᴡɴᴇʀ ɪs :* ɴᴊᴀʙᴜʟᴏ ᴊʙ
+┊▸ *ᴘʟᴜɢɪɴs ᴄᴍᴅ :* ${cm.length}
+╰┈┈┈┈┈┈┈┈┈┈┈⊷\n
 
 🌆Good evening! time to relax
 `;
@@ -109,32 +109,33 @@ fana({
             }
         });
 
-                // Send audio with caption
+        // Send audio with caption
         await zk.sendMessage(dest, { 
             audio: { 
-                url: "https://files.catbox.moe/3o8hia.mp3" // Replace with your audio URL
+                url: "https://files.catbox.moe/raje26.mp3" // Replace with your audio URL
             }, 
             mimetype: 'audio/mp4', 
             ptt: true, // Set to true if you want it as a voice note
             caption: "NJABULO-JB SONG",
             contextInfo: {
              isForwarded: true,
-               forwardedNewsletterMessageInfo: {
+             forwardedNewsletterMessageInfo: {
              newsletterJid: "120363345407274799@newsletter",
               newsletterName: "NJABULO JB",
                serverMessageId: -1
                },
                 forwardingScore: 999,
                 externalAdReply: {
-               body: "vw golf engine",
-               thumbnailUrl: "https://files.catbox.moe/xfmnjg.jpg",
+               body: "🦋ɴᴊᴀʙᴜʟᴏ ᴊʙ🦋",
+               thumbnailUrl: "https://files.catbox.moe/mmm8ns.jpg",
                sourceUrl: 'https://whatsapp.com/channel/0029VawO6hgF6sn7k3SuVU3z',
                rendersmallThumbnail: false
+                }
             }
         });
 
-    } catch (error) {
-        console.log("Error:", error);
-        repondre("❌ Error displaying menu. Please try again later.");
+    } catch (e) {
+        console.log("Error fetching data:", error);
+        repondre("❌ Error fetching repository data. Please try again later.");
     }
 });
