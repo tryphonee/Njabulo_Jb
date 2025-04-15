@@ -1,13 +1,13 @@
 🚧🚨don't deploy bot is not working am sorry coming soon🚨🚧
 
 </h1> 
-<p align="center">l introduce <b>𝙱.𝙼.𝙱-𝚃𝙴𝙲𝙷</b>, a powerful simple WhatsApp bot </p>
+<p align="center">l introduce <b>vw golf</b>, a powerful simple WhatsApp bot </p>
 </p>
   <p align="center">
-<a href="https://github.com/bmb200?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/bmb200?label=Followers&style=social"></a>
-<a href="https://github.com/bmb200/B.M.B-XMD/stargazers"><img title="STARS" src="https://img.shields.io/github/stars/bmb200/B.M.B-XMD?&style=social"></a>
-<a href="https://github.com/bmb200/B.M.B-XMD/fork/network/members"><img title="Forks" src="https://img.shields.io/github/forks/bmb200/B.M.B-XMD?style=social"></a>
-<a href="https://github.com/bmb200/B.M.B-XMD/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/bmb200/B.M.B-XMD?label=Watching&style=social"></a>
+<a href="https://github.com/NjabuloJ?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/NjabuloJ?label=Followers&style=social"></a>
+<a href="https://github.com/bmb200/VW-GOLF/stargazers"><img title="STARS" src="https://img.shields.io/github/stars/NjabuloJ/VW-GOLF?&style=social"></a>
+<a href="https://github.com/NjabuloJ/VW-GOLF/fork/network/members"><img title="Forks" src="https://img.shields.io/github/forks/NjabuloJ/VW-GOLF?style=social"></a>
+<a href="https://github.com/NjabuloJ/VW-GOLF/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/NjabuloJ/VW-GOLF?label=Watching&style=social"></a>
 
 </p>
 
