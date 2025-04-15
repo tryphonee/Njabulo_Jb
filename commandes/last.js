@@ -82,7 +82,7 @@ fana({
 ║◎┊ `;
         for (const cmd of coms[cat]) {
             menuMsg += `          
-║◎┊ ${commandIndex++}. ${toFancyLowercaseFont(command)}`;   
+║◎┊ ${toFancyLowercaseFont(command)}`;   
         }
         menuMsg += `
 ║◎┊
