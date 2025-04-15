@@ -53,7 +53,8 @@ fana({
 
     const temps = moment().format('HH:mm:ss');
     const date = moment().format('DD/MM/YYYY');
-    const img = 'https://files.catbox.moe/iw6h5w.jpg';
+    const img = 'https://files.catbox.moe/swh17p.jpg';
+    const imgs = 'https://files.catbox.moe/xfmnjg.jpg';
 
     const infoMsg = `
 ╭┈┈┈┈┈┈┈┈┈┈┈⊷
@@ -101,7 +102,7 @@ fana({
                 externalAdReply: {
                     title: "NJABULO JB MENU",
                     body: "Command List",
-                    thumbnailUrl: img,
+                    thumbnailUrl: imgs,
                     sourceUrl: "https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T",
                     mediaType: 1,
                     renderLargerThumbnail: true
@@ -126,8 +127,8 @@ fana({
                },
                 forwardingScore: 999,
                 externalAdReply: {
-               body: "🦋ɴᴊᴀʙᴜʟᴏ ᴊʙ🦋",
-               thumbnailUrl: "https://files.catbox.moe/mmm8ns.jpg",
+               body: "vw golf",
+               thumbnailUrl: "https://files.catbox.moe/swh17p.jpg",
                sourceUrl: 'https://whatsapp.com/channel/0029VawO6hgF6sn7k3SuVU3z',
                rendersmallThumbnail: false
                 }
