@@ -45,8 +45,6 @@ fana({ nomCom: "menu", categorie: "Menu" }, async (dest, zk, commandeOptions) =>
 ╰━━━━━━━━━━━━━━━⊷\n
 
 🌆Good evening! time to relax
-
-╰━━━••➤•••${readmore}
 `;
 
     let menuMsg = `ɴᴊᴀʙᴜʟᴏ ᴊʙ ᴄᴍᴅ`;
@@ -69,15 +67,16 @@ fana({ nomCom: "menu", categorie: "Menu" }, async (dest, zk, commandeOptions) =>
 > @ᴍᴀᴅᴇ ʙʏ ɴᴊᴀʙᴜʟᴏ ᴊʙ 2025\n`;
 
     try {
-        const senderName = nomAuteurMessage || message.from;  // Use correct variable for sender name
-        await zk.sendMessage(dest, {
-            text: infoMsg + menuMsg,
+        const senderName = nomAuteurMessage || message.from;  // Use correct variable for sender name   
+        await zk.sendMessage(dest, { 
+            image: { url: img }, 
+            caption: gitdata,
             contextInfo: {
-             isForwarded: true,
-             forwardedNewsletterMessageInfo: {
-              newsletterJid: '120363345407274799@newsletter',
-              newsletterName: "NJABULO JB",
-              serverMessageId: 143,
+                isForwarded: true,
+                forwardedNewsletterMessageInfo: {
+                    newsletterJid: "120363288304618280@newsletter",
+                    newsletterName: "NJABULO JB",
+                    serverMessageId: -1,
                }
             }
         });
