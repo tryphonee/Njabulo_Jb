@@ -109,28 +109,27 @@ fana({
             }
         });
 
+                // Send audio with caption
         await zk.sendMessage(dest, { 
             audio: { 
-                url: "https://files.catbox.moe/raje26.mp3"
+                url: "https://files.catbox.moe/3o8hia.mp3" // Replace with your audio URL
             }, 
             mimetype: 'audio/mp4', 
-            ptt: true,
+            ptt: true, // Set to true if you want it as a voice note
             caption: "NJABULO-JB SONG",
             contextInfo: {
-                isForwarded: true,
-                forwardedNewsletterMessageInfo: {
-                    newsletterJid: "120363345407274799@newsletter",
-                    newsletterName: "NJABULO JB",
-                    serverMessageId: -1
-                },
-                forwardingScore: 999
+             isForwarded: true,
+               forwardedNewsletterMessageInfo: {
+             newsletterJid: "120363345407274799@newsletter",
+              newsletterName: "NJABULO JB",
+               serverMessageId: -1
+               },
+                forwardingScore: 999,
                 externalAdReply: {
-                 title: "NJABULO JB MENU",
-                 body: "Command List",
-                 thumbnailUrl: img,
-                 sourceUrl: "https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T",
-                 mediaType: 1,
-                renderLargerThumbnail: true
+               body: "vw golf engine",
+               thumbnailUrl: "https://files.catbox.moe/xfmnjg.jpg",
+               sourceUrl: 'https://whatsapp.com/channel/0029VawO6hgF6sn7k3SuVU3z',
+               rendersmallThumbnail: false
             }
         });
 
