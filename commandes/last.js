@@ -77,12 +77,12 @@ fana({
     
     for (const cat in coms) {
         menuMsg += `
-┈「 ${toFancyUppercaseFont(category)} 」┈
+┈「 ${toFancyUppercaseFont(cat)} 」┈
 ╭━━━━━━━━━━━⊷
 ║◎┊ `;
         for (const cmd of coms[cat]) {
             menuMsg += `          
-║◎┊ ${toFancyLowercaseFont(command)}`;   
+║◎┊ ${toFancyLowercaseFont(cmd)}`;   
         }
         menuMsg += `
 ║◎┊
