@@ -29,7 +29,7 @@
   </tr>
   <tr>
     <td align="center">
-      <b>DEPLOY NJABULO JB1</b><br>
+      <b>DEPLOY VW GOLF</b><br>
       ᴅᴇᴘʟᴏʏ ᴛʜᴇ ʙᴏᴛ ᴜsᴇ ɴᴏʀᴍᴀʟ ʙᴏᴛ ᴏɴ ʜᴇʀᴏᴋᴜ ᴡᴏʀᴋɪɴɢ 100% ɴᴏ ʙᴀɴɴᴇᴅ ʜᴇʀᴏᴋᴜ ᴀɴᴅ ᴡʜᴀᴛsᴀᴘᴘ ᴛᴀɴᴋs ʏᴏᴜ ᴇɴᴊᴏʏ.
       <br><br>
       <a href="https://dashboard.heroku.com/new?button-url=https://github.com/NjabuloJ/VW-GOLF&template=https://github.com/NjabuloJ/VW-GOLF.git">
@@ -37,7 +37,7 @@
       </a>
     </td>
     <td align="center">
-      <b>DEPLOY NJABULO-JB</b><br>
+      <b>DEPLOY VW GOLF</b><br>
       ᴅᴇᴘʟᴏʏ ᴛʜᴇ ʙᴏᴛ ᴜsᴇ ɴᴏʀᴍᴀʟ ʙᴏᴛ ᴏɴ ʜᴇʀᴏᴋᴜ ᴡᴏʀᴋɪɴɢ 100% ɴᴏ ʙᴀɴɴᴇᴅ ʜᴇʀᴏᴋᴜ ᴀɴᴅ ᴡʜᴀᴛsᴀᴘᴘ ᴛᴀɴᴋs ʏᴏᴜ ᴇɴᴊᴏʏ.
       <br><br>
        <a href="https://dashboard.heroku.com/new?button-url=https://github.com/NjabuloJ/VW-GOLF&template=https://github.com/NjabuloJ/VW-GOLF.git">
