@@ -4,6 +4,26 @@ const moment = require("moment-timezone");
 const os = require("os");
 const s = require("../set");
 
+const readMore = String.fromCharCode(8206).repeat(4001);
+
+// Function to convert text to fancy uppercase font
+const toFancyUppercaseFont = (text) => {
+    const fonts = {
+        'A': '𝐀', 'B': '𝐁', 'C': '𝐂', 'D': '𝐃', 'E': '𝐄', 'F': '𝐅', 'G': '𝐆', 'H': '𝐇', 'I': '𝐈', 'J': '𝐉', 'K': '𝐊', 'L': '𝐋', 'M': '𝐌',
+        'N': '𝐍', 'O': '𝐎', 'P': '𝐏', 'Q': '𝐐', 'R': '𝐑', 'S': '𝐒', 'T': '𝐓', 'U': '𝐔', 'V': '𝐕', 'W': '𝐖', 'X': '𝐗', 'Y': '𝐘', 'Z': '𝐙'
+    };
+    return text.split('').map(char => fonts[char] || char).join('');
+};
+
+// Function to convert text to fancy lowercase font
+const toFancyLowercaseFont = (text) => {
+    const fonts = {
+        'a': '𝚊', 'b': '𝚋', 'c': '𝚌', 'd': '𝚍', 'e': '𝚎', 'f': '𝚏', 'g': '𝚐', 'h': '𝚑', 'i': '𝚒', 'j': '𝚓', 'k': '𝚔', 'l': '𝚕', 'm': '𝚖',
+        'n': '𝚗', 'o': '𝚘', 'p': '𝚙', 'q': '𝚚', 'r': '𝚛', 's': '𝚜', 't': '𝚝', 'u': '𝚞', 'v': '𝚟', 'w': '𝚠', 'x': '𝚡', 'y': '𝚢', 'z': '𝚣'
+    };
+    return text.split('').map(char => fonts[char] || char).join('');
+};
+
 fana({ 
     nomCom: "last", 
     categorie: "General", 
@@ -57,12 +77,12 @@ fana({
     
     for (const cat in coms) {
         menuMsg += `
-⊷━〔 *${cat}* 〕━⊷
+┈「 ${toFancyUppercaseFont(category)} 」┈
 ╭━━━━━━━━━━━⊷
 ║◎┊ `;
         for (const cmd of coms[cat]) {
             menuMsg += `          
-║◎┊ ${s.PREFIXE}  *${cmd}*`;    
+║◎┊ ${commandIndex++}. ${toFancyLowercaseFont(command)}`;   
         }
         menuMsg += `
 ║◎┊
