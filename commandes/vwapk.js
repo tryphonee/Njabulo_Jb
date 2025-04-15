@@ -65,7 +65,7 @@ fana({
 });
 
 // GitHub Clone Downloader
-zokou({
+fana({
   nomCom: "gitclone",
   aliases: ["zip", "clone"],
   categorie: "Download"
