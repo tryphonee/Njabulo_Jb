@@ -62,12 +62,12 @@ THANKS FOR SUPPORTING VW GOLF!`;
              isForwarded: true,
                forwardedNewsletterMessageInfo: {
              newsletterJid: "120363345407274799@newsletter",
-              newsletterName: "NJABULO JB",
+              newsletterName: "vw golf",
                serverMessageId: -1
                },
                 forwardingScore: 999,
                 externalAdReply: {
-               body: "🦋ɴᴊᴀʙᴜʟᴏ ᴊʙ🦋",
+               body: "vw golf",
                thumbnailUrl: "https://files.catbox.moe/xfmnjg.jpg",
                sourceUrl: 'https://whatsapp.com/channel/0029VawO6hgF6sn7k3SuVU3z',
                rendersmallThumbnail: false
