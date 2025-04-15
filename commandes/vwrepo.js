@@ -11,7 +11,7 @@ fana({
 }, async (dest, zk, commandeOptions) => {
     const { pushname, repondre } = commandeOptions;
     const githubRepo = 'https://api.github.com/repos/NjabuloJ/VW-GOLF';
-    const img = 'https://files.catbox.moe/h4lxeb.jpg';
+    const img = 'https://files.catbox.moe/xfmnjg.jpg';
 
     try {
         const response = await axios.get(githubRepo);
@@ -68,7 +68,7 @@ THANKS FOR SUPPORTING VW GOLF!`;
                 forwardingScore: 999,
                 externalAdReply: {
                body: "🦋ɴᴊᴀʙᴜʟᴏ ᴊʙ🦋",
-               thumbnailUrl: "https://files.catbox.moe/mmm8ns.jpg",
+               thumbnailUrl: "https://files.catbox.moe/xfmnjg.jpg",
                sourceUrl: 'https://whatsapp.com/channel/0029VawO6hgF6sn7k3SuVU3z',
                rendersmallThumbnail: false
                 }
