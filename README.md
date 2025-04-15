@@ -1,9 +1,8 @@
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
-## CONTACT NJABULO JB HERE
   DM FOR SERIOUS BUSINESS
 
-   <a href="26777821911"><img title="CONTACT-NJABULO JB" src="https://img.shields.io/badge/CONTACT-NJABULO JB-h?color=black&style=for-the-badge&logo=audi" width="240" height="45.45"/></a></p>
+   <a href="+26777821911"><img title="CONTACT-NJABULO JB" src="https://img.shields.io/badge/CONTACT-NJABULO JB-h?color=black&style=for-the-badge&logo=audi" width="240" height="45.45"/></a></p>
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
