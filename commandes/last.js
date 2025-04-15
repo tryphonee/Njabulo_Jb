@@ -56,16 +56,15 @@ fana({
     const img = 'https://files.catbox.moe/iw6h5w.jpg';
 
     const infoMsg = `
-╭─❖ 𓆩 🦋 𓆪 ❖─╮
- VW-GOLF CAR BOT
-╰─❖ 𓆩 🦋 𓆪 ❖─╯
-╭┈❖
-┊▸🕵️ ʙᴏᴛ ɴᴀᴍᴇ : ɴᴊᴀʙᴜʟᴏ ᴊʙ*
-┊▸📅 ᴅᴀᴛᴇ: ${date}*
-┊▸⏰ ᴛɪᴍᴇ: ${temps}*
-┊▸🫂ᴜsᴇʀs ᴜsᴇʀs: ${formattedTotalUsers}*
-┊▸🌇: ${greeting}*
-╰┈❖*\n
+    ╭┈┈┈┈┈┈┈┈┈┈┈⊷
+    ┊▸ *ʙᴏᴛ ɴᴀᴍᴇ :* ɴᴊᴀʙᴜʟᴏ
+    ┊▸ *ᴘʀᴇғɪx :* [ ${s.PREFIXE} ]
+    ┊▸ *ᴍᴏᴅᴇ :* ${mode}
+    ┊▸ *ᴅᴀᴛᴇ  :* ${date}
+    ┊▸ *ᴘʟᴀᴛғᴏʀᴍ :* ${os.platform()}
+    ┊▸ *ᴏᴡɴᴇʀ ɪs :* ɴᴊᴀʙᴜʟᴏ ᴊʙ
+    ┊▸ *ᴘʟᴜɢɪɴs ᴄᴍᴅ :* ${cm.length}
+    ╰┈┈┈┈┈┈┈┈┈┈┈⊷\n
 
 🌆Good evening! time to relax
 `;
@@ -125,6 +124,13 @@ fana({
                     serverMessageId: -1
                 },
                 forwardingScore: 999
+                externalAdReply: {
+                 title: "NJABULO JB MENU",
+                 body: "Command List",
+                 thumbnailUrl: img,
+                 sourceUrl: "https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T",
+                 mediaType: 1,
+                renderLargerThumbnail: true
             }
         });
 
