@@ -24,7 +24,7 @@ const fetchFootballData = async (url) => {
 /** ✅ serieA standings */
 fana({
   nomCom: "seriea_table",
-  categorie: "football live",
+  categorie: "Football",
   reaction: "⚽"
 }, async (dest, zk, commandOptions) => {
   const { repondre } = commandOptions;
@@ -49,7 +49,7 @@ fana({
 /** ✅ serieA matchday */
 fana({
   nomCom: "seriea_matchday",
-  categorie: "football live",
+  categorie: "Football",
   reaction: "📅"
 }, async (dest, zk, commandOptions) => {
   const { repondre } = commandOptions;
@@ -74,7 +74,7 @@ fana({
 /** ✅ serieA top scorers */
 fana({
   nomCom: "seriea_top_scorer",
-  categorie: "football live",
+  categorie: "Football",
   reaction: "⚽"
 }, async (dest, zk, commandOptions) => {
   const { repondre } = commandOptions;
@@ -99,7 +99,7 @@ fana({
 /** ✅ serieA top assists */
 fana({
   nomCom: "seriea_top_assist",
-  categorie: "football live",
+  categorie: "Football",
   reaction: "🎯"
 }, async (dest, zk, commandOptions) => {
   const { repondre } = commandOptions;
@@ -124,7 +124,7 @@ fana({
 /** ✅ serieA news */
 fana({
   nomCom: "seriea_news",
-  categorie: "football live",
+  categorie: "Football",
   reaction: "📰"
 }, async (dest, zk, commandOptions) => {
   const { repondre } = commandOptions;
@@ -151,7 +151,7 @@ fana({
 /** ✅ serieA highlights (You can integrate video highlight API) */
 fana({
   nomCom: "seriea_highlights",
-  categorie: "football live",
+  categorie: "Football",
   reaction: "📺"
 }, async (dest, zk, commandOptions) => {
   const { repondre } = commandOptions;
