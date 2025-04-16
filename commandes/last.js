@@ -79,7 +79,7 @@ fana({
 ╭┈┈┈┈┈┈┈┈┈┈┈⊷ `;
         for (const cmd of coms[cat]) {
             menuMsg += `          
-┊▸ ${toFancyLowercaseFont(cmd)}`;   
+┊▸ ${cmdIndex++}. *${toFancyLowercaseFont(cmd)}*`;   
         }
         menuMsg += `
 ╰┈┈┈┈┈┈┈┈┈┈┈⊷`;
