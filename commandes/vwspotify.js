@@ -4,7 +4,7 @@ const axios = require("axios");
 fana({
   nomCom: "spotifylist",
   aliases: ["spotifysearch", "splaylist"],
-  categorie: "Fledi-search",
+  categorie: "Search",
   reaction: "🎬"
 }, async (dest, zk, commandeOptions) => {
   const { repondre, arg } = commandeOptions;
