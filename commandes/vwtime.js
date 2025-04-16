@@ -10,7 +10,7 @@ fana({
   nomCom: "timezone",
   aliases: ["timee", "datee"],
   desc: "Check the current local time and date for a specified timezone.",
-  categorie: "new",
+  categorie: "Mods",
   reaction: '🕰️',
 }, async (dest, zk, context) => {
   const { repondre, arg } = context;
@@ -56,7 +56,7 @@ fana({
   nomCom: "color",
   aliases: ["rcolor", "colorcode"],
   desc: "Generate a random color with name and code.",
-  categorie: "script",
+  categorie: "Mods",
   reaction: '🤦',
 }, async (dest, zk, context) => {
   const { repondre, arg } = context;
@@ -82,7 +82,7 @@ fana({
   nomCom: "binary",
   aliases: ["binarydgt", "binarycode"],
   desc: "Convert text into binary format",
-  categorie: "script",
+  categorie: "Mods",
   reaction: '🤦',
 }, async (dest, zk, context) => {
   const { repondre, arg } = context;
@@ -108,7 +108,7 @@ fana({
   nomCom: "dbinary",
   aliases: ["binarydecode", "decodebinary"],
   desc: "Decode binary string into text.",
-  categorie: "script",
+  categorie: "Mods",
   reaction: '🔓',
 }, async (dest, zk, context) => {
   const { repondre, arg } = context;
@@ -135,7 +135,7 @@ fana({
   nomCom: "base64",
   aliases: ["base64encode", "encodebase64"],
   desc: "Encode text into Base64 format.",
-  categorie: "script",
+  categorie: "Mods",
   reaction: '🔒',
 }, async (dest, zk, context) => {
   const { repondre, arg } = context;
@@ -161,7 +161,7 @@ fana({
   nomCom: "unbase64",
   aliases: ["base64decode", "decodebase64"],
   desc: "Decode Base64 encoded text.",
-  categorie: "script",
+  categorie: "Mods",
   reaction: '🔓',
 }, async (dest, zk, context) => {
   const { repondre, arg } = context;
@@ -187,7 +187,7 @@ fana({
   nomCom: "urlencode",
   aliases: ["urlencode", "encodeurl"],
   desc: "Encode text into URL encoding.",
-  categorie: "script",
+  categorie: "Mods",
   reaction: '🔒',
 }, async (dest, zk, context) => {
   const { repondre, arg } = context;
@@ -213,7 +213,7 @@ fana({
   nomCom: "urldecode",
   aliases: ["decodeurl", "urldecode"],
   desc: "Decode URL encoded text.",
-  categorie: "coding",
+  categorie: "Mods",
   reaction: '🔓',
 }, async (dest, zk, context) => {
   const { repondre, arg } = context;
@@ -237,7 +237,7 @@ fana({
   nomCom: "dice",
   aliases: ["rolldice", "diceroll", "roll"],
   desc: "Roll a dice (1-6).",
-  categorie: "fun",
+  categorie: "Mods",
   reaction: '🎲',
 }, async (dest, zk, context) => {
   const { repondre } = context;
@@ -258,7 +258,7 @@ fana({
   nomCom: "coinflip",
   aliases: ["flipcoin", "coinflip"],
   desc: "Flip a coin and get Heads or Tails.",
-  categorie: "fun",
+  categorie: "Mods",
   reaction: '🪙',
 }, async (dest, zk, context) => {
   const { repondre } = context;
@@ -279,7 +279,7 @@ fana({
   nomCom: "flip",
   aliases: ["fliptext", "textflip"],
   desc: "Flip the text you provide.",
-  categorie: "fun",
+  categorie: "Mods",
   reaction: '🔄',
 }, async (dest, zk, context) => {
   const { repondre, arg } = context;
@@ -305,7 +305,7 @@ fana({
   nomCom: "pick",
   aliases: ["choose", "select"],
   desc: "Pick between two choices.",
-  categorie: "fun",
+  categorie: "Mods",
   reaction: '🚚',
 }, async (dest, zk, context) => {
   const { repondre, arg } = context;
@@ -333,7 +333,7 @@ fana({
   nomCom: "timenow",
   aliases: ["currenttime", "time"],
   desc: "Check the current local time.",
-  categorie: "new",
+  categorie: "Mods",
   reaction: '🕰️',
 }, async (dest, zk, context) => {
   const { repondre } = context;
@@ -364,7 +364,7 @@ fana({
   nomCom: "date",
   aliases: ["currentdate", "todaydate"],
   desc: "Check the current date.",
-  categorie: "new",
+  categorie: "Mods",
   reaction: '📆',
 }, async (dest, zk, context) => {
   const { repondre } = context;
@@ -394,7 +394,7 @@ fana({
   nomCom: "calculate",
   aliases: ["calcu", "maths", "mathema"],
   desc: "Evaluate a mathematical expression.",
-  categorie: "new",
+  categorie: "Mods",
   reaction: '🧮',
 }, async (dest, zk, context) => {
   const { repondre, arg } = context;
@@ -426,7 +426,7 @@ fana({
   nomCom: "emojify",
   aliases: ["emoji", "txtemoji"],
   desc: "Convert text into emoji form.",
-  categorie: "fun",
+  categorie: "Mods",
   reaction: '🙂',
 }, async (dest, zk, context) => {
   const { repondre, arg } = context;
