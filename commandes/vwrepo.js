@@ -43,9 +43,15 @@ THANKS FOR SUPPORTING VW GOLF!`;
             contextInfo: {
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: "120363288304618280@newsletter",
-                    newsletterName: "vw golf",
-                    serverMessageId: -1,
+                  newsletterJid: "120363288304618280@newsletter",
+                 newsletterName: "vw golf",
+                 serverMessageId: -1,
+                 },
+                 forwardingScore: 999,
+                 externalAdReply: {
+                 body: "vw golf",
+                 thumbnailUrl: img,
+                 sourceUrl: 'https://whatsapp.com/channel/
                 }
             }
         });
