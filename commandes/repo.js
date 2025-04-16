@@ -1,5 +1,5 @@
 "use strict";
-const { zokou } = require("../njabulo/fana");
+const { fana } = require("../njabulo/fana");
 const axios = require("axios");
 
 fana({ 
