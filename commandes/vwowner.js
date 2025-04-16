@@ -46,12 +46,6 @@ zokou({ nomCom: "owner", categorie: "General", reaction: "❣️" }, async (dest
         contacts: {
             displayName: conf.OWNER_NAME,
             contacts: [{ vcard }],
-            contextInfo: {
-             isForwarded: true,
-             forwardedNewsletterMessageInfo: {
-             newsletterJid: "120363345407274799@newsletter",
-             newsletterName: "vw golf",
-            serverMessageId: -1
         },
     },{quoted:ms});
   }
@@ -75,7 +69,7 @@ zokou({ nomCom: "owner", categorie: "General", reaction: "❣️" }, async (dest
                 forwardingScore: 999,
                 externalAdReply: {
                body: "vw golf",
-               thumbnailUrl: "https://files.catbox.moe/swh17p.jpg",
+               thumbnailUrl: "https://files.catbox.moe/8oy1du.jpg",
                sourceUrl: 'https://whatsapp.com/channel/0029VawO6hgF6sn7k3SuVU3z',
                rendersmallThumbnail: false
                 }
