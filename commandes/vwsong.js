@@ -58,7 +58,7 @@ async function downloadFromApis(apis) {
 fana({
   nomCom: "play",
   aliases: ["song", "playdoc", "audio", "mp3"],
-  categorie: "download",
+  categorie: "Download",
   reaction: "🎸"
 }, async (dest, zk, commandOptions) => {
   const { arg, ms, userJid } = commandOptions;
@@ -115,7 +115,7 @@ fana({
 fana({
   nomCom: "video",
   aliases: ["videodoc", "film", "mp4"],
-  categorie: "download",
+  categorie: "Download",
   reaction: "🎬"
 }, async (dest, zk, commandOptions) => {
   const { arg, ms, userJid } = commandOptions;
