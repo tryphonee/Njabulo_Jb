@@ -24,7 +24,7 @@ const fetchFootballData = async (url) => {
 /** ✅ UEFA Champions League Standings */
 fana({
   nomCom: "cl_table",
-  categorie: "football live",
+  categorie: "Football",
   reaction: "⚽"
 }, async (dest, zk, commandOptions) => {
   const { repondre } = commandOptions;
@@ -49,7 +49,7 @@ fana({
 /** ✅ UEFA Champions League Matchday */
 fana({
   nomCom: "cl_matchday",
-  categorie: "football live",
+  categorie: "Football",
   reaction: "📅"
 }, async (dest, zk, commandOptions) => {
   const { repondre } = commandOptions;
@@ -74,7 +74,7 @@ fana({
 /** ✅ UEFA Champions League Top Scorers */
 fana({
   nomCom: "cl_top_scorer",
-  categorie: "football live",
+  categorie: "Football",
   reaction: "⚽"
 }, async (dest, zk, commandOptions) => {
   const { repondre } = commandOptions;
@@ -99,7 +99,7 @@ fana({
 /** ✅ UEFA Champions League Top Assists */
 fana({
   nomCom: "cl_top_assist",
-  categorie: "football live",
+  categorie: "Football",
   reaction: "🎯"
 }, async (dest, zk, commandOptions) => {
   const { repondre } = commandOptions;
@@ -124,7 +124,7 @@ fana({
 /** ✅ UEFA Champions League News */
 fana({
   nomCom: "cl_news",
-  categorie: "football live",
+  categorie: "Football",
   reaction: "📰"
 }, async (dest, zk, commandOptions) => {
   const { repondre } = commandOptions;
@@ -151,7 +151,7 @@ fana({
 /** ✅ UEFA Champions League Highlights (You can integrate video highlight API) */
 fana({
   nomCom: "cl_highlights",
-  categorie: "football live",
+  categorie: "Football",
   reaction: "📺"
 }, async (dest, zk, commandOptions) => {
   const { repondre } = commandOptions;
