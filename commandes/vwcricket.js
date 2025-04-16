@@ -3,7 +3,7 @@ const axios = require("axios");
 
 fana({
   nomCom: "cricket",
-  categorie: "football-zone",
+  categorie: "Football",
   desc: "Sends info of given query from Google Search.",
   reaction: "🏏",
 }, async (dest, zk, commandeOptions) => {
