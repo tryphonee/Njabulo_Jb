@@ -12,11 +12,11 @@ const {
   ajouterOuMettreAJourJid,
   mettreAJourAction,
   verifierEtatJid
-} = require('../luckydatabase/antilien');
+} = require('../bdd/antilien');
 const {
   atbajouterOuMettreAJourJid,
   atbverifierEtatJid
-} = require('../luckydatabase/antibot');
+} = require('../bdd/antibot');
 const {
   search,
   download
