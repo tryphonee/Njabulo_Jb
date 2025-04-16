@@ -7,7 +7,7 @@ const conf = require(__dirname + "/../set");
 fana({
   nomCom: "technews",
   reaction: '📰',
-  categorie: 'new'
+  categorie: 'VW-new'
 }, async (dest, zk, context) => {
   const { repondre, ms } = context;
 
@@ -39,7 +39,7 @@ fana({
 fana({
   nomCom: "biblie",
   reaction: '📖',
-  categorie: "new"
+  categorie: "VW-new"
 }, async (dest, zk, commandeOptions) => {
   const { repondre, arg, ms } = commandeOptions;
   const reference = arg.join(" ");
@@ -77,16 +77,14 @@ fana({
     const messageText = `
 ᕙ⁠ VW GOLF HOLY BIBLE ᕗ
 
-✿⁠ *_WE'RE READING:_* ${data.reference}
+⁠ *_WE'RE READING:_* ${data.reference}
 
-✿⁠ *_NUMBER OF VERSES:_* ${data.verses.length}
+⁠ *_NUMBER OF VERSES:_* ${data.verses.length}
 
-✿⁠ *_NOW READ:_* ${data.text}
+⁠ *_NOW READ:_* ${data.text}
 
-✿⁠ *_LANGUAGE:_* ${data.translation_name}
-╭────────────────◆
-│ POWER BY VW GOLF CAR
-╰─────────────────◆ `;
+⁠ *_LANGUAGE:_* ${data.translation_name}
+ `;
     
     await zk.sendMessage(dest, {
       text: messageText,
@@ -119,7 +117,7 @@ fana({
   nomCom: "describe",
   aliases: ["dictionaries", "dict", "def"],
   reaction: '😁',
-  categorie: "new"
+  categorie: "VW-new"
 }, async (dest, zk, commandeOptions) => {
   const { repondre, arg, ms } = commandeOptions;
   const term = arg.join(" ");
@@ -164,7 +162,7 @@ fana({
   nomCom: "paircode",
   aliases: ["session", "qrcode"],
   reaction: '🚀',
-  categorie: 'new'
+  categorie: 'General'
 }, async (dest, zk, commandeOptions) => {
   const { repondre, arg, ms } = commandeOptions;
 
@@ -215,7 +213,7 @@ fana({
 fana({
   nomCom: "elements",
   reaction: '📓',
-  categorie: "new"
+  categorie: "VW-new"
 }, async (dest, zk, commandeOptions) => {
   const { repondre, arg, ms } = commandeOptions;
   const elementQuery = arg.join(" ").trim();
@@ -235,7 +233,7 @@ fana({
     const thumb = data.image; // Assuming the API returns an 'image' property for the element thumbnail
 
     const formattedMessage = `
-*Lucky Md Element Information:*
+*vw golf Element Information:*
 🚀 *Name:* ${data.name}
 🚀 *Symbol:* ${data.symbol}
 🚀 *Atomic Number:* ${data.atomic_number}
@@ -269,7 +267,7 @@ fana({
   nomCom: "githubs",
   aliases: ["gits"],
   reaction: '💻',
-  categorie: "new"
+  categorie: "VW-new"
 }, async (dest, zk, commandeOptions) => {
   const { repondre, arg, ms } = commandeOptions;
   const githubUsername = arg.join(" ");
@@ -326,7 +324,7 @@ fana({
   nomCom: "tempmaile",
   aliases: ['maile', 'tempe'],
   reaction: '📧',
-  categorie: "new"
+  categorie: "VW-new"
 }, async (dest, zk, context) => {
   const { repondre: replyToUser, prefix, ms: messageQuote } = context;
 
@@ -416,7 +414,7 @@ fana({
   nomCom: "wikipedia",
   aliases: ["wiki", "wikipeda"],
   reaction: '🤡',
-  categorie: "new"
+  categorie: "VW-new"
 }, async (zk, dest, context) => {
   const { repondre, arg, ms } = context;
 
