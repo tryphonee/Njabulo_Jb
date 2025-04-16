@@ -63,14 +63,14 @@ fana({
 *┋* *ᴍᴏᴅᴇ :* ${mode}
 *┋* *ᴅᴀᴛᴇ  :* ${date}
 *┋* *ᴘʟᴀᴛғᴏʀᴍ :* ${os.platform()}
-*ᴘ* *ᴠᴡ ɢᴏʟғ ᴄᴍᴅ :* ${cm.length}
+*┋* *ᴠᴡ ɢᴏʟғ ᴄᴍᴅ :* ${cm.length}
 *╰───────────━⊷*\n`;
     
     let menuMsg = ` *${greeting}*`;
     
     for (const cat in coms) {
         menuMsg += `
-┈「 ${toFancyUppercaseFont(cat)} 」┈
+*「 ${toFancyUppercaseFont(cat)} 」*
 *╭───────────━⊷* `;
         for (const cmd of coms[cat]) {
             menuMsg += `          
@@ -124,7 +124,7 @@ fana({
                 forwardingScore: 999,
                 externalAdReply: {
                body: "vw golf",
-               thumbnailUrl: "https://files.catbox.moe/swh17p.jpg",
+               thumbnailUrl: "https://files.catbox.moe/73h91g.jpg",
                sourceUrl: 'https://whatsapp.com/channel/0029VawO6hgF6sn7k3SuVU3z',
                rendersmallThumbnail: false
                 }
