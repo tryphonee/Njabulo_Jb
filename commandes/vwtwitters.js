@@ -4,7 +4,7 @@ const axios = require("axios");
 fana({
   nomCom: "twittersearch",
   aliases: ["xsearch", "twitterlist", "tweetsearch", "xsearch"],
-  categorie: "Fledi-search",
+  categorie: "Search",
   reaction: "📽️"
 }, async (dest, zk, commandeOptions) => {
   const { repondre, arg } = commandeOptions;
@@ -32,10 +32,10 @@ fana({
     // Loop through search results and append details to the message
     searchData.forEach((track, index) => {
       const trackNumber = index + 1; // Number tracks starting from 1
-      searchMessage += `*☞${trackNumber}.* ${track.user}\n`;
-      searchMessage += `*☞Profile*: ${track.profile || "Unknown"}\n`;
-      searchMessage += `*☞Post*: ${track.post}\n`;  // The text of the tweet
-      searchMessage += `*☞User Link*: ${track.user_link}\n`;  // Link to the user's profile
+      searchMessage += `*${trackNumber}.* ${track.user}\n`;
+      searchMessage += `*Profile*: ${track.profile || "Unknown"}\n`;
+      searchMessage += `*Post*: ${track.post}\n`;  // The text of the tweet
+      searchMessage += `*User Link*: ${track.user_link}\n`;  // Link to the user's profile
       searchMessage += `──────────────\n\n`;
     });
 
