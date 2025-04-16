@@ -6,7 +6,7 @@ const { writeFile } = require('fs/promises')
 // Commande waifu
 fana({
   nomCom: "waifu",
-  categorie: "Weeb",
+  categorie: "Hentai",
   reaction: "😤"
 },
 async (origineMessage, zk, commandeOptions) => {
@@ -30,7 +30,7 @@ async (origineMessage, zk, commandeOptions) => {
 // Commande neko
 fana({
   nomCom: "neko",
-  categorie: "Weeb",
+  categorie: "Hentai",
   reaction: "😺"
 },
 async (origineMessage, zk, commandeOptions) => {
@@ -53,7 +53,7 @@ async (origineMessage, zk, commandeOptions) => {
 // Commande shinobu
 fana({
   nomCom: "shinobu",
-  categorie: "Weeb",
+  categorie: "Hentai",
   reaction: "🦋"
 },
 async (origineMessage, zk, commandeOptions) => {
@@ -76,7 +76,7 @@ async (origineMessage, zk, commandeOptions) => {
 // Commande megumin
 fana({
   nomCom: "megumin",
-  categorie: "Weeb",
+  categorie: "Hentai",
   reaction: "😅"
 },
 async (origineMessage, zk, commandeOptions) => {
@@ -100,7 +100,7 @@ async (origineMessage, zk, commandeOptions) => {
 
 fana({
   nomCom: "cosplay",
-  categorie: "Weeb",
+  categorie: "Hentai",
   reaction: "😤"
 },
 async (origineMessage, zk, commandeOptions) => {
@@ -127,7 +127,7 @@ async (origineMessage, zk, commandeOptions) => {
 });
 
 
-ezra({nomCom:"couplepp",categorie: "Weeb",reaction : "💞"},async(dest,zk,commandeOptions)=>{ const {repondre , ms} = commandeOptions;
+ezra({nomCom:"couplepp",categorie: "Hentai",reaction : "💞"},async(dest,zk,commandeOptions)=>{ const {repondre , ms} = commandeOptions;
     let api = 'https://smiling-hosiery-bear.cyclic.app/weeb/couplepp'
   try {
      repondre('she/he dont love you :)')
