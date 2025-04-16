@@ -6,7 +6,7 @@ fana({
   nomCom: "surah",
  aliases: ["surahh", "qurann"],
   reaction: '🤲',
-  categorie: "God-first"
+  categorie: "General"
 }, async (dest, zk, commandeOptions) => {
   const { repondre, arg, ms } = commandeOptions;
   const reference = arg.join(" ");
