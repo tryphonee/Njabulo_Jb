@@ -6,7 +6,7 @@ fana({
   nomCom: "hadith",
   aliases: ["islam", "hadees"],
   reaction: '📖',
-  categorie: "Islam"
+  categorie: "VW-new"
 }, async (dest, zk, params) => {
   const { repondre } = params;
 
