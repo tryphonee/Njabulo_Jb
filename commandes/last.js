@@ -27,7 +27,7 @@ const toFancyLowercaseFont = (text) => {
 fana({ 
     nomCom: "menu", 
     categorie: "General", 
-    reaction: "📜", 
+    reaction: "🚘", 
     nomFichier: __filename 
 }, async (dest, zk, commandeOptions) => {
     const { repondre, prefixe, nomAuteurMessage } = commandeOptions;
@@ -65,8 +65,9 @@ fana({
 ┊▸ *ᴘʟᴀᴛғᴏʀᴍ :* ${os.platform()}
 ┊▸ *ᴏᴡɴᴇʀ ɪs :* ɴᴊᴀʙᴜʟᴏ ᴊʙ
 ┊▸ *ᴘʟᴜɢɪɴs ᴄᴍᴅ :* ${cm.length}
-╰───────────━⊷
-`;
+╰───────────━⊷`;
+    
+    let menuMsg = ` *${greeting}*`;
     
     for (const cat in coms) {
         menuMsg += `
