@@ -42,7 +42,7 @@ fana({
 *┋* *ғᴏʀᴋs:*  ${data.forks_count}
 *┋* *ᴡᴀᴛᴄʜᴇʀs:*  ${data.watchers}
 *┋* *ᴜᴘᴅᴀᴛᴇᴅ:*  ${updated}
-*┋* *ᴜʀʟ:* github.com/NjabuloJ/Njabulo-Jb
+*┋* *ᴜʀʟ:* ${data.html_url}
  *╰────────────━⊷*
 `;
 
