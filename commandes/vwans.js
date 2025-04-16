@@ -6,7 +6,7 @@ const { default: axios } = require('axios');
 
 
 
-fana({nomCom:"car",reaction:"🤷",categorie:"IA"},async(dest,zk,commandeOptions)=>{
+fana({nomCom:"car",reaction:"🤷",categorie:"AI"},async(dest,zk,commandeOptions)=>{
 
   const {repondre,ms,arg}=commandeOptions;
   
@@ -45,7 +45,7 @@ fetch(`http://api.brainshop.ai/get?bid=177607&key=NwzhALqeO1kubFVD&uid=[uid]&msg
 
 
 
-  fana({ nomCom: "bing4", reaction: "🌀", categorie: "IA" }, async (dest, zk, commandeOptions) => {
+  fana({ nomCom: "bing4", reaction: "🌀", categorie: "AI" }, async (dest, zk, commandeOptions) => {
     const { repondre, arg, ms } = commandeOptions;
   
     try {
@@ -73,7 +73,7 @@ fetch(`http://api.brainshop.ai/get?bid=177607&key=NwzhALqeO1kubFVD&uid=[uid]&msg
     }
   });
   
-  fana({ nomCom: "ask", reaction: "🌀", categorie: "IA" }, async (dest, zk, commandeOptions) => {
+  fana({ nomCom: "ask", reaction: "🌀", categorie: "AI" }, async (dest, zk, commandeOptions) => {
     const { repondre, arg, ms } = commandeOptions;
   
     try {
@@ -98,7 +98,7 @@ fetch(`http://api.brainshop.ai/get?bid=177607&key=NwzhALqeO1kubFVD&uid=[uid]&msg
   });
 
 
-fana({ nomCom: "gpt-all", reaction: "🌀", categorie: "IA" }, async (dest, zk, commandeOptions) => {
+fana({ nomCom: "gpt-all", reaction: "🌀", categorie: "AI" }, async (dest, zk, commandeOptions) => {
     const { repondre, arg, ms } = commandeOptions;
   
     try {
