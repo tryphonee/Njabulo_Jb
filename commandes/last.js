@@ -57,15 +57,14 @@ fana({
     const imgs = 'https://files.catbox.moe/73h91g.jpg';
 
     const infoMsg = `
-╭───────────━⊷
-┊▸ *ʙᴏᴛ ɴᴀᴍᴇ :* ɴᴊᴀʙᴜʟᴏ
-┊▸ *ᴘʀᴇғɪx :* [ ${s.PREFIXE} ]
-┊▸ *ᴍᴏᴅᴇ :* ${mode}
-┊▸ *ᴅᴀᴛᴇ  :* ${date}
-┊▸ *ᴘʟᴀᴛғᴏʀᴍ :* ${os.platform()}
-┊▸ *ᴏᴡɴᴇʀ ɪs :* ɴᴊᴀʙᴜʟᴏ ᴊʙ
-┊▸ *ᴘʟᴜɢɪɴs ᴄᴍᴅ :* ${cm.length}
-╰───────────━⊷`;
+*╭───────────━⊷*
+*┋* *ʙᴏᴛ ɴᴀᴍᴇ :  ᴠᴡ ɢᴏʟғ*
+*┋* *ᴘʀᴇғɪx :* [ ${s.PREFIXE} ]
+*┋* *ᴍᴏᴅᴇ :* ${mode}
+*┋* *ᴅᴀᴛᴇ  :* ${date}
+*┋* *ᴘʟᴀᴛғᴏʀᴍ :* ${os.platform()}
+*ᴘ* *ᴠᴡ ɢᴏʟғ ᴄᴍᴅ :* ${cm.length}
+*╰───────────━⊷*\n`;
     
     let menuMsg = ` *${greeting}*`;
     
@@ -75,7 +74,7 @@ fana({
 *╭───────────━⊷* `;
         for (const cmd of coms[cat]) {
             menuMsg += `          
-┊▸ *${toFancyLowercaseFont(cmd)}*`;   
+*┋* *${toFancyLowercaseFont(cmd)}*`;   
         }
         menuMsg += `
 *╰───────────━⊷*`;
@@ -137,3 +136,4 @@ fana({
         repondre("❌ Error fetching repository data. Please try again later.");
     }
 });
+        
