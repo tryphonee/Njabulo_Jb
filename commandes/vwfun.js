@@ -3,7 +3,7 @@ const { fana } = require('../njabulo/fana');
 
 fana({
   nomCom: "happi",
-  categorie: "fledi-funs",
+  categorie: "funs",
   reaction: "😂"
 }, async (dest, zk, commandeOptions) => {
   const { repondre, ms } = commandeOptions;
@@ -32,7 +32,7 @@ fana({
 fana({
   nomCom: "heart",
   aliases: ["moyo", "hrt"],
-  categorie: "fledi-fun",
+  categorie: "fun",
   reaction: "🫀"
 }, async (dest, zk, commandeOptions) => {
   const { repondre, ms } = commandeOptions;
@@ -60,7 +60,7 @@ fana({
 });
 fana({
   nomCom: "angry",
-  categorie: "fledi-fun",
+  categorie: "fun",
   reaction: "🥺"
 }, async (dest, zk, commandeOptions) => {
   const { repondre, ms } = commandeOptions;
@@ -89,7 +89,7 @@ fana({
 fana({
   nomCom: "sad",
   aliases: ["heartbroken", "hrtbroken"],
-  categorie: "fledi-fun",
+  categorie: "fun",
   reaction: "😒"
 }, async (dest, zk, commandeOptions) => {
   const { repondre, ms } = commandeOptions;
@@ -118,7 +118,7 @@ fana({
 fana({
   nomCom: "shy",
   aliases: ["shyoff", "shyy"],
-  categorie: "fledi-fun",
+  categorie: "fun",
   reaction: "🥂"
 }, async (dest, zk, commandeOptions) => {
   const { repondre, ms } = commandeOptions;
@@ -147,7 +147,7 @@ fana({
 fana({
   nomCom: "moon",
   aliases: ["mon", "mwezi"],
-  categorie: "fledi-fun",
+  categorie: "fun",
   reaction: "🌚"
 }, async (dest, zk, commandeOptions) => {
   const { repondre, ms } = commandeOptions;
@@ -176,7 +176,7 @@ fana({
 
 fana({
   nomCom: "nikal",
-  categorie: "fledi-fun",
+  categorie: "fun",
   reaction: "⁉️"
 }, async (dest, zk, commandeOptions) => {
   const { repondre, ms } = commandeOptions;
@@ -206,7 +206,7 @@ fana({
 
 fana({
   nomCom: "hand",
-  categorie: "fledi-fun",
+  categorie: "fun",
   reaction: "👊"
 }, async (dest, zk, commandeOptions) => {
   const { repondre, ms } = commandeOptions;
