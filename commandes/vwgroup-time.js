@@ -5,7 +5,7 @@ const conf = require("../set");
 fana({
     nomCom: "opentime",
     reaction: "😌",
-    categorie: "group"
+    categorie: "Group"
 }, async (dest, zk, context) => {
     var { repondre, arg, verifGroupe, verifAdmin } = context;
     try {
@@ -46,7 +46,7 @@ fana({
 fana({
     nomCom: "closetime",
     reaction: "😌",
-    categorie: "group"
+    categorie: "Group"
 }, async (dest, zk, context) => {
     var { repondre, arg, verifGroupe, verifAdmin } = context;
     try {
