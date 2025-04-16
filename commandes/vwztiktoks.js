@@ -4,7 +4,7 @@ const axios = require("axios");
 fana({
   nomCom: "tiktoksearch",
   aliases: ["tiksearch", "tiktoklist"],
-  categorie: "Fledi-search",
+  categorie: "Search",
   reaction: "📽️"
 }, async (dest, zk, commandeOptions) => {
   const { repondre, arg } = commandeOptions;
@@ -31,16 +31,16 @@ fana({
     // Loop through search results and construct track info with numbers
     searchData.forEach((track, index) => {
       const trackNumber = index + 1; // Number tracks starting from 1
-      searchMessage += `*☞${trackNumber}.* ${track.title}\n`;
-      searchMessage += `*☞Region*: ${track.region || "Unknown"}\n`;
-      searchMessage += `*☞ID*: ${track.id}\n`;  // `id` is the video ID
-      searchMessage += `*☞Video URL*: ${track.url}\n`;
-      searchMessage += `*☞Cover Image*: ${track.cover}\n`;
-      searchMessage += `*☞Views*: ${track.views || 0}\n`;
-      searchMessage += `*☞Likes*: ${track.likes || 0}\n`;
-      searchMessage += `*☞Comments*: ${track.comments || 0}\n`;
-      searchMessage += `*☞Shares*: ${track.share || 0}\n`;
-      searchMessage += `*☞Download Count*: ${track.download || 0}\n`;
+      searchMessage += `*${trackNumber}.* ${track.title}\n`;
+      searchMessage += `*Region*: ${track.region || "Unknown"}\n`;
+      searchMessage += `*ID*: ${track.id}\n`;  // `id` is the video ID
+      searchMessage += `*Video URL*: ${track.url}\n`;
+      searchMessage += `*Cover Image*: ${track.cover}\n`;
+      searchMessage += `*Views*: ${track.views || 0}\n`;
+      searchMessage += `*Likes*: ${track.likes || 0}\n`;
+      searchMessage += `*Comments*: ${track.comments || 0}\n`;
+      searchMessage += `*Shares*: ${track.share || 0}\n`;
+      searchMessage += `*Download Count*: ${track.download || 0}\n`;
       searchMessage += `────────────────\n\n`;
     });
 
