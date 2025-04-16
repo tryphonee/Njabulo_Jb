@@ -1,8 +1,8 @@
 "use strict";
-const { zokou } = require("../framework/zokou");
+const { zokou } = require("../njabulo/fana");
 const axios = require("axios");
 
-zokou({ 
+fana({ 
   nomCom: "repo", 
   categorie: "General",
   reaction: "🚘",
@@ -35,6 +35,7 @@ zokou({
 
     // Enhanced cage design with channel information
     const gitdata = `
+    
 *╭────────────━⊷*
 *┋* *ɴᴀᴍᴇ:   ɴᴊᴀʙᴜʟᴏ ᴊʙ*
 *┋* *sᴛᴀʀs:*  ${data.stargazers_count}
@@ -65,7 +66,7 @@ zokou({
           renderLargerThumbnail: true
         }
       }
-       });
+    });
 
         // Send audio with caption
         await zk.sendMessage(dest, { 
