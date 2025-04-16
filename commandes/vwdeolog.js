@@ -5,7 +5,7 @@
 const { fana } = require("../njabulo/fana");
 const axios = require("axios");
 
-fana({ nomCom: "videologo", categorie: "Fledi-logo", reaction: "🔖" }, async (dest, zk, commandeOptions) => {
+fana({ nomCom: "videologo", categorie: "General", reaction: "🔖" }, async (dest, zk, commandeOptions) => {
   const { ms, repondre, arg } = commandeOptions;
   const text = arg.join(" ");
 
@@ -18,22 +18,21 @@ fana({ nomCom: "videologo", categorie: "Fledi-logo", reaction: "🔖" }, async (
     // Message content
     const messageText = `😁Reply with below alphabet to generate *${text}* logo
 
-A ☞ sweet love 💞😻
-B ☞ lightning pubg🕯️
-C ☞ intro video 🎬
-D ☞ tiger 🐯 video logo
+ sweet love 💞😻
+ lightning pubg🕯️
+ intro video 🎬
+ tiger 🐯 video logo
 
 *Enjoy 🔮*`;
 
     const contextInfo = {
       mentionedJid: [ms.sender], // Mention the sender
-      externalAdReply: {
-        title: "vw golf",
-        body: "Pambe Kwa, vw golf",
-        thumbnailUrl: "https://files.catbox.moe/7irwqn.jpeg",
-        sourceUrl: "https://whatsapp.com/channel/0029VaihcQv84Om8LP59fO3f",
-        mediaType: 1,
-        renderLargerThumbnail: true,
+      contextInfo: {
+         isForwarded: true,
+         forwardedNewsletterMessageInfo: {
+         newsletterJid: '120363345407274799@newsletter',
+         newsletterName: "vw golf",
+         serverMessageId: 143,
       },
     };
 
