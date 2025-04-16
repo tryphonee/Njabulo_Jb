@@ -36,7 +36,7 @@ fana(
   {
     nomCom: 'github',
     alias: ['githubstalk'],
-    categorie: 'gitcme',
+    categorie: 'General',
     reaction: '♻️'
   },
   
