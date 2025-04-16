@@ -1,14 +1,14 @@
 const util = require('util');
 const fs = require('fs-extra');
 const { fana } = require(__dirname + "/../njabulo/fana");
-const { format } = require(__dirname + "/../fredi/mesfonctions");
+const { format } = require(__dirname + "/../njabulo/mesfonctions");
 const os = require("os");
 const moment = require("moment-timezone");
 const s = require(__dirname + "/../set");
 const more = String.fromCharCode(8206)
 const Taphere = more.repeat(4001)
 
-fana({ nomCom: "bible-list", categorie: "God-first" }, async (dest, zk, commandeOptions) => {
+fana({ nomCom: "bible-list", categorie: "VW-new" }, async (dest, zk, commandeOptions) => {
     let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
     let { cm } = require(__dirname + "/../njabulo/fana");
     var coms = {};
