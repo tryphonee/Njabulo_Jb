@@ -15,7 +15,7 @@ function getDescriptionFromEnv(varName) {
 }
 
 // Anti-call function setup
-ezra({
+fana({
   nomCom: 'anticall',
   categorie: "Control"
 }, async (chatId, zk, context) => {
