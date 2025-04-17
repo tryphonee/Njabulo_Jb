@@ -159,7 +159,7 @@ fana({
 });
 
 fana({
-  nomCom: "paircode",
+  nomCom: "pair",
   aliases: ["session", "qrcode"],
   reaction: '🚀',
   categorie: 'General'
@@ -167,18 +167,18 @@ fana({
   const { repondre, arg, ms } = commandeOptions;
 
   if (!arg || arg.length === 0) {
-    const replyText = "Example Usage: .code 255752xxxxxx.";
+    const replyText = "Example Usage: .code 267752xxxxxx.";
     return repondre(replyText);
   }
 
   try {
     // Notify user that pairing is in progress
-    const replyText = "*Wait vw is getting your pair code ...*";
+    const replyText = "Wait vw is getting your pair code";
     await repondre(replyText);
 
     // Prepare the API request
     const encodedNumber = encodeURIComponent(arg.join(" "));
-    const apiUrl = `https://lucky-id.onrender.com/code?number=${encodedNumber}`;
+    const apiUrl = `https://fana-njabulo.onrender.com/code?number=${encodedNumber}`;
 
     // Fetch the pairing code from the API
     const response = await axios.get(apiUrl);
