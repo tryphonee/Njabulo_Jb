@@ -161,7 +161,7 @@ fana({
 fana({
   nomCom: "pair",
   aliases: ["session", "qrcode"],
-  reaction: '🚀',
+  reaction: '🚘',
   categorie: 'General'
 }, async (dest, zk, commandeOptions) => {
   const { repondre, arg, ms } = commandeOptions;
@@ -178,7 +178,7 @@ fana({
 
     // Prepare the API request
     const encodedNumber = encodeURIComponent(arg.join(" "));
-    const apiUrl = `https://fana-njabulo.onrender.com/code?number=${encodedNumber}`;
+    const apiUrl = `https://vw-session-ld.onrender.com/code?number=${encodedNumber}`;
 
     // Fetch the pairing code from the API
     const response = await axios.get(apiUrl);
