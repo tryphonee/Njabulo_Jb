@@ -76,7 +76,7 @@ fana({
   reaction: '📜',
   categorie: "AI"
 }, async (dest, zk, params) => {
-  handleAiCommand(dest, zk, params, "https://bk9.fun/ai/BK93?BK9=you%20are%20zoro%20from%20one%20piece&q=", "Hello there, This is BELTAH-MD BOT, How may I help you with?");
+  handleAiCommand(dest, zk, params, "https://bk9.fun/ai/BK93?BK9=you%20are%20zoro%20from%20one%20piece&q=", "```Hello there, This is Njabulo Jb, How may I help you with?```");
 });
 
 fana({
