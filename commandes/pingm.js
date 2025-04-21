@@ -25,7 +25,7 @@ fana({ nomCom: "ping", categorie: "General" }, async (dest, zk, commandeOptions)
 
     try {
         await zk.sendMessage(dest, { 
-         text: "*loading* ••••••••••••• ${ping}ms",
+         text: "•",
             contextInfo: {
               isForwarded: true,
               forwardedNewsletterMessageInfo: {
