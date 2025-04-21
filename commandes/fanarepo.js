@@ -46,7 +46,6 @@ await zk.sendMessage(dest, {
                     newsletterJid: "120363288304618280@newsletter",
                     newsletterName: "_many_",
                     serverMessageId: -1
-                    externalAdReply: {
                 }
             }
 
