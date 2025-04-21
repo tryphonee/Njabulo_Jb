@@ -45,7 +45,6 @@ fana({ nomCom: 'uptime',
           title: "🧃 Bot uptime",
           body: ` UPTIME: ${runtime(process.uptime())}`,
           thumbnailUrl: THUMBNAIL_URL,
-          mediaType: 1,
           renderSmallThumbnail: true // Small thumbnail rendering
                 }
             }
