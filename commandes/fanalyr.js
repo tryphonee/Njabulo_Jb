@@ -6,7 +6,7 @@ fana({
   nomCom: "lyrics",
   aliases: ["mistari", "lyric"],
   reaction: '🧾',
-  categorie: "search"
+  categorie: "Search"
 }, async (dest, zk, params) => {
   const { repondre: sendResponse, arg: commandArgs, ms } = params;
   const text = commandArgs.join(" ").trim();
