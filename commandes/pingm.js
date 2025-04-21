@@ -6,7 +6,7 @@ const os = require("os");
 const moment = require("moment-timezone");
 const set = require(__dirname + "/../set");
 
-const THUMBNAIL_URL = "https://files.catbox.moe/npl123.jpg"; // New image URL
+const THUMBNAIL_URL = "https://files.catbox.moe/h4lxeb.jpg"; // New image URL
 
 moment.tz.setDefault(`${set.TZ}`);
 
@@ -25,7 +25,7 @@ fana({ nomCom: "ping", categorie: "General" }, async (dest, zk, commandeOptions)
 
     try {
         await zk.sendMessage(dest, { 
-         text: "[ ```🧃NJABULO JB OFFICE 🧃``` ]",
+         text: "*loading* ••••••••••••• ${ping}ms",
             contextInfo: {
               isForwarded: true,
               forwardedNewsletterMessageInfo: {
