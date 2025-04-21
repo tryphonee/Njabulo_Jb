@@ -53,8 +53,8 @@ fana({
 
     const temps = moment().format('HH:mm:ss');
     const date = moment().format('DD/MM/YYYY');
-    const img = 'https://files.catbox.moe/0g3dgb.jpg';
-    const imgs = 'https://files.catbox.moe/npl123.jpg';
+    const img = 'https://files.catbox.moe/jcylyv.jpg';
+    const imgs = 'https://files.catbox.moe/h4lxeb.jpg';
 
     const infoMsg = `
 *╭───────────━⊷*
@@ -92,7 +92,7 @@ fana({
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: "120363288304618280@newsletter",
-                    newsletterName: "vw golf ",
+                    newsletterName: "_many-",
                     serverMessageId: -1
                 },
                 forwardingScore: 999,
