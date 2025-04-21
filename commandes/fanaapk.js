@@ -46,17 +46,17 @@ fana({
       document: { url: appDetails.BK9.dllink },
       fileName: `${appDetails.BK9.name}.apk`,
       mimetype: "application/vnd.android.package-archive",
-      caption: [ ```download by Njabulo Jb``` ]`,
+      caption: `DOWNLOAD BY NJABULO JB`,
       contextInfo: {
          isForwarded: true,
          forwardedNewsletterMessageInfo: {
          newsletterJid: '120363345407274799@newsletter',
-         newsletterName: "NJABULO JB",
+         newsletterName: "_many_",
          serverMessageId: 143,
          },
          forwardingScore: 999, // Score to indicate it has been forwarded
          externalAdReply: {
-           title: "ɳᴊᴀʙᴜʟᴏ ᴊʙ σғғɪᴄᴇ",
+           title: "🧃Njabulo Jb",
            body: appDetails.BK9.name,
            thumbnailUrl: 'https://files.catbox.moe/npl123.jpg', // Add thumbnail URL if required 
            sourceUrl: 'https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T', // Add source URL if necessary
@@ -120,13 +120,13 @@ fana({
          isForwarded: true,
          forwardedNewsletterMessageInfo: {
          newsletterJid: '120363345407274799@newsletter',
-         newsletterName: "NJABULO JB",
+         newsletterName: "_many_",
          serverMessageId: 143,
          },
          forwardingScore: 999, // Score to indicate it has been forwarded
          externalAdReply: {
            title: `${conf.BOT} GIT CLONE`,
-           body: "```Njabulo J ```",
+           body: "🧃Njabulo Jb",
            thumbnailUrl: 'https://files.catbox.moe/npl123.jpg', // Add thumbnail URL if required 
            sourceUrl: 'https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T', // Add source URL if necessary
            mediaType: 1,
