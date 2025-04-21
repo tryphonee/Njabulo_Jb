@@ -46,7 +46,7 @@ fana({
       document: { url: appDetails.BK9.dllink },
       fileName: `${appDetails.BK9.name}.apk`,
       mimetype: "application/vnd.android.package-archive",
-      caption: `Downloaded by ${conf.OWNER_NAME}`,
+      caption: [ ```download by Njabulo Jb``` ]`,
       contextInfo: {
          isForwarded: true,
          forwardedNewsletterMessageInfo: {
