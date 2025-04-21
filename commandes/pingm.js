@@ -30,7 +30,7 @@ fana({ nomCom: "ping", categorie: "General" }, async (dest, zk, commandeOptions)
               isForwarded: true,
               forwardedNewsletterMessageInfo: {
               newsletterJid: '120363345407274799@newsletter',
-                  newsletterName: "NJABULO JB",
+                  newsletterName: "_many_",
                   serverMessageId: 143,
                    },
                    forwardingScore: 999, // Score to indicate it has been forwarded
