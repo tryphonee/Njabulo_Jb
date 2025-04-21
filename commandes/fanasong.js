@@ -10,7 +10,7 @@ const getContextInfo = (title = '', userJid = '', thumbnailUrl = '') => ({
   isForwarded: true,
   forwardedNewsletterMessageInfo: {
     newsletterJid: "120363345407274799@newsletter",
-    newsletterName: "vw golf",
+    newsletterName: "_many_",
     serverMessageId: Math.floor(100000 + Math.random() * 900000),
   },
   externalAdReply: {
@@ -72,7 +72,7 @@ fana({
     const video = await searchYouTube(query);
     
     await zk.sendMessage(dest, {
-      text: "⏳loading•••••••••••••\n\n⌚ wait are second•••••••••••••\n```Njabulo Jb youtube downloaded you audio```",
+      text: "⏳loading•••••••••••••\n\n⌚ wait are second•••••••••••••\n```Njabulo Jb downloaded you audio```",
       contextInfo: getContextInfo("vw golf music", userJid, video.thumbnail)
     }, { quoted: ms });
 
@@ -129,7 +129,7 @@ fana({
     const video = await searchYouTube(query);
     
     await zk.sendMessage(dest, {
-      text: "⏳loading•••••••••••••\n\n⌚ wait are second•••••••••••••\n```Njabulo Jb youtube downloaded you video```",
+      text: "⏳loading•••••••••••••\n\n⌚ wait are second•••••••••••••\n```Njabulo Jb downloaded you video```",
       contextInfo: getContextInfo("vw golf video", userJid, video.thumbnail)
     }, { quoted: ms });
 
