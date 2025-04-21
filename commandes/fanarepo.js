@@ -47,7 +47,6 @@ await zk.sendMessage(dest, {
                     newsletterName: "_many_",
                     serverMessageId: -1
                     externalAdReply: {
-                   showAdAttribution: true,
                 }
             }
 
