@@ -6,7 +6,7 @@ const conf = require(__dirname + '/../set');
 fana({
   nomCom: "img",
   aliases: ["image", "images"],
-  categorie: "Images",
+  categorie: "Search",
   reaction: "📸"
 }, async (dest, zk, commandeOptions) => {
   const { repondre, ms, arg } = commandeOptions;
