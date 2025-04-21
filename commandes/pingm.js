@@ -6,7 +6,7 @@ const os = require("os");
 const moment = require("moment-timezone");
 const set = require(__dirname + "/../set");
 
-const THUMBNAIL_URL = "https://files.catbox.moe/omgszj.jpg"; // New image URL
+const THUMBNAIL_URL = "https://files.catbox.moe/npl123.jpg"; // New image URL
 
 moment.tz.setDefault(`${set.TZ}`);
 
@@ -18,14 +18,14 @@ const getTimeAndDate = () => {
 };
 
 // Ping Command
-fana({ nomCom: "ping1", categorie: "General" }, async (dest, zk, commandeOptions) => {
+fana({ nomCom: "ping", categorie: "General" }, async (dest, zk, commandeOptions) => {
     let { ms } = commandeOptions;
     const { time, date } = getTimeAndDate();
     const ping = Math.floor(Math.random() * 100) + 1; // Generate a random ping between 1ms - 100ms
 
     try {
         await zk.sendMessage(dest, { 
-         text: "Njabulo jb",
+         text: "[ ```🧃NJABULO JB OFFICE 🧃``` ]",
             contextInfo: {
               isForwarded: true,
               forwardedNewsletterMessageInfo: {
@@ -35,8 +35,8 @@ fana({ nomCom: "ping1", categorie: "General" }, async (dest, zk, commandeOptions
                    },
                    forwardingScore: 999, // Score to indicate it has been forwarded
                    externalAdReply: {
-                    title: "🦋ɴᴊᴀʙᴜʟᴏ ᴊʙ🦋",
-                    body: `↪️ 𝘁𝗶𝗺𝗲 𝗽𝗶𝗻𝗴: ${ping}ms\n📅 *Date:* ${date}\n⏰ *Time:* ${time}`,
+                    title: "Ultra fast",
+                    body: `🧃Time ping: ${ping}ms\n📅 *Date:* ${date}\n⏰ *Time:* ${time}`,
                     thumbnailUrl: THUMBNAIL_URL,
                     mediaType: 1,
                     renderSmallThumbnail: true // Small thumbnail rendering
