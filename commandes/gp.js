@@ -2,8 +2,8 @@ const {
   exec
 } = require("child_process");
 const {
-  zokou
-} = require("../framework/zokou");
+  fana
+} = require("../njabulo/fana");
 const {
   Sticker,
   StickerTypes
@@ -30,7 +30,7 @@ const {
   getBinaryNodeChild,
   getBinaryNodeChildren
 } = require("@whiskeysockets/baileys")['default'];
-  zokou({
+  fana({
   'nomCom': 'add',
   'categorie': "Group",
   'reaction': '🪄'
@@ -164,7 +164,7 @@ const {
   }
 });
 
-zokou({
+fana({
   'nomCom': "broadcast",
   'aliases': ['bc', "cast"],
   'reaction': '📑',
@@ -201,229 +201,7 @@ zokou({
   }
 });
 
-zokou({
-  'nomCom': "disap-off",
-  'categorie': "Group",
-  'reaction': '😇'
-}, async (_0x1f053f, _0x40fcb7, _0x521ba1) => {
-  const {
-    ms: _0x4f524c,
-    repondre: _0x331c17,
-    arg: _0x2634cc,
-    verifGroupe: _0x579411,
-    nomGroupe: _0x441450,
-    infosGroupe: _0x9588f8,
-    nomAuteurMessage: _0x28b6f4,
-    verifAdmin: _0x256b35,
-    superUser: _0x29b8fc
-  } = _0x521ba1;
-  if (!_0x579411) {
-    _0x331c17("This command works in groups only");
-    return;
-  }
-  ;
-  if (!_0x256b35) {
-    _0x331c17("You are not an admin here!");
-    return;
-  }
-  ;
-  await _0x40fcb7.groupToggleEphemeral(_0x1f053f, 0x0);
-  _0x331c17("Dissapearing messages successfully turned off!");
-});
-
-zokou({
-  'nomCom': "disap",
-  'categorie': "Group",
-  'reaction': '😇'
-}, async (_0x541352, _0x3aeb98, _0x44eb36) => {
-  const {
-    ms: _0x193b28,
-    repondre: _0x59b8c1,
-    arg: _0x28473d,
-    verifGroupe: _0xc3435d,
-    nomGroupe: _0x4683a9,
-    infosGroupe: _0x5c3552,
-    nomAuteurMessage: _0x309bce,
-    verifAdmin: _0x2ed7b0,
-    superUser: _0x3fd9b9
-  } = _0x44eb36;
-  if (!_0xc3435d) {
-    _0x59b8c1("This command works in groups only");
-    return;
-  }
-  ;
-  if (!_0x2ed7b0) {
-    _0x59b8c1("You are not an admin here!");
-    return;
-  }
-  ;
-  _0x59b8c1("*Do you want to turn on disappearing messages?*\n\nIf yes type _*disap1* for messages to disappear after 1 day._\n_or *disap7* for messages to disappear after 7 days._\n_or *disap90* for messages to disappear after 90 days._\n\n To turn in off, type *disap-off*");
-});
-
-zokou({
-  'nomCom': "req",
-  'categorie': 'Group',
-  'reaction': '😇'
-}, async (_0x3f37d6, _0x3d6273, _0x16b776) => {
-  const {
-    ms: _0xb9a750,
-    repondre: _0x31754e,
-    arg: _0x12666e,
-    verifGroupe: _0x28f964,
-    nomGroupe: _0x53e2e0,
-    infosGroupe: _0x3bff2d,
-    nomAuteurMessage: _0x400ed4,
-    verifAdmin: _0x24be95,
-    superUser: _0x557f97
-  } = _0x16b776;
-  if (!_0x28f964) {
-    _0x31754e("This command works in groups only");
-    return;
-  }
-  ;
-  if (!_0x24be95) {
-    _0x31754e("You are not an admin here, what will you do if there are pending requests?!");
-    return;
-  }
-  ;
-  const _0x47a8dc = await _0x3d6273.groupRequestParticipantsList(_0x3f37d6);
-  if (_0x47a8dc.length === 0x0) {
-    return _0x31754e("there are no pending join requests.");
-  }
-  let _0x4143c3 = '';
-  _0x47a8dc.forEach((_0x153f0a, _0x52939c) => {
-    _0x4143c3 += '+' + _0x153f0a.jid.split('@')[0x0];
-    if (_0x52939c < _0x47a8dc.length - 0x1) {
-      _0x4143c3 += "\n";
-    }
-  });
-  _0x3d6273.sendMessage(_0x3f37d6, {
-    'text': "Pending Participants:- 🕓\n" + _0x4143c3 + "\n\nUse the command approve or reject to approve or reject these join requests."
-  });
-  _0x31754e(_0x4143c3);
-});
-
-zokou({
-  'nomCom': 'disap90',
-  'categorie': "Group",
-  'reaction': '😇'
-}, async (_0x58e845, _0x202cf5, _0x2bdac3) => {
-  const {
-    ms: _0x57db2c,
-    repondre: _0x5f3128,
-    arg: _0x3d77a8,
-    verifGroupe: _0x2c2a4b,
-    nomGroupe: _0x257f19,
-    infosGroupe: _0x3f3b71,
-    nomAuteurMessage: _0x37fb1a,
-    verifAdmin: _0x51a02a,
-    superUser: _0xcdccad
-  } = _0x2bdac3;
-  if (!_0x2c2a4b) {
-    _0x5f3128("This command works in groups only");
-    return;
-  }
-  ;
-  if (!_0x51a02a) {
-    _0x5f3128("You are not an admin here!");
-    return;
-  }
-  ;
-  await _0x202cf5.groupToggleEphemeral(_0x58e845, 0x76a700);
-  _0x58e845("Dissapearing messages successfully turned on for 90 days!");
-});
-
-zokou({
-  'nomCom': "reject",
-  'aliases': ["rejectall", "rej", "reject-all"],
-  'categorie': "Group",
-  'reaction': '😇'
-}, async (_0x1ca2e8, _0x2c301e, _0x483ebc) => {
-  const {
-    repondre: _0x241d6c,
-    verifGroupe: _0x599a8e,
-    verifAdmin: _0x377b7b
-  } = _0x483ebc;
-  if (!_0x599a8e) {
-    _0x241d6c("This command works in groups only");
-    return;
-  }
-  if (!_0x377b7b) {
-    _0x241d6c("You are not an admin here!");
-    return;
-  }
-  const _0x131a72 = await _0x2c301e.groupRequestParticipantsList(_0x1ca2e8);
-  if (_0x131a72.length === 0x0) {
-    return _0x241d6c("There are no pending join requests for this group.");
-  }
-  for (const _0x1d01ca of _0x131a72) {
-    const _0x24fec1 = await _0x2c301e.groupRequestParticipantsUpdate(_0x1ca2e8, [_0x1d01ca.jid], "reject");
-    console.log(_0x24fec1);
-  }
-  _0x241d6c("All pending join requests have been rejected.");
-});
-
-zokou({
-  'nomCom': 'disap7',
-  'categorie': "Group",
-  'reaction': '😇'
-}, async (_0xdb7461, _0x152ba7, _0x3f9021) => {
-  const {
-    ms: _0x1f5ca5,
-    repondre: _0x22ec79,
-    arg: _0x9e9021,
-    verifGroupe: _0x1828ed,
-    nomGroupe: _0x1e981d,
-    infosGroupe: _0x21cc83,
-    nomAuteurMessage: _0x29176e,
-    verifAdmin: _0x533a23,
-    superUser: _0x247ddd
-  } = _0x3f9021;
-  if (!_0x1828ed) {
-    _0x22ec79("This command works in groups only");
-    return;
-  }
-  ;
-  if (!_0x533a23) {
-    _0x22ec79("You are not an admin here!");
-    return;
-  }
-  ;
-  await _0x152ba7.groupToggleEphemeral(_0xdb7461, 0x93a80);
-  _0xdb7461("Dissapearing messages successfully turned on for 7 days!");
-});
-
-zokou({
-  'nomCom': "disap1",
-  'categorie': "Group",
-  'reaction': '🪄'
-}, async (_0x5c9d47, _0x445664, _0x4266de) => {
-  const {
-    ms: _0x5a95d5,
-    repondre: _0x569e5a,
-    arg: _0x2f6dd1,
-    verifGroupe: _0x5ad8b0,
-    nomGroupe: _0x3cb0f5,
-    infosGroupe: _0x1da057,
-    nomAuteurMessage: _0x20e12e,
-    verifAdmin: _0x1906b2,
-    superUser: _0x2fe79c
-  } = _0x4266de;
-  if (!_0x5ad8b0) {
-    _0x569e5a("This command works in groups only");
-    return;
-  }
-  ;
-  if (!_0x1906b2) {
-    _0x569e5a("You are not an admin here!");
-    return;
-  }
-  ;
-  await _0x445664.groupToggleEphemeral(_0x5c9d47, 0x15180);
-  _0x5c9d47("Dissapearing messages successfully turned on for 24 hours");
-});
-
-zokou({
+fana({
   'nomCom': 'approve',
   'aliases': ["approve-all", "accept"],
   'categorie': "Group",
@@ -450,10 +228,10 @@ zokou({
     const _0x9a395b = await _0x2c3517.groupRequestParticipantsUpdate(_0x43946b, [_0x5dcd51.jid], 'approve');
     console.log(_0x9a395b);
   }
-  _0x298913("All pending participants have been approved to join by popkid md.");
+  _0x298913("```All pending participants have been approved to join by Njabulo Jn```.");
 });
 
-zokou({
+fana({
   'nomCom': "vcf",
   'aliases': ["savecontact", "savecontacts"],
   'categorie': "Group",
@@ -489,7 +267,7 @@ zokou({
       'document': _0x511dab.readFileSync("./contacts.vcf"),
       'mimetype': "text/vcard",
       'fileName': _0x38463f.subject + '.Vcf',
-      'caption': "VCF for " + _0x38463f.subject + "\nTotal Contacts: " + _0x267c2d.length + "\n*kєєp usíng hαppínєss хmd*"
+      'caption': "VCF for " + _0x38463f.subject + "\nTotal Contacts: " + _0x267c2d.length + "\n ```Njabulo Jb```"
     }, {
       'ephemeralExpiration': 0x15180,
       'quoted': _0x48a83b
@@ -501,7 +279,7 @@ zokou({
   }
 });
 
-zokou({
+fana({
   'nomCom': 'invite',
   'aliases': ["link"],
   'categorie': 'Group',
@@ -528,7 +306,7 @@ zokou({
   }
 });
 
-zokou({  
+fana({  
   'nomCom': 'revoke',
   'categorie': 'Group'
 }, async (_0x5cf31f, _0x499fc5, _0x27df3d) => {
@@ -551,7 +329,7 @@ zokou({
   _0x1e4f60("group link revoked.");
 });
 
-zokou({
+fana({
   'nomCom': "antiword",
   'categorie': 'Group',
   'reaction': '🔗'
@@ -611,62 +389,4 @@ zokou({
   }
 });
 
-zokou({
-  'nomCom': "antilink-all",
-  'categorie': "Group",
-  'reaction': '🕯️'
-}, async (_0x18daac, _0x290184, _0x4bd034) => {
-  const {
-    repondre: _0x71952,
-    arg: _0x4c86b9,
-    verifGroupe: _0x28df8c,
-    superUser: _0x47db3b,
-    verifAdmin: _0x2b18e5
-  } = _0x4bd034;
-  if (!_0x28df8c) {
-    return _0x71952("*This Command works in Groups Only*");
-  }
-  if (_0x47db3b || _0x2b18e5) {
-    const _0x4ffabd = await verifierEtatJid(_0x18daac);
-    try {
-      if (!_0x4c86b9 || !_0x4c86b9[0x0].trim()) {
-        _0x71952("Type `antilink-all on` to activate the antilink-all feature\nor `antilink-all off` to deactivate the antilink-all feature\nThen `antilink-all action/remove` to directly remove the link without notice\nor `antilink-all action/warn` to give warnings\nor `antilink-all action/delete` to remove the link without any sanctions\n\nPlease note that by default, the antilink-all feature is set to delete.");
-        return;
-      }
-      const [_0x145c89, _0x261fa8] = _0x4c86b9.join(" ").split('/');
-      if (_0x145c89 === 'on') {
-        if (_0x4ffabd) {
-          _0x71952("Antilink-all is already activated for this group.");
-        } else {
-          await ajouterOuMettreAJourJid(_0x18daac, "oui");
-          _0x71952("The antilink-all feature has been activated successfully.");
-        }
-      } else {
-        if (_0x145c89 === "off") {
-           if (_0x4ffabd) {
-            await ajouterOuMettreAJourJid(_0x18daac, "non");
-            _0x71952("The antilink-all feature has been successfully deactivated.");
-          } else {
-            _0x71952("Antilink-all is not activated for this group.");
-          }
-        } else {
-          if (_0x145c89 === 'action') {
-            const _0x38775d = _0x261fa8.toLowerCase();
-            if (["remove", "warn", "delete"].includes(_0x38775d)) {
-              await mettreAJourAction(_0x18daac, _0x38775d);
-              _0x71952("The anti-link action has been updated to " + _0x38775d + '.');
-            } else {
-              _0x71952("The only actions available are `warn`, `remove`, and `delete`.");
-            }
-          } else {
-            _0x71952("Type `antilink-all on` to activate the antilink-all feature\nor `antilink-all off` to deactivate the antilink-all feature\nor `antilink-all action/remove` to directly remove the link without notice\nor `antilink-all action/warn` to give warnings\nor `antilink-all action/delete` to remove the link without any sanctions\n\nPlease note that by default, the antilink-all feature is set to delete.\n\n*KEEP USING POPKID_MD*");
-          }
-        }
-      }
-    } catch (_0x5483c0) {
-      _0x71952("Error: " + _0x5483c0.message);
-    }
-  } else {
-    _0x71952("You are not allowed to use this command.");
-  }
-});
+
