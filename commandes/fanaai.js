@@ -72,7 +72,7 @@ fana({
 
 fana({
   nomCom: "Njabulo",
-  aliases: ["NjabuloJb", "Njabulobot"],
+  aliases: ["NjabuloJb", "NjabuloJbbot"],
   reaction: '📜',
   categorie: "AI"
 }, async (dest, zk, params) => {
