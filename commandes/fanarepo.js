@@ -11,7 +11,7 @@ fana({
 }, async (dest, zk, commandeOptions) => {
     const { pushname, repondre } = commandeOptions;
     const githubRepo = 'https://api.github.com/repos/NjabuloJ/Njabulo-Jb';
-    const img = 'https://files.catbox.moe/h4lxeb.jpg';
+    const img = 'https://files.catbox.moe/jcylyv.jpg';
 
     try {
         const response = await axios.get(githubRepo);
@@ -46,6 +46,8 @@ await zk.sendMessage(dest, {
                     newsletterJid: "120363288304618280@newsletter",
                     newsletterName: "_many_",
                     serverMessageId: -1
+                    externalAdReply: {
+                   showAdAttribution: true,
                 }
             }
 
