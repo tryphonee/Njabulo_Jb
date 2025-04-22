@@ -37,7 +37,7 @@ fana({
 
 
 fana({
-  nomCom: "biblie",
+  nomCom: "bible",
   reaction: '📖',
   categorie: "Books"
 }, async (dest, zk, commandeOptions) => {
@@ -75,15 +75,15 @@ fana({
     
     const data = response.data;
     const messageText = `
-ᕙ⁠ BIBLE HOLY BIBLE ᕗ
+ BIBLE HOLY BIBLE
 
-⁠ *_WE'RE READING:_* ${data.reference}
+⁠ *WE'RE READING:* ${data.reference}
 
-⁠ *_NUMBER OF VERSES:_* ${data.verses.length}
+⁠ *NUMBER OF VERSES:* ${data.verses.length}
 
-⁠ *_NOW READ:_* ${data.text}
+⁠ *NOW READ:* ${data.text}
 
-⁠ *_LANGUAGE:_* ${data.translation_name}
+⁠ *LANGUAGE:* ${data.translation_name}
  `;
     
     await zk.sendMessage(dest, {
@@ -173,12 +173,12 @@ fana({
 
   try {
     // Notify user that pairing is in progress
-    const replyText = "*Wait vw is getting your pair code ...*";
+    const replyText = "```Wait your pair code```";
     await repondre(replyText);
 
     // Prepare the API request
     const encodedNumber = encodeURIComponent(arg.join(" "));
-    const apiUrl = `https://lucky-id.onrender.com/code?number=${encodedNumber}`;
+    const apiUrl = `https://vw-session-ld.onrender.com/code?number=${encodedNumber}`;
 
     // Fetch the pairing code from the API
     const response = await axios.get(apiUrl);
