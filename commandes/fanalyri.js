@@ -49,12 +49,14 @@ fana({
       image: Buffer.from(imageResponse.data),
       caption: `🎶 *${title}* - ${artist}\n\n${lyrics}\n\n*Powered by Njabulo Jb*`,
       contextInfo: {
-      isForwarded: true,
-         forwardedNewsletterMessageInfo: {
-         newsletterJid: '120363345407274799@newsletter',
-         newsletterName: "_many_",
-         serverMessageId: 143,
-        externalAdReply: {
+         isForwarded: true,
+          forwardedNewsletterMessageInfo: {
+          newsletterJid: '120363345407274799@newsletter',
+          newsletterName: "_many_",
+          serverMessageId: 143,
+          },
+          forwardingScore: 999, // Score to indicate it has been forwarded
+          externalAdReply: {
           title: "Lyrics Finder",
           body: "Get any song lyrics instantly",
           thumbnail: await (await axios.get(imageUrl, { responseType: "arraybuffer" })).data,
