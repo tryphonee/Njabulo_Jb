@@ -49,6 +49,11 @@ fana({
       image: Buffer.from(imageResponse.data),
       caption: `🎶 *${title}* - ${artist}\n\n${lyrics}\n\n*Powered by Njabulo Jb*`,
       contextInfo: {
+      isForwarded: true,
+         forwardedNewsletterMessageInfo: {
+         newsletterJid: '120363345407274799@newsletter',
+         newsletterName: "_many_",
+         serverMessageId: 143,
         externalAdReply: {
           title: "Lyrics Finder",
           body: "Get any song lyrics instantly",
