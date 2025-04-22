@@ -89,20 +89,20 @@ fana({
             image: { url: img },
             caption: infoMsg + menuMsg,
             contextInfo: {
-                isForwarded: true,
-                forwardedNewsletterMessageInfo: {
-                    newsletterJid: "120363288304618280@newsletter",
-                    newsletterName: "_many-",
-                    serverMessageId: -1
-                },
-                forwardingScore: 999, // Score to indicate it has been forwarded
-                externalAdReply: {
-                    title: "🧃ɴᴊᴀʙᴜʟᴏ ᴊʙ",
-                    body: "🧃Command List",
-                    thumbnailUrl: imgs,
-                    sourceUrl: "https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T",
-                    mediaType: 1,
-                    renderLargerThumbnail: true
+         isForwarded: true,
+          forwardedNewsletterMessageInfo: {
+          newsletterJid: '120363345407274799@newsletter',
+          newsletterName: "_many_",
+          serverMessageId: 143,
+          },
+          forwardingScore: 999, // Score to indicate it has been forwarded
+          externalAdReply: {
+          title: "Lyrics Finder",
+          body: "Get any song lyrics instantly",
+          thumbnail: imgs,
+          mediaType: 1,
+          mediaUrl: "",
+          sourceUrl: ""
                 }
             }
         });
