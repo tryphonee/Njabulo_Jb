@@ -88,7 +88,7 @@ fana({
     
     const data = response.data;
     const messageText = `
-ᬑ *𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃 HOLY SCRIPT* ᬒ
+ᬑ Bible HOLY SCRIPT ᬒ
 
 ⧭ *_WE'RE READING:_* ${data.reference}
 
@@ -97,20 +97,25 @@ fana({
 ⧭ *_NOW READ:_* ${data.text}
 
 ⧭ *_LANGUAGE:_* ${data.translation_name}
-╭────────────────◆
-> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʙᴇʟᴛᴀʜ ʜᴀᴄᴋɪɴɢ ᴛᴇᴀᴍ
-╰─────────────────◆ `;
+•`;
     
     await zk.sendMessage(dest, {
       text: messageText,
       contextInfo: {
-        externalAdReply: {
-          title: "𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃 HOLY BIBLE",
-          body: `We're reading: ${data.reference}`,
-          mediaType: 1,
-          thumbnailUrl: "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg", 
-          sourceUrl: 'https://whatsapp.com/channel/0029VaRHDBKKmCPKp9B2uH2F' ,
-          showAdAttribution: true, 
+         isForwarded: true,
+         forwardedNewsletterMessageInfo: {
+         newsletterJid: '120363345407274799@newsletter',
+         newsletterName: "NJABULO JB",
+         serverMessageId: 143,
+         },
+         forwardingScore: 999, // Score to indicate it has been forwarded
+         externalAdReply: {
+           title: "🦋ɴᴊᴀʙᴜʟᴏ ᴊʙ🦋",
+           body: "message on",
+           thumbnailUrl: 'https://files.catbox.moe/7cce9r.jpg', // Add thumbnail URL if required 
+           sourceUrl: 'https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T', // Add source URL if necessary
+           mediaType: 1,
+           renderLargerThumbnail: true
         },
       },
     }, { quoted: ms });
@@ -159,6 +164,11 @@ fana({
       await zk.sendMessage(dest, {
         text: definitionMessage,
         contextInfo: {
+        isForwarded: true,
+         forwardedNewsletterMessageInfo: {
+         newsletterJid: '120363345407274799@newsletter',
+         newsletterName: "NJABULO JB",
+         serverMessageId: 143,
           externalAdReply: {
             title: "𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃 DICTIONARY",
             body: `Definition of ${term}`,
@@ -270,13 +280,20 @@ fana({
       await zk.sendMessage(dest, {
         text: pairingCode,
         contextInfo: {
-          externalAdReply: {
-            title: "𝗕𝗘𝗟𝗧𝗔𝗛-𝗠𝗗 𝗦𝗘𝗦𝗦𝗜𝗢𝗡𝗦",
-            body: "Here is your pairing code:",
-            mediaType: 1,
-            thumbnailUrl: "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg", 
-            sourceUrl:  'https://whatsapp.com/channel/0029VaRHDBKKmCPKp9B2uH2F',
-            showAdAttribution: true, 
+         isForwarded: true,
+         forwardedNewsletterMessageInfo: {
+         newsletterJid: '120363345407274799@newsletter',
+         newsletterName: "NJABULO JB",
+         serverMessageId: 143,
+         },
+         forwardingScore: 999, // Score to indicate it has been forwarded
+         externalAdReply: {
+           title: "🦋ɴᴊᴀʙᴜʟᴏ ᴊʙ🦋",
+           body: "message on",
+           thumbnailUrl: 'https://files.catbox.moe/7cce9r.jpg', // Add thumbnail URL if required 
+           sourceUrl: 'https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T', // Add source URL if necessary
+           mediaType: 1,
+           renderLargerThumbnail: true
           },
         },
       }, { quoted: ms });
@@ -331,13 +348,20 @@ Regards ${conf.BOT} `;
     await zk.sendMessage(dest, {
       text: formattedMessage,
       contextInfo: {
-        externalAdReply: {
-          title: "𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃 ELEMENT INFORMATION",
-          body: "Here is the information you requested:",
-          mediaType: 1,
-          thumbnailUrl: thumb,
-          sourceUrl:  'https://whatsapp.com/channel/0029VaRHDBKKmCPKp9B2uH2F' ,
-          showAdAttribution: true, 
+         isForwarded: true,
+         forwardedNewsletterMessageInfo: {
+         newsletterJid: '120363345407274799@newsletter',
+         newsletterName: "NJABULO JB",
+         serverMessageId: 143,
+         },
+         forwardingScore: 999, // Score to indicate it has been forwarded
+         externalAdReply: {
+           title: "🦋ɴᴊᴀʙᴜʟᴏ ᴊʙ🦋",
+           body: "message on",
+           thumbnailUrl: 'https://files.catbox.moe/7cce9r.jpg', // Add thumbnail URL if required 
+           sourceUrl: 'https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T', // Add source URL if necessary
+           mediaType: 1,
+           renderLargerThumbnail: true
         },
       },
     }, { quoted: ms });
@@ -391,13 +415,20 @@ fana({
     await zk.sendMessage(dest, {
       text: githubMessage,
       contextInfo: {
-        externalAdReply: {
-          title: "𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃 GITHUB USER INFO",
-          body: `Information about ${data.login}`,
-          mediaType: 1,
-          thumbnailUrl: thumb,
-          sourceUrl:  'https://whatsapp.com/channel/0029VaRHDBKKmCPKp9B2uH2F' ,
-          showAdAttribution: true,
+         isForwarded: true,
+         forwardedNewsletterMessageInfo: {
+         newsletterJid: '120363345407274799@newsletter',
+         newsletterName: "NJABULO JB",
+         serverMessageId: 143,
+         },
+         forwardingScore: 999, // Score to indicate it has been forwarded
+         externalAdReply: {
+           title: "🦋ɴᴊᴀʙᴜʟᴏ ᴊʙ🦋",
+           body: "message on",
+           thumbnailUrl: 'https://files.catbox.moe/7cce9r.jpg', // Add thumbnail URL if required 
+           sourceUrl: 'https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T', // Add source URL if necessary
+           mediaType: 1,
+           renderLargerThumbnail: true
         },
       },
     }, { quoted: ms });
@@ -424,6 +455,11 @@ fana({
 
 You can use this email for temporary purposes. I will notify you if you receive any emails.`,
       contextInfo: {
+        isForwarded: true,
+         forwardedNewsletterMessageInfo: {
+         newsletterJid: '120363345407274799@newsletter',
+         newsletterName: "NJABULO JB",
+         serverMessageId: 143,
         externalAdReply: {
           title: "Temporary Email Service",
           body: "Create temporary emails quickly and easily for privacy and security.",
@@ -477,6 +513,11 @@ You can use this email for temporary purposes. I will notify you if you receive 
       zk.sendMessage(dest, {
         text: "Your temporary email session has ended. Please create a new temporary email if needed.",
         contextInfo: {
+        isForwarded: true,
+         forwardedNewsletterMessageInfo: {
+         newsletterJid: '120363345407274799@newsletter',
+         newsletterName: "NJABULO JB",
+         serverMessageId: 143,
           externalAdReply: {
             title: "Temporary Email Session Ended",
             body: "Your temporary email session has ended. Need another one? Just ask!",
@@ -494,6 +535,11 @@ You can use this email for temporary purposes. I will notify you if you receive 
     await zk.sendMessage(dest, {
       text: "Error generating temporary email. Please try again later.",
       contextInfo: {
+        isForwarded: true,
+         forwardedNewsletterMessageInfo: {
+         newsletterJid: '120363345407274799@newsletter',
+         newsletterName: "NJABULO JB",
+         serverMessageId: 143,
         externalAdReply: {
           title: "Temporary Email Error",
           body: "There was an issue generating your temporary email. Please try again later.",
