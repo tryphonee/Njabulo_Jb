@@ -8,7 +8,7 @@ fana({ nomCom: "fancy", categorie: "Use", reaction: "🖊️" }, async (dest, zk
 
     try {
         if (id === undefined || text === undefined) {
-            return await repondre(`\nExample : ${prefixe}fancy 10 Beltah-Md\n` + String.fromCharCode(8206).repeat(4001) + fancy.list('text next', fancy));
+            return await repondre(`\nExample : ${prefixe}fancy 10 text name\n` + String.fromCharCode(8206).repeat(4001) + fancy.list('text next', fancy));
         }
 
         const selectedStyle = fancy[parseInt(id) - 1];
