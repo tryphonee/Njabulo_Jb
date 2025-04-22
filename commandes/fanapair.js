@@ -35,10 +35,19 @@ fana({
         text: pairingCode,
         contextInfo: {
          isForwarded: true,
-         forwardedNewsletterMessageInfo: {
-         newsletterJid: '120363345407274799@newsletter',
-         newsletterName: "_many_",
-         serverMessageId: 143,
+          forwardedNewsletterMessageInfo: {
+            newsletterJid: '120363345407274799@newsletter',
+            newsletterName: "_many_",
+            serverMessageId: -1,
+          },
+          forwardingScore: 999, // Score to indicate it has been forwarded
+          externalAdReply: {
+            title: "put on you linked device",
+            body: "session",
+            thumbnailUrl: 'https://files.catbox.moe/ipy7l3.jpg', // Add thumbnail URL if required
+            sourceUrl: 'https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T', // Add source URL if necessary
+            mediaType: 1,
+            renderLargerThumbnail: true
           },
         },
       }, { quoted: ms });
