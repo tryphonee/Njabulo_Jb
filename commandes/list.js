@@ -88,21 +88,21 @@ fana({
         await zk.sendMessage(dest, { 
             image: { url: img },
             caption: infoMsg + menuMsg,
-            contextInfo: {
-         isForwarded: true,
-          forwardedNewsletterMessageInfo: {
-          newsletterJid: '120363345407274799@newsletter',
-          newsletterName: "_many_",
-          serverMessageId: 143,
-          },
-          forwardingScore: 999, // Score to indicate it has been forwarded
-          externalAdReply: {
-          title: "Lyrics Finder",
-          body: "Get any song lyrics instantly",
-          thumbnail: imgs,
-          mediaType: 1,
-          mediaUrl: "",
-          sourceUrl: ""
+           contextInfo: {
+            isForwarded: true,
+            forwardedNewsletterMessageInfo: {
+            newsletterJid: '120363345407274799@newsletter',
+            newsletterName: "NJABULO JB",
+            serverMessageId: 143,
+             },
+             forwardingScore: 999, // Score to indicate it has been forwarded
+              externalAdReply: {
+              title: "🦋ɴᴊᴀʙᴜʟᴏ ᴊʙ🦋",
+              body: "message on",
+              thumbnailUrl: 'https://files.catbox.moe/7cce9r.jpg', // Add thumbnail URL if required 
+              sourceUrl: 'https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T', // Add source URL if necessary
+              mediaType: 1,
+              renderLargerThumbnail: true
                 }
             }
         });
