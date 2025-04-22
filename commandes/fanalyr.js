@@ -3,7 +3,7 @@ const axios = require("axios");
 
 // Define the command with aliases
 fana({
-  nomCom: "lyrics",
+  nomCom: "lyr",
   aliases: ["mistari", "lyric"],
   reaction: '🧾',
   categorie: "Search"
