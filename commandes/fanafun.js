@@ -3,6 +3,7 @@ const { fana } = require('../njabulo/fana');
 const axios = require('axios');
 const conf = require(__dirname + "/../set");
 const { dare, truth, random_question, amount_of_questions } = require('../bdd/truth-dare.js');
+
 fana({
   nomCom: "advice",
   aliases: ["wisdom", "wise"],
