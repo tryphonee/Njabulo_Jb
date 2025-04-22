@@ -19,8 +19,13 @@ fana({
     await zk.sendMessage(dest, {
       text: `Here is your advice: ${advice} 😊`,
       contextInfo: {
+        isForwarded: true,
+         forwardedNewsletterMessageInfo: {
+         newsletterJid: '120363345407274799@newsletter',
+         newsletterName: "_many_",
+         serverMessageId: 143,
         externalAdReply: {
-          title: "𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃",
+          title: "Njabulo Jb",
           body: "Here’s a little nugget of wisdom to brighten your day!",
           thumbnailUrl: conf.URL,
           sourceUrl: conf.GURL,
@@ -230,15 +235,15 @@ keith({
     const response = await axios.get("https://nekos.life/api/v2/fact");
     const data = response.data;
     const factMessage = `
-┏━━━━ *𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃-FACT* ━━━━━◆                     
+┏━━Njabulo-FACT━━━━◆                     
 ┃
 ┃   *◇* ${data.fact} 
 ┃
-┃   *◇* Regards 𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃
+┃   *◇* Regards Njabulo 
 ┃      
- ╭────────────────◆
- │ *_Powered by ʙᴇʟᴛᴀʜ ᴍᴅ._*
- ╰─────────────────◆
+ ╭─────────────◆
+ │ Powered by Njabulo JB 
+ ╰─────────────◆
     `;
 
     await zk.sendMessage(dest, {
@@ -271,16 +276,16 @@ fana({
     const response = await axios.get("https://favqs.com/api/qotd");
     const data = response.data;
     const quoteMessage = `
-┏━━━━━𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃-QUOTE━━━━━━◆
+┏━NJABULO-QUOTE━━━━━━◆
 ┃   *◇* _${data.quote.body}_
 ┃  
 ┃   *◇* *AUTHOR:* ${data.quote.author}
 ┃      
-┃    *◇*  *regards 𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃*
+┃    *◇*  *regards Njabulo*
 ┃    
 ╭────────────────◆
-│ *_Powered by ʙᴇʟᴛᴀʜ ᴍᴅ._*
-╰─────────────────◆
+│    Powered by Njabulo JB 
+╰────────────────◆
     `;
 
     await zk.sendMessage(dest, {
@@ -333,7 +338,7 @@ fana({
       "```SENDING LOG DOCUMENTS...```",
       "```SUCCESSFULLY SENT DATA AND Connection disconnected```",
       "```BACKLOGS CLEARED```",
-      "```POWERED BY 𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃```",
+      "```POWERED BY NJABULO JB```",
       "```paralyzed by the mighty ${conf.OWNER_NAME}```"
     ];
 
