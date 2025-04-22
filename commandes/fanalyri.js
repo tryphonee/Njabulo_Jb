@@ -2,9 +2,9 @@ const { fana } = require("../njabulo/fana");
 const axios = require("axios");
 
 fana({
-  nomCom: "lyrics1",
+  nomCom: "lyrics",
   reaction: '🎵', // Changed reaction to match music theme
-  categorie: "Music",
+  categorie: "Search",
   aliases: ["lyric", "mistari"] // Added aliases
 }, async (dest, zk, commandeOptions) => {
   const { repondre, arg, ms } = commandeOptions;
