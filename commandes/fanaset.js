@@ -708,7 +708,7 @@ fana({
 function changevars(commandName, varName) {
   fana({
     nomCom: commandName,
-    categorie: 'HEROKU-CLIENT'
+    categorie: 'Control'
   }, async (chatId, messagingService, context) => {
     const { arg, superUser, repondre } = context;
     
