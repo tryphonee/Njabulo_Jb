@@ -6,7 +6,7 @@ const axios = require('axios');
 const FormData = require('form-data');
 const { exec } = require("child_process");
 
-zokou({ nomCom: "trt", categorie: "Mods", reaction: "💗" }, async (dest, zk, commandeOptions) => {
+fana({ nomCom: "trt", categorie: "Mods", reaction: "💗" }, async (dest, zk, commandeOptions) => {
 
   const { msgRepondu, repondre , arg } = commandeOptions;
 
