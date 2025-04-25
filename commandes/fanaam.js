@@ -76,7 +76,12 @@ fana({
     waveform: [100, 0, 100, 0, 100, 0, 100],
     fileName: 'shizo',
     contextInfo: {
-      externalAdReply: {
+    isForwarded: true,
+      forwardedNewsletterMessageInfo: {
+       newsletterJid: '120363345407274799@newsletter',
+       newsletterName: "NJABULO JB",
+       serverMessageId: 143,
+        externalAdReply: {
         title: '𝗕𝗢𝗧',
         body: "𝗜 𝗔𝗠 𝗔𝗟𝗜𝗩𝗘",
         thumbnailUrl: "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg",
@@ -104,7 +109,12 @@ fana({
   await zk.sendMessage(dest, {
     text: `╭───────────────━⊷\n║ ʀᴜɴᴛɪᴍᴇ \n╰───────────────━⊷\n\n${runtime(botUptime)}\n`,
     contextInfo: {
-      externalAdReply: {
+      isForwarded: true,
+      forwardedNewsletterMessageInfo: {
+      newsletterJid: '120363345407274799@newsletter',
+       newsletterName: "NJABULO JB",
+        serverMessageId: 143,
+        externalAdReply: {
         title: " ᴜᴘᴛɪᴍᴇ ",
         body: "ʙᴏᴛ ʀᴜɴɴɪɴɢ 24/7 ɴᴏɴ-sᴛᴏᴘ",
         thumbnailUrl: conf.URL,
