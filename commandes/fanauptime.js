@@ -1,7 +1,6 @@
 const { fana } = require("../njabulo/fana");
 const speed = require("performance-now");
 
-// Command: Uptime
 fana(
   {
     nomCom: 'uptime',
