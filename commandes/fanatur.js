@@ -109,7 +109,7 @@ fana({
 
 fana({
   nomCom: "question",
-  categorie: "fun",
+  categorie: "Fun",
   reaction: "👄"
 }, async (dest, zk, commandeOptions) => {
   const { repondre, ms } = commandeOptions;
@@ -137,7 +137,7 @@ fana({
 // Command for truth
 fana({
   nomCom: "truth",
-  categorie: "fun",
+  categorie: "Fun",
   reaction: "👄"
 }, async (dest, zk, commandeOptions) => {
   const { repondre, ms } = commandeOptions;
@@ -165,7 +165,7 @@ fana({
 // Command for dare
 fana({
   nomCom: "dare",
-  categorie: "fun",
+  categorie: "Fun",
   reaction: "👄"
 }, async (dest, zk, commandeOptions) => {
   const { repondre, ms } = commandeOptions;
@@ -193,7 +193,7 @@ fana({
 // Command for amount of questions
 fana({
   nomCom: "amountquiz",
-  categorie: "fun",
+  categorie: "Fun",
   reaction: "👄"
 }, async (dest, zk, commandeOptions) => {
   const { repondre, ms } = commandeOptions;
