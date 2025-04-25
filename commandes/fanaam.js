@@ -1,5 +1,4 @@
 const { fana } = require('../njabulo/fana');
-const Heroku = require('heroku-client');
 const s = require("../set");
 const axios = require("axios");
 const speed = require("performance-now");
@@ -90,140 +89,9 @@ fana({
   await zk.sendMessage(dest, audioMessage, { quoted: ms });
 });
 
-// Command to restart the bot
-fana({
-  nomCom: 'restart',
-  aliases: ['reboot'],
-  categorie: "system"
-}, async (chatId, zk, context) => {
-  const { repondre, superUser } = context;
-  if (!superUser) {
-    return repondre("You need owner privileges to execute this command!");
-  }
-  try {
-    await repondre("> *BELTAH-MD is Restarting from the server...*");
-    const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
-    await sleep(3000);
-    process.exit();
-  } catch (error) {
-    console.error("Error during restart:", error);
-  }
-});
-
-// Command to retrieve Heroku config vars
-keith({
-  nomCom: 'allvar',
-  categorie: "system"
-}, async (chatId, zk, context) => {
-  const { repondre, superUser } = context;
-  if (!superUser) {
-    return repondre("*This command is restricted to the bot owner or Beltah Tech owner 💀*");
-  }
-  const appname = s.HEROKU_APP_NAME;
-  const herokuapi = s.HEROKU_API_KEY;
-  const heroku = new Heroku({ token: herokuapi });
-  const baseURI = `/apps/${appname}/config-vars`;
-  try {
-    const configVars = await heroku.get(baseURI);
-    let str = '*╭───༺NJABULO JB  𝗔𝗟𝗟 𝗩𝗔𝗥༻────╮*\n\n';
-    for (let key in configVars) {
-      if (configVars.hasOwnProperty(key)) {
-        str += `★ *${key}* = ${configVars[key]}\n`;
-      }
-    }
-    repondre(str);
-  } catch (error) {
-    console.error('Error fetching Heroku config vars:', error);
-    repondre('Sorry, there was an error fetching the config vars.');
-  }
-});
-
-// Command to set a Heroku config var
-keith({
-  nomCom: 'setvar',
-  categorie: "system"
-}, async (chatId, zk, context) => {
-  const { repondre, superUser, arg } = context;
-  if (!superUser) {
-    return repondre("*This command is restricted to the bot owner or Beltah Tech*");
-  }
-  const appname = s.HEROKU_APP_NAME;
-  const herokuapi = s.HEROKU_API_KEY;
-  if (!arg || arg.length !== 1 || !arg[0].includes('=')) {
-    return repondre('Incorrect Usage:\nProvide the key and value correctly.\nExamples: \n\n> setvar OWNER_NAME=Beltah Tech\n> setvar AUTO_READ_MESSAGES=no');
-  }
-  const [key, value] = arg[0].split('=');
-  const heroku = new Heroku({ token: herokuapi });
-  const baseURI = `/apps/${appname}/config-vars`;
-  try {
-    await heroku.patch(baseURI, { body: { [key]: value } });
-    repondre(`*✅ The variable ${key} = ${value} has been set successfully. The bot is restarting...*`);
-  } catch (error) {
-    console.error('Error setting config variable:', error);
-    repondre(`❌ There was an error setting the variable. Please try again later.\n${error.message}`);
-  }
-});
-
-// Command to execute shell commands
-fana({
-  nomCom: "shell",
-  aliases: ["getcmd", "cmd"],
-  reaction: '🗿',
-  categorie: "system"
-}, async (context, message, params) => {
-  const { repondre: sendResponse, arg: commandArgs, superUser: Owner, auteurMessage } = params;
-  if (!Owner) {
-    return sendResponse("You are not authorized to execute shell commands.");
-  }
-  const command = commandArgs.join(" ").trim();
-  if (!command) {
-    return sendResponse("Please provide a valid shell command.");
-  }
-  exec(command, (err, stdout, stderr) => {
-    if (err) {
-      return sendResponse(`Error: ${err.message}`);
-    }
-    if (stderr) {
-      return sendResponse(`stderr: ${stderr}`);
-    }
-    if (stdout) {
-      return sendResponse(stdout);
-    }
-    return sendResponse("Command executed successfully, but no output was returned.");
-  });
-});
-
-// Command to check bot response time
-fana({
-  nomCom: 'ping1',
-  aliases: ['speed', 'latency'],
-  desc: 'To check bot response time',
-  categorie: 'system',
-  reaction: '👻',
-  fromMe: true,
-}, async (dest, zk) => {
-  const loadingPromise = loading(dest, zk);
-  const pingResults = Array.from({ length: 1 }, () => Math.floor(Math.random() * 10000 + 1000));
-  const formattedResults = pingResults.map(ping => `*📡 ᴘᴏɴɢ 📡*\n\n*${ping}...ᴍɪʟʟɪsᴇᴄᴏɴᴅs*\n> *•*`);
-  await zk.sendMessage(dest, {
-    text: `${formattedResults}`, 
-    contextInfo: {
-      externalAdReply: {
-        title: "  sᴘᴇᴇᴅ ᴛᴇsᴛ ",
-        body: " 👻ᴏʀɪɢɪɴᴀᴛᴇᴅ ғʀᴏᴍ ᴛʜᴇ sᴀᴠᴇʀ👻",
-        thumbnailUrl: "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg",
-        sourceUrl: 'https://whatsapp.com/channel/0029VaRHDBKKmCPKp9B2uH2F',
-        mediaType: 1,
-        showAdAttribution: true,
-      },
-    },
-  });
-  console.log("Ping results sent successfully with new loading animation and formatted results!");
-  await loadingPromise;
-});
 
 // Command to check bot uptime
-keith({
+fana({
   nomCom: 'uptime1',
   aliases: ['runtime', 'running'],
   desc: 'To check runtime',
