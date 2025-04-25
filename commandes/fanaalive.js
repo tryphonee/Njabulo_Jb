@@ -31,7 +31,7 @@ fana(
          },
          forwardingScore: 999, // Score to indicate it has been forwarded
          externalAdReply: {
-            title: `💦 Message from: ${contactName}\n🦋ɴᴊᴀʙᴜʟᴏ ᴊʙ🦋`, // Your contact in WhatsApp status format
+            title: `🧃 Hallo: ${contactName}`, // Your contact in WhatsApp status format
             body: "Yoh don't disturb am active🥱 Tap here",
             thumbnailUrl: smallThumbnailUrl, // Small thumbnail displayed below
             mediaType: 1, // Indicate this is an image
@@ -85,7 +85,7 @@ fana(
          },
          forwardingScore: 999, // Score to indicate it has been forwarded
          externalAdReply: {
-            title: `🌟 Message from: ${contactName}\n🦋ɴᴊᴀʙᴜʟᴏ ᴊʙ🦋`, // Your contact in WhatsApp status format
+            title: `🧃Hallo: ${contactName}`, // Your contact in WhatsApp status format
             body: "Yoh don't disturb am active🥱 Tap here",
             thumbnailUrl: smallThumbnailUrl, // Small thumbnail displayed below
             mediaType: 1, // Indicate this is an image
