@@ -7,7 +7,7 @@ fana({
   nomCom: "date",
   aliases: ["currentdate", "todaydate"],
   desc: "Check the current date.",
-  categorie: "tools",
+  categorie: "Mods",
   reaction: '📅',
 }, async (dest, zk, context) => {
   const { repondre } = context;
@@ -36,7 +36,7 @@ fana({
   nomCom: "calculate",
   aliases: ["calc", "maths", "math"],
   desc: "Evaluate a mathematical expression.",
-  categorie: "tools",
+  categorie: "Mods",
   reaction: '✳️',
 }, async (dest, zk, context) => {
   const { repondre, arg } = context;
