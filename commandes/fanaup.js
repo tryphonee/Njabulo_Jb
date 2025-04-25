@@ -1,4 +1,4 @@
-const { zokou } = require("../framework/zokou");
+const { fana } = require("../njabulo/fana");
 const moment = require("moment-timezone");
 const { getBuffer } = require("../framework/dl/Function");
 const { default: axios } = require('axios');
@@ -19,7 +19,7 @@ const runtime = function (seconds) {
  } 
 
 
-zokou({ nomCom: 'uptime',
+fana({ nomCom: 'uptime',
     desc: 'To check runtime',
     Categorie: 'General',
     reaction: '☘️', 
