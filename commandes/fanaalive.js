@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const { fana } = require("../njabulo/fana");
 const axios = require("axios");
 
-const audioUrl = "https://files.catbox.moe/o6d4l7.mp3"; // New audio URL
+const AUDIO_URL = "https://files.catbox.moe/o6d4l7.mp3"; // New audio URL
 
 const audioFiles = Array.from({ length: 161 }, (_, i) => `sound${i + 1}.mp3`);
 const images = [
@@ -80,9 +80,9 @@ fana(
       await zk.sendMessage(dest, {
         image: { url: randomImage },
         caption: `${greeting} ${contactName}\n\n${randomFactOrQuote}\n\n🙋 Always Active 🙋\n🌟 Contact: ${contactName}\n🌐 [Visit Channel](${externalAdReply.sourceUrl})\n\n${emojis}`,
-        audio: { url: audioUrl },
-        mimetype: "audio/mpeg",
-        ptt: true,
+        audio: { url: AUDIO_URL }, 
+        mimetype: 'audio/mp4', 
+        ptt: true, // Voice note form
         contextInfo: {
           quotedMessage: {
             conversation: "Njabulo 😎",
@@ -154,9 +154,9 @@ fana(
       await zk.sendMessage(dest, {
         image: { url: randomImage },
         caption: `${greeting}, ${contactName}!\n\n${randomFactOrQuote}\n\n🙋 Always Active 🙋\n🌟 Contact: ${contactName}\n🌐 [Visit Channel](${externalAdReply.sourceUrl})\n\n${emojis}`,
-        audio: { url: audioUrl },
-        mimetype: "audio/mpeg",
-        ptt: true,
+        audio: { url: AUDIO_URL }, 
+        mimetype: 'audio/mp4', 
+        ptt: true, // Voice note form
         contextInfo: {
           quotedMessage: {
             conversation: "NJABULO 😎",
