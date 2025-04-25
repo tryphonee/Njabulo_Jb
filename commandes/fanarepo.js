@@ -21,11 +21,10 @@ fana({
         const updated = moment(data.updated_at).format("DD/MM/YYYY");
 
         const gitdata = `
-            *This is Njabulo Jb*
-            the best bot in the universe developed by Njabulo. Fork and give a star 🌟 to my repo!
+            *🧃ɴᴀᴍᴇ: ɴᴊᴀʙᴜʟᴏ ᴊʙ*
+            the best bot in the universe developed by Njabulo. Fork🍽️ and give a star 🌟 to my repo!
 
 *╭───────────━⊷*
-*┋* *ɴᴀᴍᴇ:     ɴᴊᴀʙᴜʟᴏ ᴊʙ*
 *┋* *sᴛᴀʀs:*  ${data.stargazers_count}
 *┋* *ғᴏʀᴋs:*  ${data.forks_count}
 *┋* *ᴡᴀᴛᴄʜᴇʀs:*  ${data.watchers}
