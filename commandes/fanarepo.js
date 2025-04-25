@@ -21,10 +21,10 @@ fana({
         const updated = moment(data.updated_at).format("DD/MM/YYYY");
 
         const gitdata = `
-                  *Hello 👋 my friend ${nomAuteurMessage}*
+            *Hello 👋 my friend ${nomAuteurMessage}*
 
-            *This is ${conf.BOT}*
-            the best bot in the universe developed by ${conf.OWNER_NAME}. Fork and give a star 🌟 to my repo!
+            *This is Njabulo Jb*
+            the best bot in the universe developed by Njabulo. Fork and give a star 🌟 to my repo!
 
 *╭───────────━⊷*
 *┋* *ɴᴀᴍᴇ:     ɴᴊᴀʙᴜʟᴏ ᴊʙ*
