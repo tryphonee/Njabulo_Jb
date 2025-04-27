@@ -92,7 +92,7 @@ fana({
             isForwarded: true,
              forwardedNewsletterMessageInfo: {
               newsletterJid: '120363345407274799@newsletter',
-              newsletterName: "NJABULO JB",
+              newsletterName: "©Njabulo Jb",
               serverMessageId: 143,
               },
               forwardingScore: 999, // Score to indicate it has been forwarded
@@ -110,7 +110,7 @@ fana({
         // Send audio with caption
         await zk.sendMessage(dest, { 
             audio: { 
-                url: "https://files.catbox.moe/ocyosy.mp3" // Replace with your audio URL
+                url: "https://files.catbox.moe/1u9aiw.mp3" // Replace with your audio URL
             }, 
             mimetype: 'audio/mp4', 
             ptt: true, // Set to true if you want it as a voice note
@@ -119,7 +119,7 @@ fana({
              isForwarded: true,
              forwardedNewsletterMessageInfo: {
              newsletterJid: "120363345407274799@newsletter",
-              newsletterName: "vw golf",
+              newsletterName: "®Njabulo Jb",
                serverMessageId: -1
                 }
             }
