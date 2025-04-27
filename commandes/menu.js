@@ -86,7 +86,7 @@ fana({
 
     try {
     await zk.sendMessage(dest, {
-      image: img,
+      image: { url: img },
       caption: `*Powered by Njabulo Jb*`,
       contextInfo: {
          isForwarded: true,
