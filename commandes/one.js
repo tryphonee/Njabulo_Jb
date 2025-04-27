@@ -87,6 +87,7 @@ fana({
     try {
         await zk.sendMessage(dest, { 
             image: { url: img },
+           caption: infoMsg + menuMsg,
             contextInfo: {
                 externalAdReply: {
                     title: "🧃ɴᴊᴀʙᴜʟᴏ ᴊʙ",
