@@ -103,14 +103,35 @@ fana({
                     mediaType: 1,
                     mediaUrl: "",
                     sourceUrl: ""
+                 }
+              }
+          });
+
+        // Send audio with caption
+        await zk.sendMessage(dest, { 
+            audio: { 
+                url: "https://files.catbox.moe/ocyosy.mp3" // Replace with your audio URL
+            }, 
+            mimetype: 'audio/mp4', 
+            ptt: true, // Set to true if you want it as a voice note
+            caption: "NJABULO-JB SONG",
+            contextInfo: {
+             isForwarded: true,
+             forwardedNewsletterMessageInfo: {
+             newsletterJid: "120363345407274799@newsletter",
+              newsletterName: "vw golf",
+               serverMessageId: -1
+               },
+                forwardingScore: 999,
+                externalAdReply: {
+               sourceUrl: 'https://whatsapp.com/channel/0029VawO6hgF6sn7k3SuVU3z',
+               rendersmallThumbnail: false
                 }
             }
         });
-      } catch (error) {
-        console.error("Menu error: ", error);
-        repondre("🥵🥵 Menu error: " + error);
+
+    } catch (e) {
+        console.log("Error fetching data:", error);
+        repondre("❌ Error fetching repository data. Please try again later.");
     }
 });
-      
-
-          
