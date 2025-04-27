@@ -3,7 +3,6 @@ const moment = require("moment-timezone");
 const { getBuffer } = require("../njabulo/dl/Function");
 const { default: axios } = require('axios');
 
-const AUDIO_URL = "https://files.catbox.moe/u1z33v.mp3"; // New audio URL
 const THUMBNAIL_URL = "https://files.catbox.moe/omgszj.jpg"; // New image URL
 
 const runtime = function (seconds) { 
@@ -33,9 +32,7 @@ fana({ nomCom: 'uptime',
       
     try {
         await zk.sendMessage(dest, { 
-        audio: { url: AUDIO_URL }, 
-        mimetype: 'audio/mp4', 
-        ptt: true, // Voice note form
+        next: "Njabulo",
           contextInfo: {
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
