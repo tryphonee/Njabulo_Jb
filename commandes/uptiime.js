@@ -46,7 +46,7 @@ fana({ nomCom: 'uptime',
           body: ` UPTIME: ${runtime(process.uptime())}`,
           thumbnailUrl: THUMBNAIL_URL,
           sourceUrl: 'https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T', // Add source URL if necessary
-          mediaType: 1,
+          mediaType: "",
           renderSmallThumbnail: true // Small thumbnail rendering
                 }
             }
