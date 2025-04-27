@@ -124,8 +124,6 @@ fana({
                },
                 forwardingScore: 999,
                 externalAdReply: {
-               sourceUrl: 'https://whatsapp.com/channel/0029VawO6hgF6sn7k3SuVU3z',
-               rendersmallThumbnail: false
                 }
             }
         });
