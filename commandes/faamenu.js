@@ -92,7 +92,7 @@ fana({
             isForwarded: true,
              forwardedNewsletterMessageInfo: {
               newsletterJid: '120363345407274799@newsletter',
-              newsletterName: "NJABULO JB",
+              newsletterName: "╭╼••➤©Njabulo Jb",
               serverMessageId: 143,
               },
               forwardingScore: 999, // Score to indicate it has been forwarded
@@ -103,15 +103,30 @@ fana({
                     mediaType: 1,
                     mediaUrl: "",
                     sourceUrl: ""
+                 }
+              }
+          });
+
+        // Send audio with caption
+        await zk.sendMessage(dest, { 
+            audio: { 
+                url: "https://files.catbox.moe/1u9aiw.mp3" // Replace with your audio URL
+            }, 
+            mimetype: 'audio/mp4', 
+            ptt: true, // Set to true if you want it as a voice note
+            caption: "NJABULO-JB SONG",
+            contextInfo: {
+             isForwarded: true,
+               forwardedNewsletterMessageInfo: {
+             newsletterJid: "120363345407274799@newsletter",
+              newsletterName: "╭╼••➤®Njabulo Jb",
+               serverMessageId: -1
                 }
             }
         });
-      } catch (error) {
-        console.error("Menu error: ", error);
-        repondre("🥵🥵 Menu error: " + error);
+
+    } catch (e) {
+        console.log("Error fetching data:", error);
+        repondre("❌ Error fetching repository data. Please try again later.");
     }
 });
-      
-
-
-      
