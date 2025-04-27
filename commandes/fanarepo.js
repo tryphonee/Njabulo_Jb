@@ -12,6 +12,7 @@ fana({
     const { pushname, repondre } = commandeOptions;
     const githubRepo = 'https://api.github.com/repos/NjabuloJ/Njabulo-Jb';
     const img = 'https://files.catbox.moe/jcylyv.jpg';
+    const imgs = 'https://files.catbox.moe/jcylyv.jpg';
 
     try {
         const response = await axios.get(githubRepo);
@@ -38,15 +39,24 @@ fana({
 THANKS FOR SUPPORTING NJABULO JB!`;
 
 
-await zk.sendMessage(dest, { 
+        await zk.sendMessage(dest, { 
             image: { url: img },
-            caption: gitdata,
+           caption: infoMsg + menuMsg,
             contextInfo: {
-                isForwarded: true,
-                forwardedNewsletterMessageInfo: {
-                    newsletterJid: "120363288304618280@newsletter",
-                    newsletterName: "_many_",
-                    serverMessageId: -1
+            isForwarded: true,
+             forwardedNewsletterMessageInfo: {
+              newsletterJid: '120363345407274799@newsletter',
+              newsletterName: "_many_",
+              serverMessageId: 143,
+              },
+              forwardingScore: 999, // Score to indicate it has been forwarded
+                externalAdReply: {
+                    title: "🧃ɴᴊᴀʙᴜʟᴏ ᴊʙ",
+                    body: "🧃Command List",
+                    thumbnailUrl: imgs,
+                    mediaType: 1,
+                    mediaUrl: "",
+                    sourceUrl: ""
                 }
             }
 
