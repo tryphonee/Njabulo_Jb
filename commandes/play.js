@@ -1,14 +1,14 @@
-const { timoth } = require("../timnasa/timoth");
+const { fana } = require("../njabulo/fana");
 const axios = require('axios');
 const ytSearch = require('yt-search');
 const conf = require(__dirname + '/../set');
 
 // Define the command with aliases for play
-timoth({
-  nomCom: "play",
+fana({
+  nomCom: "ply",
   aliases: ["song", "playdoc", "audio", "mp3"],
   categorie: "Search",
-  reaction: "🪀"
+  reaction: "⌚"
 }, async (dest, zk, commandOptions) => {
   const { arg, ms, repondre } = commandOptions;
 
