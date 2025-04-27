@@ -98,7 +98,7 @@ fana({
           externalAdReply: {
           title: "Jb",
           body: "Get Njabulo",
-          thumbnail: conf.URL,
+          thumbnail: "https://files.catbox.moe/jcylyv.jpg",
           mediaType: 1,
           mediaUrl: "",
           sourceUrl: ""
