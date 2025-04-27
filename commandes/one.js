@@ -121,9 +121,6 @@ fana({
              newsletterJid: "120363345407274799@newsletter",
               newsletterName: "vw golf",
                serverMessageId: -1
-               },
-                forwardingScore: 999,
-                externalAdReply: {
                 }
             }
         });
