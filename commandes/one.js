@@ -87,7 +87,6 @@ fana({
     try {
         await zk.sendMessage(dest, { 
             image: { url: img },
-            caption: "Njabulo",
             contextInfo: {
                 externalAdReply: {
                     title: "🧃ɴᴊᴀʙᴜʟᴏ ᴊʙ",
