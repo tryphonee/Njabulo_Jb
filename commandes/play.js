@@ -69,12 +69,14 @@ fana({
       audio: { url: downloadUrl },
       mimetype: 'audio/mp4',
       contextInfo: {
-       isForwarded: true,
+      isForwarded: true,
          forwardedNewsletterMessageInfo: {
          newsletterJid: '120363345407274799@newsletter',
          newsletterName: "NJABULO JB",
          serverMessageId: 143,
-        externalAdReply: {
+         },
+         forwardingScore: 999, // Score to indicate it has been forwarded       
+         externalAdReply: {
           title: "Follow for fantastic updates",
           body: "SONG DOWNLOADER",
           thumbnailUrl: conf.URL,
@@ -104,12 +106,7 @@ fana({
       }
 
     ];
-
-    // Send the download link to the user for each payload
-    for (const messagePayload of messagePayloads) {
-      await zk.sendMessage(dest, messagePayload, { quoted: ms });
-    }
-
+    
   } catch (error) {
     console.error('Error during download process:', error);
     return repondre(`Download failed due to an error: ${error.message || error}`);
