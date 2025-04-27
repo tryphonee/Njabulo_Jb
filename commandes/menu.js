@@ -53,8 +53,7 @@ fana({
 
     const temps = moment().format('HH:mm:ss');
     const date = moment().format('DD/MM/YYYY');
-    const img = 'https://files.catbox.moe/jcylyv.jpg';
-    const data = 'https://files.catbox.moe/h4lxeb.jpg';
+    const img = 'https://files.catbox.moe/h4lxeb.jpg';
 
     const infoMsg = `
 ╭───────────━⊷
@@ -99,7 +98,7 @@ fana({
           externalAdReply: {
           title: "Jb",
           body: "Get Njabulo",
-          thumbnail: data,
+          thumbnail: conf.URL,
           mediaType: 1,
           mediaUrl: "",
           sourceUrl: ""
