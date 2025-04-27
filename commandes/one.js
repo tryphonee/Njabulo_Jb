@@ -87,15 +87,15 @@ fana({
     try {
         await zk.sendMessage(dest, { 
             image: { url: img },
-            caption: infoMsg + menuMsg,
+            caption: `Njabulo,
             contextInfo: {
                 externalAdReply: {
                     title: "🧃ɴᴊᴀʙᴜʟᴏ ᴊʙ",
                     body: "🧃Command List",
                     thumbnailUrl: imgs,
-                    sourceUrl: "https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T",
                     mediaType: 1,
-                    renderLargerThumbnail: true
+                    mediaUrl: "",
+                    sourceUrl: ""
                 }
             }
         });
