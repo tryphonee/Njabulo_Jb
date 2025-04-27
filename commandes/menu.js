@@ -53,7 +53,7 @@ fana({
 
     const temps = moment().format('HH:mm:ss');
     const date = moment().format('DD/MM/YYYY');
-    const Buffer = 'https://files.catbox.moe/jcylyv.jpg';
+    const img = 'https://files.catbox.moe/jcylyv.jpg';
     const data = 'https://files.catbox.moe/h4lxeb.jpg';
 
     const infoMsg = `
@@ -86,7 +86,7 @@ fana({
 
     try {
     await zk.sendMessage(dest, {
-      image: Buffer,
+      image: img,
       caption: `*Powered by Njabulo Jb*`,
       contextInfo: {
          isForwarded: true,
