@@ -26,23 +26,13 @@ fana({ nomCom: "pi", categorie: "General" }, async (dest, zk, commandeOptions) =
 
     try {
         await zk.sendMessage(dest, { 
-            audio: { url: AUDIO_URL }, 
-            mimetype: 'audio/mp4', 
-            ptt: true, // Voice note form
+            caption: `↪️ 𝘁𝗶𝗺𝗲 𝗽𝗶𝗻𝗴: ${ping}ms\n📅 *Date:* ${date}\n⏰ *Time:* ${time}`,
             contextInfo: {
               isForwarded: true,
               forwardedNewsletterMessageInfo: {
               newsletterJid: '120363345407274799@newsletter',
                   newsletterName: "NJABULO JB",
                   serverMessageId: 143,
-                   },
-                   forwardingScore: 999, // Score to indicate it has been forwarded
-                   externalAdReply: {
-                    title: "🦋ɴᴊᴀʙᴜʟᴏ ᴊʙ🦋",
-                    body: `↪️ 𝘁𝗶𝗺𝗲 𝗽𝗶𝗻𝗴: ${ping}ms\n📅 *Date:* ${date}\n⏰ *Time:* ${time}`,
-                    thumbnailUrl: THUMBNAIL_URL,
-                    mediaType: 1,
-                    renderSmallThumbnail: true // Small thumbnail rendering
                 }
             }
         }, { quoted: ms });
