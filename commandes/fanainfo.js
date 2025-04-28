@@ -1,4 +1,18 @@
-fana({ nomCom: "info", categorie: 'Group' }, async (dest, zk, commandeOptions) => {
+
+
+const { fana } = require("../njabulo/fana")
+//const { getGroupe } = require("../bdd/groupe")
+const { Sticker, StickerTypes } = require('wa-sticker-formatter');
+const {ajouterOuMettreAJourJid,mettreAJourAction,verifierEtatJid} = require("../bdd/antilien")
+const {atbajouterOuMettreAJourJid,atbverifierEtatJid} = require("../bdd/antibot")
+const { search, download } = require("aptoide-scraper");
+const fs = require("fs-extra");
+const conf = require("../set");
+const { default: axios } = require('axios');
+//const { uploadImageToImgur } = require('../njabulo/imgur');
+
+
+fana({ nomCom: "rules", categorie: 'Group' }, async (dest, zk, commandeOptions) => {
   const { ms, repondre, verifGroupe } = commandeOptions;
   if (!verifGroupe) { repondre("order reserved for the group only"); return };
 
@@ -22,7 +36,7 @@ fana({ nomCom: "info", categorie: 'Group' }, async (dest, zk, commandeOptions) =
 
  //------------------------------------antilien-------------------------------
 
- ezra({ nomCom: "antilink", categorie: 'Group', reaction: "🔗" }, async (dest, zk, commandeOptions) => {
+ fana({ nomCom: "dellink", categorie: 'Group', reaction: "🔗" }, async (dest, zk, commandeOptions) => {
 
 
   var { repondre, arg, verifGroupe, superUser, verifAdmin } = commandeOptions;
