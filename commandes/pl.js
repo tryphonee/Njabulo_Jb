@@ -11,7 +11,8 @@ fana({
 }, async (dest, zk, commandeOptions) => {
     const { pushname, repondre } = commandeOptions;
     const githubRepo = 'https://api.github.com/repos/NjabuloJ/Njabulo-Jb';
-    const img = 'https://files.catbox.moe/jcylyv.jpg';
+    const img = 'https://files.catbox.moe/3iz29r.jpg';
+    const imgs = 'https://files.catbox.moe/bw9rme.jpg';
 
     try {
         const response = await axios.get(githubRepo);
@@ -21,7 +22,7 @@ fana({
         const updated = moment(data.updated_at).format("DD/MM/YYYY");
 
         const gitdata = `
-            *🧃ɴᴀᴍᴇ: ɴᴊᴀʙᴜʟᴏ ᴊʙ*
+            > 🧃ɴᴀᴍᴇ: ɴᴊᴀʙᴜʟᴏ ᴊʙ
             the best bot in the universe developed by Njabulo. Fork🍽️ and give a star 🌟 to my repo!
 
 > *sᴛᴀʀs:*  ${data.stargazers_count}
