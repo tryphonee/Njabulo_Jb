@@ -23,7 +23,7 @@ fana({ nomCom: "pi", categorie: "General" }, async (dest, zk, commandeOptions) =
 
     try {
         await zk.sendMessage(dest, { 
-            next: "↪️ 𝘁𝗶𝗺𝗲 𝗽𝗶𝗻𝗴: ${ping}ms\n📅 *Date:* ${date}\n⏰ *Time:* ${time}",
+            next: `↪️ 𝘁𝗶𝗺𝗲 𝗽𝗶𝗻𝗴: ${ping}ms\n📅 *Date:* ${date}\n⏰ *Time:* ${time}`,
             contextInfo: {
               isForwarded: true,
               forwardedNewsletterMessageInfo: {
