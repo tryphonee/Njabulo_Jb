@@ -72,7 +72,7 @@ fana({
     const video = await searchYouTube(query);
     
     await zk.sendMessage(dest, {
-      text: "⬇️ Njabulo Jb downloading audio This may take a moment...",
+      text: "╔══════════════╗\n> *NJABULO JB OFFICE ]*\n╚══════════════╝\n> •\n> DOWNLOAD MUSIC \n> *YouTube channel dow*\n> *wait are second to download you audio*\n> •\n> *repo url github.com/NjabuloJ/Njabulo-Jb*",
       contextInfo: getContextInfo("Downloading", userJid, video.thumbnail)
     }, { quoted: ms });
 
@@ -122,7 +122,7 @@ fana({
     const video = await searchYouTube(query);
     
     await zk.sendMessage(dest, {
-      text: "⬇️ Njabulo Jb downloading video This may take a moment...",
+      text: "╔══════════════╗\n> *NJABULO JB OFFICE ]*\n╚══════════════╝\n> •\n> DOWNLOAD MUSIC \n> *YouTube channel dow*\n> *wait are second to download you audio*\n> •\n> *repo url github.com/NjabuloJ/Njabulo-Jb*",
       contextInfo: getContextInfo("Downloading", userJid, video.thumbnail)
     }, { quoted: ms });
 
