@@ -10,7 +10,7 @@ const getContextInfo = (title = '', userJid = '', thumbnailUrl = '') => ({
   isForwarded: true,
   forwardedNewsletterMessageInfo: {
     newsletterJid: "120363345407274799@newsletter",
-    newsletterName: "NJABULO JB",
+    newsletterName: "╭••➤®Njabulo Jb",
     serverMessageId: Math.floor(100000 + Math.random() * 900000),
   },
   externalAdReply: {
@@ -72,7 +72,7 @@ fana({
     const video = await searchYouTube(query);
     
     await zk.sendMessage(dest, {
-      text: "╔══════════════╗\n> *NJABULO JB OFFICE ]*\n╚══════════════╝\n> •\n> DOWNLOAD MUSIC \n> *YouTube channel dow*\n> *wait are second to download you audio*\n> •\n> *repo url github.com/NjabuloJ/Njabulo-Jb*",
+      text: "> *[don't do risk just wait]*\n> *YouTube channel download*\n> *wait are second to download you audio*\n> •\n> *repo url github.com/NjabuloJ/Njabulo-Jb*",
       contextInfo: getContextInfo("Downloading", userJid, video.thumbnail)
     }, { quoted: ms });
 
