@@ -33,6 +33,8 @@ async (dest, zk, commandeOptions) => {
          newsletterJid: '120363345407274799@newsletter',
          newsletterName: "NJABULO JB",
          serverMessageId: 143,
+           {
+         }
        zk.sendMessage(dest, { 
          video: { url: result.hd  }, 
          next: "Njabulo",
@@ -42,6 +44,8 @@ async (dest, zk, commandeOptions) => {
          newsletterJid: '120363345407274799@newsletter',
          newsletterName: "NJABULO JB",
          serverMessageId: 143,
+        }
+      },
     })
     .catch((error) => {console.log("Error:", error)
                       repondre('try fbdl2 on this link')});
