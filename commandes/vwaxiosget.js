@@ -23,7 +23,7 @@ fana({
          isForwarded: true,
          forwardedNewsletterMessageInfo: {
          newsletterJid: '120363345407274799@newsletter',
-         newsletterName: "vw golf",
+         newsletterName: "╭••➤®Njabulo Jb",
          serverMessageId: 143,
         },
       },
@@ -50,7 +50,7 @@ fana({
          isForwarded: true,
          forwardedNewsletterMessageInfo: {
          newsletterJid: '120363345407274799@newsletter',
-         newsletterName: "_many_",
+         newsletterName: "╭••➤®Njabulo Jb",
          serverMessageId: 143,
         },
       },
@@ -66,7 +66,7 @@ fana({
          isForwarded: true,
          forwardedNewsletterMessageInfo: {
          newsletterJid: '120363345407274799@newsletter',
-         newsletterName: "_many_",
+         newsletterName: "╭••➤®Njabulo Jb",
          serverMessageId: 143,
           },
         },
@@ -75,15 +75,15 @@ fana({
     
     const data = response.data;
     const messageText = `
- BIBLE HOLY BIBLE
+ > *BIBLE HOLY BIBLE*
 
-⁠ *WE'RE READING:* ${data.reference}
+⁠ > WE'RE READING: ${data.reference}
 
-⁠ *NUMBER OF VERSES:* ${data.verses.length}
+⁠ > NUMBER OF VERSES: ${data.verses.length}
 
-⁠ *NOW READ:* ${data.text}
+⁠ > NOW READ: ${data.text}
 
-⁠ *LANGUAGE:* ${data.translation_name}
+⁠ > LANGUAGE: ${data.translation_name}
  `;
     
     await zk.sendMessage(dest, {
@@ -92,7 +92,7 @@ fana({
          isForwarded: true,
          forwardedNewsletterMessageInfo: {
          newsletterJid: '120363345407274799@newsletter',
-         newsletterName: "_many_",
+         newsletterName: "╭••➤®Njabulo Jb",
          serverMessageId: 143,
         },
       },
@@ -105,7 +105,7 @@ fana({
          isForwarded: true,
          forwardedNewsletterMessageInfo: {
          newsletterJid: '120363345407274799@newsletter',
-         newsletterName: "_many_",
+         newsletterName: "╭••➤®Njabulo Jb",
          serverMessageId: 143,
         },
       },
@@ -143,7 +143,7 @@ fana({
          isForwarded: true,
          forwardedNewsletterMessageInfo: {
          newsletterJid: '120363345407274799@newsletter',
-         newsletterName: "_many_",
+         newsletterName: "╭••➤®Njabulo Jb",
          serverMessageId: 143,
           },
         },
@@ -161,7 +161,7 @@ fana({
 fana({
   nomCom: "pair",
   aliases: ["session", "qrcode"],
-  reaction: '🚀',
+  reaction: '📃',
   categorie: 'General'
 }, async (dest, zk, commandeOptions) => {
   const { repondre, arg, ms } = commandeOptions;
@@ -192,7 +192,7 @@ fana({
          isForwarded: true,
          forwardedNewsletterMessageInfo: {
          newsletterJid: '120363345407274799@newsletter',
-         newsletterName: "_many_",
+         newsletterName: "╭••➤®Njabulo Jb",
          serverMessageId: 143,
           },
         },
@@ -233,15 +233,15 @@ fana({
     const thumb = data.image; // Assuming the API returns an 'image' property for the element thumbnail
 
     const formattedMessage = `
-*vw golf Element Information:*
-🚀 *Name:* ${data.name}
-🚀 *Symbol:* ${data.symbol}
-🚀 *Atomic Number:* ${data.atomic_number}
-🚀 *Atomic Mass:* ${data.atomic_mass}
-🚀 *Period:* ${data.period}
-🚀 *Phase:* ${data.phase}
-🚀 *Discovered By:* ${data.discovered_by}
-🚀 *Summary:* ${data.summary}
+> *vw golf Element Information:*
+> *Name:* ${data.name}
+> *Symbol:* ${data.symbol}
+> *Atomic Number:* ${data.atomic_number}
+> *Atomic Mass:* ${data.atomic_mass}
+> *Period:* ${data.period}
+> *Phase:* ${data.phase}
+> *Discovered By:* ${data.discovered_by}
+> *Summary:* ${data.summary}
    
 Regards ${conf.BOT} `;
 
@@ -251,7 +251,7 @@ Regards ${conf.BOT} `;
          isForwarded: true,
          forwardedNewsletterMessageInfo: {
          newsletterJid: '120363345407274799@newsletter',
-         newsletterName: "_many_",
+         newsletterName: "╭••➤®Njabulo Jb",
          serverMessageId: 143,
         },
       },
@@ -308,7 +308,7 @@ fana({
          isForwarded: true,
          forwardedNewsletterMessageInfo: {
          newsletterJid: '120363345407274799@newsletter',
-         newsletterName: "_many_",
+         newsletterName: "╭••➤®Njabulo Jb",
          serverMessageId: 143,
         },
       },
@@ -339,7 +339,7 @@ You can use this email for temporary purposes. I will notify you if you receive 
          isForwarded: true,
          forwardedNewsletterMessageInfo: {
          newsletterJid: '120363345407274799@newsletter',
-         newsletterName: "_many_",
+         newsletterName: "╭••➤®Njabulo Jb",
          serverMessageId: 143,
         }
       }
@@ -364,7 +364,7 @@ You can use this email for temporary purposes. I will notify you if you receive 
          isForwarded: true,
          forwardedNewsletterMessageInfo: {
          newsletterJid: '120363345407274799@newsletter',
-         newsletterName: "_many_",
+         newsletterName: "╭••➤®Njabulo Jb",
          serverMessageId: 143,
                 }
               }
@@ -388,7 +388,7 @@ You can use this email for temporary purposes. I will notify you if you receive 
          isForwarded: true,
          forwardedNewsletterMessageInfo: {
          newsletterJid: '120363345407274799@newsletter',
-         newsletterName: "_many_",
+         newsletterName: "╭••➤®Njabulo Jb",
          serverMessageId: 143,
           }
         }
@@ -403,7 +403,7 @@ You can use this email for temporary purposes. I will notify you if you receive 
          isForwarded: true,
          forwardedNewsletterMessageInfo: {
          newsletterJid: '120363345407274799@newsletter',
-         newsletterName: "_many_",
+         newsletterName: "╭••➤®Njabulo Jb",
          serverMessageId: 143,
         }
       }
