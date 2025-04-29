@@ -27,6 +27,7 @@ async (dest, zk, commandeOptions) => {
       `;
        zk.sendMessage(dest,{
          image : { url : result.thumbnail}, 
+         caption: quoted: ms,
          contextInfo: {
          isForwarded: true,
          forwardedNewsletterMessageInfo: {
@@ -37,8 +38,8 @@ async (dest, zk, commandeOptions) => {
          }
        zk.sendMessage(dest, { 
          video: { url: result.hd  }, 
-         next: "Njabulo",
-        contextInfo: {
+         caption: quoted: ms,
+         contextInfo: {
          isForwarded: true,
          forwardedNewsletterMessageInfo: {
          newsletterJid: '120363345407274799@newsletter',
