@@ -25,9 +25,23 @@ async (dest, zk, commandeOptions) => {
         titre: ${result.title}
         Lien: ${result.url}
       `;
-       zk.sendMessage(dest,{image : { url : result.thumbnail}, caption : caption},{quoted : ms}) ;
-       zk.sendMessage(dest, { video: { url: result.hd  }, caption: 'facebook video downloader powered by *☆ɴᴊᴀʙᴜʟᴏ-ᴊʙ☆*' }, { quoted: ms });
-      
+       zk.sendMessage(dest,{
+         image : { url : result.thumbnail}, 
+         contextInfo: {
+         isForwarded: true,
+         forwardedNewsletterMessageInfo: {
+         newsletterJid: '120363345407274799@newsletter',
+         newsletterName: "NJABULO JB",
+         serverMessageId: 143,
+       zk.sendMessage(dest, { 
+         video: { url: result.hd  }, 
+         next: "Njabulo",
+        contextInfo: {
+         isForwarded: true,
+         forwardedNewsletterMessageInfo: {
+         newsletterJid: '120363345407274799@newsletter',
+         newsletterName: "NJABULO JB",
+         serverMessageId: 143,
     })
     .catch((error) => {console.log("Error:", error)
                       repondre('try fbdl2 on this link')});
