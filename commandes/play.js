@@ -59,7 +59,7 @@ fana({
   nomCom: "pla",
   aliases: ["song", "playdoc", "audio", "mp3"],
   categorie: "download",
-  reaction: "🎸"
+  reaction: "🚨"
 }, async (dest, zk, commandOptions) => {
   const { arg, ms, userJid } = commandOptions;
 
@@ -73,7 +73,7 @@ fana({
     
     await zk.sendMessage(dest, {
       fileName: `${title}.mp3`.replace(/[^\w\s.-]/gi, ''),
-      caption: `════════════════════\n *AUDIO DOWNLOADER*\n════════════════════\n *Source :* YouTube\n════════════════════\n *Title :* ${title}\n *wait second to download you audio*\n════════════════════\n\n> © Sir Njabulo JB`,
+      caption: `${title}`,
       contextInfo: getContextInfo(title, userJid, video.thumbnail)
     }, { quoted: ms });
 
