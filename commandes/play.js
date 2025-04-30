@@ -5,7 +5,7 @@ const conf = require(__dirname + '/../set');
 
 // Define the command with aliases for play
 fana({
-  nomCom: "play",
+  nomCom: "py",
   aliases: ["song", "playdoc", "audio", "mp3"],
   categorie: "Search",
   reaction: "📃"
