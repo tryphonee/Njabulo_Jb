@@ -72,8 +72,8 @@ fana({
     const video = await searchYouTube(query);
     
     await zk.sendMessage(dest, {
-      text: "⏳loading•••••••••••••\n\n⌚ wait are second•••••••••••••\n*🎧vw golf youtube downloaded you audio*✓",
-      contextInfo: getContextInfo("YouTube download audio YouTube.com", userJid, video.thumbnail)
+      text: "=========================\n *YOUTUBE DOWNLOADER*\n=========================\n *Source :* YouTube\n=========================\n *Hallo:* Wait are second\n *Sownloaded:* you audio\n=========================\n\n> © Sir Njabulo JB",
+      contextInfo: getContextInfo("Downloaded From YouTube\n youtube.com", userJid, video.thumbnail)
     }, { quoted: ms });
 
     const apis = [
@@ -122,8 +122,8 @@ fana({
     const video = await searchYouTube(query);
     
     await zk.sendMessage(dest, {
-      text: "⏳loading•••••••••••••\n\n⌚ wait are second•••••••••••••\n*🎥vw golf youtube downloaded you video*✓",
-      contextInfo: getContextInfo("vw golf video", userJid, video.thumbnail)
+      text: "=========================\n *YOUTUBE DOWNLOADER*\n=========================\n *Source :* YouTube\n=========================\n *Hallo:* Wait are second\n *Sownloaded:* you audio\n=========================\n\n> © Sir Njabulo JB",
+      contextInfo: getContextInfo("Downloaded from YouTube\n youtube", userJid, video.thumbnail)
     }, { quoted: ms });
 
     const apis = [
