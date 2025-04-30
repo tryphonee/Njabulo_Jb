@@ -72,7 +72,7 @@ fana({
     const video = await searchYouTube(query);
     
     await zk.sendMessage(dest, {
-      text: `════════════════════\n *AUDIO DOWNLOADER*\n════════════════════\n *Source :* YouTube\n════════════════════\n *Title :* ${title}*\n *wait second to download you audio*\n════════════════════\n\n> © Sir Njabulo JB`;
+      caption: `════════════════════\n *AUDIO DOWNLOADER*\n════════════════════\n *Source :* YouTube\n════════════════════\n *Title :* ${title}\n *wait second to download you audio*\n════════════════════\n\n> © Sir Njabulo JB`,
       contextInfo: getContextInfo(title, userJid, video.thumbnail)
     }, { quoted: ms });
 
@@ -129,7 +129,7 @@ fana({
     const video = await searchYouTube(query);
     
     await zk.sendMessage(dest, {
-      text: `════════════════════\n *AUDIO DOWNLOADER*\n════════════════════\n *Source :* YouTube\n════════════════════\n *Title :* ${title}*\n *wait second to download you audio*\n════════════════════\n\n> © Sir Njabulo JB`;
+      caption: `════════════════════\n *AUDIO DOWNLOADER*\n════════════════════\n *Source :* YouTube\n════════════════════\n *Title :* ${title}*\n *wait second to download you audio*\n════════════════════\n\n> © Sir Njabulo JB`,
       contextInfo: getContextInfo(title, userJid, video.thumbnail)
     }, { quoted: ms });
 
