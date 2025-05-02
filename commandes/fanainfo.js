@@ -25,7 +25,21 @@ fana({ nomCom: "rules", categorie: 'Group' }, async (dest, zk, commandeOptions) 
 
     let mess = {
       image: { url: ppgroup },
-      caption:  `*━━━━『𝗚𝗥𝗢𝗨𝗣 𝗜𝗡𝗙𝗢』━━━━*\n\n*🎐Name:* ${info.subject}\n\n*🔩Group's ID:* ${dest}\n\n*🔍Desc:* \n\n${info.desc}`
+      next: `*━━━━『𝗚𝗥𝗢𝗨𝗣 𝗜𝗡𝗙𝗢』━━━━*\n\n*🎐Name:* ${info.subject}\n\n*🔩Group's ID:* ${dest}\n\n*🔍Desc:* \n\n${info.desc}`,
+       contextInfo: {
+        isForwarded: true,
+        forwardedNewsletterMessageInfo: {
+          newsletterJid: '120363345407274799@newsletter',
+         newsletterName: "╭••➤®Njabulo Jb",
+          serverMessageId: 143,
+          },
+          forwardingScore: 999, // Score to indicate it has been forwarded
+          externalAdReply: {
+          title: "group",
+          body: "📃online is alwaysonline",
+         thumbnailUrl: conf.URL,
+         mediaType: 1,
+        renderSmallThumbnail: true // Small thumbnail rendering
     }
 
 
