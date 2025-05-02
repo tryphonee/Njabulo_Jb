@@ -43,7 +43,6 @@ fana({ nomCom: "ow", categorie: "General", reaction: "❣️" }, async (dest, zk
         'TEL;type=CELL;type=VOICE;waid=' + conf.NUMERO_OWNER + ':+' + conf.NUMERO_OWNER + '\n' + // WhatsApp ID + phone number
         'END:VCARD';
     zk.sendMessage(dest, {
-      contacts: {
        displayName: conf.OWNER_NAME,
        contacts: [{ vcard }],
        contextInfo: {
