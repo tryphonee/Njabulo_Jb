@@ -61,23 +61,22 @@ fana({
 
     // Send the formatted menu as a message
     return await zk.sendMessage(dest, {
-       image: { url: img },
+       image: conf.URL,
         caption: infoMsg + menuMsg,
-        contextInfo: {
-        isForwarded: true,
-          forwardedNewsletterMessageInfo: {
-          newsletterJid: '120363345407274799@newsletter',
-          newsletterName: "_many_",
-          serverMessageId: 143,
-          },
-          forwardingScore: 999, // Score to indicate it has been forwarded
-          externalAdReply: {
-            title: "ɳᴊᴀʙᴜʟᴏ ᴊʙ",
-            body: "fast via",
-            thumbnailUrl: img,
-            sourceUrl: 'https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T', // Add source URL if necessary
-            mediaType: 1,
-            renderLargerThumbnail: true
+      contextInfo: {
+           isForwarded: true,
+           forwardedNewsletterMessageInfo: {
+           newsletterJid: '120363345407274799@newsletter',
+             newsletterName: "╭••➤®Njabulo Jb",
+              serverMessageId: 143,
+                },
+                forwardingScore: 999, // Score to indicate it has been forwarded
+                 externalAdReply: {
+                  title: "💬menu list react",
+                  body: "📃menu help you react",
+                  thumbnailUrl: conf.URL,
+                  mediaType: 1,
+                  renderSmallThumbnail: true // Small thumbnail rendering
             }
         }
     });
