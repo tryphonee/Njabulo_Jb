@@ -32,7 +32,8 @@ fana({ nomCom: "tag", categorie: 'Group', reaction: "📣" }, async (dest, zk, c
   tag +=`
   
  *Hallo* : *${nomAuteurMessage}* 
-` ;
+ group name: ${nomGroupe}
+`;
 
 
 
@@ -59,9 +60,9 @@ fana({ nomCom: "tag", categorie: 'Group', reaction: "📣" }, async (dest, zk, c
                 },
                 forwardingScore: 999, // Score to indicate it has been forwarded
                  externalAdReply: {
-                  title: `${nomGroupe},
-                  body: "📃online is alwaysonline*,
-                  thumbnailUrl: "https://files.catbox.moe/h4lxeb.jpg",
+                  title: "group",
+                  body: "📃online is alwaysonline",
+                  thumbnailUrl: conf.URL,
                   mediaType: 1,
                   renderSmallThumbnail: true // Small thumbnail rendering
                 }
