@@ -64,8 +64,8 @@ fana({
 
     const downloadUrl = downloadData.result.download_url;
     const videoDetails = downloadData.result;
-    const img = 'https://files.catbox.moe/b2vql7.jpg';
-    const infoMsg = `Njabulo Jb`;
+    const img = 'https://files.catbox.moe/13yg4f.jpg';
+    const infoMsg = ` *Title:* ${videoDetails.title} `;
     zk.sendMessage(dest, {
       image: { url: img },
       caption: infoMsg,
