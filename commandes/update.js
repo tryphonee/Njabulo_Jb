@@ -67,7 +67,7 @@ fana({
     const img = 'https://files.catbox.moe/13yg4f.jpg';
     const infoMsg = ` *Title:* ${videoDetails.title} `;
     zk.sendMessage(dest, {
-      image: { url: img },
+      image: { url: firstVideo.thumbnail },
       caption: infoMsg,
       contextInfo: {
          isForwarded: true,
