@@ -1,4 +1,4 @@
-const { zokou } = require("../framework/zokou");
+const { fana } = require("../njabulo/fana");
 const axios = require('axios');
 const ytSearch = require('yt-search');
 const conf = require(__dirname + '/../set');
@@ -56,7 +56,7 @@ async function downloadFromApis(apis) {
 }
 
 // Audio download command
-zokou({
+fana({
   nomCom: "songs",
   aliases: ["song", "playdoc", "audio", "mp3"],
   categorie: "download",
