@@ -68,13 +68,11 @@ fana({
       text: "```NJABULO JB SONG DOWNLOADER```",
       image: { url: firstVideo },
       contextInfo: {
-        externalAdReply: {
-          title: "Follow for fantastic updates",
-          body: "NJABULO SONG DOWNLOADER",
-          thumbnailUrl: conf.URL,
-          sourceUrl: conf.GURL,
-          mediaType: 1,
-          showAdAttribution: true
+         isForwarded: true,
+         forwardedNewsletterMessageInfo: {
+         newsletterJid: '120363345407274799@newsletter',
+         newsletterName: "NJABULO JB",
+         serverMessageId: 143,
         }
       }
     }, { quoted: ms });
