@@ -40,7 +40,7 @@ fana({ nomCom: "tags", categorie: 'Group', reaction: "📣" }, async (dest, zk, 
 
 
   for (const membre of membresGroupe) {
-    tag += `${emoji[random]}      +${membre.id.split("+")[0]}\n`
+    tag += `${emoji[random]} +${membre.id.split("+")[0]}\n`
   }
 
  
