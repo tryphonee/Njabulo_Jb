@@ -26,7 +26,9 @@ console.log(url);
          newsletterJid: '120363345407274799@newsletter',
          newsletterName: "NJABULO JB",
          serverMessageId: 143,
-       }
+        },
+       },
+      },
      },{ quoted: ms,ptt: true }); 
    }
-) ;
+);
