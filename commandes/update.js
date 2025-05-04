@@ -101,7 +101,13 @@ fana({
 
     // Send the download link to the user for each payload
     for (const messagePayload of messagePayloads) {
-      await zk.sendMessage(dest, messagePayload, { quoted: ms });
+      await zk.sendMessage(dest, messagePayload,{ quoted: ms });
+          contextInfo: {
+         isForwarded: true,
+         forwardedNewsletterMessageInfo: {
+         newsletterJid: '120363345407274799@newsletter',
+         newsletterName: "╭••➤®Njabulo Jb",
+         serverMessageId: 143,
     }
 
   } catch (error) {
