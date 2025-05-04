@@ -21,7 +21,7 @@ fana({ nomCom: "tags", categorie: 'Group', reaction: "📣" }, async (dest, zk, 
 
  
 
-  if (!verifGroupe) { repondre("✋🏿 ✋🏿this command is reserved for groups ❌"); return; }
+  if (!verifGroupe) { repondre("```erro only groups ❌```"); return; }
   if (!arg || arg === ' ') {
   mess = 'Aucun Message'
   } else {
@@ -40,7 +40,7 @@ fana({ nomCom: "tags", categorie: 'Group', reaction: "📣" }, async (dest, zk, 
 
 
   for (const membre of membresGroupe) {
-    tag += `${emoji[random]}      @${membre.id.split("@")[0]}\n`
+    tag += `${emoji[random]}      +${membre.id.split("+")[0]}\n`
   }
 
  
