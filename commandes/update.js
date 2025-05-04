@@ -64,9 +64,9 @@ fana({
 
     const downloadUrl = downloadData.result.download_url;
     const videoDetails = downloadData.result;
+    const img = 'https://files.catbox.moe/b2vql7.jpg';
     zk.sendMessage(dest, {
-      text: "```NJABULO JB SONG DOWNLOADER```",
-      image: { image: firstVideo.thumbnail},
+      image: { irl: img },
       contextInfo: {
          isForwarded: true,
          forwardedNewsletterMessageInfo: {
