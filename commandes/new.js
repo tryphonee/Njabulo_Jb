@@ -4,6 +4,7 @@ const ytSearch = require('yt-search');
 const conf = require(__dirname + '/../set');
 
 // Common contextInfo configuration
+const infoMsg = ` *Title:* ${videoDetails.title} \n> sir Njabulo JB Office download`;
 const getContextInfo = (title = '', userJid = '', thumbnailUrl = '') => ({
   mentionedJid: [userJid],
   forwardingScore: 999,
@@ -56,7 +57,7 @@ async function downloadFromApis(apis) {
 
 // Audio download command
 zokou({
-  nomCom: "play",
+  nomCom: "songs",
   aliases: ["song", "playdoc", "audio", "mp3"],
   categorie: "download",
   reaction: "🎸"
@@ -72,7 +73,7 @@ zokou({
     const video = await searchYouTube(query);
     
     await zk.sendMessage(dest, {
-      text: "⬇️ Njabulo Jb downloading audio This may take a moment...",
+      text: infoMsg,
       contextInfo: getContextInfo("Downloading", userJid, video.thumbnail)
     }, { quoted: ms });
 
