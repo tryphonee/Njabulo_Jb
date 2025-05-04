@@ -72,7 +72,7 @@ fana({
     const video = await searchYouTube(query);
     
     await zk.sendMessage(dest, {
-      image: { url: video},
+      image: { url: download_url },
       text: "⬇️ Njabulo Jb downloading audio This may take a moment...",
       contextInfo: getContextInfo("Downloading", userJid, video.thumbnail)
     }, { quoted: ms });
