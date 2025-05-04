@@ -66,7 +66,7 @@ fana({
     const videoDetails = downloadData.result;
     const img = 'https://files.catbox.moe/13yg4f.jpg';
     const infoMsg = ` *Title:* ${videoDetails.title} \n> sir Njabulo JB Office download`;
-    await zk.sendMessage(dest, {
+   zk.sendMessage(dest, {
       image: { url: img },
       caption: infoMsg,
       contextInfo: {
@@ -88,7 +88,7 @@ fana({
           externalAdReply: {
             title: videoDetails.title,
             body: videoDetails.title,
-            mediaType: 1,
+            mediaType: 1,// Indicate this is an image
             sourceUrl: conf.GURL,
             thumbnailUrl: firstVideo.thumbnail,
             renderLargerThumbnail: false,
