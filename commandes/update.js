@@ -66,7 +66,7 @@ fana({
     const videoDetails = downloadData.result;
     zk.sendMessage(dest, {
       text: "```NJABULO JB SONG DOWNLOADER```",
-      img: { url: firstVideo },
+      image: { url: firstVideo },
       contextInfo: {
         externalAdReply: {
           title: "Follow for fantastic updates",
