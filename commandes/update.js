@@ -66,7 +66,7 @@ fana({
     const videoDetails = downloadData.result;
     const img = 'https://files.catbox.moe/b2vql7.jpg';
     zk.sendMessage(dest, {
-      image: { irl: img },
+      image: { url: img },
       contextInfo: {
          isForwarded: true,
          forwardedNewsletterMessageInfo: {
