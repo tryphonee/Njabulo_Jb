@@ -34,6 +34,7 @@ async (dest, zk, commandeOptions) => {
          newsletterJid: '120363345407274799@newsletter',
          newsletterName: "NJABULO JB",
          serverMessageId: 143,
+         }
        },{quoted : ms});
        zk.sendMessage(dest, {
          video: { url: result.sd  },
@@ -46,7 +47,6 @@ async (dest, zk, commandeOptions) => {
          serverMessageId: 143,
          }
        }, { quoted: ms });
-    })
     .catch((error) => {console.log("Error:", error)
                       repondre(error)});
 
