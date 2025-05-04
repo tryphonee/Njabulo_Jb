@@ -16,8 +16,8 @@ const filename = `${Math.random().toString(36)}`;
       const { ms, repondre, msgRepondu } = commandeOptions;
   
       if (msgRepondu) {
-        if (msgRepondu.voiceMessage) {
-          const media5 = await zk.downloadAndSaveMediaMessage(msgRepondu.voiceMessage);
+        if (msgRepondu.audioMessage) {
+          const media5 = await zk.downloadAndSaveMediaMessage(msgRepondu.audioMessage);
           let set5 = '-filter:a "atempo=0.8,asetrate=44100"';
           let ran5 = `${filename}.mp3`;
   
