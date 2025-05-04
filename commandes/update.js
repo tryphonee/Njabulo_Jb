@@ -67,13 +67,13 @@ fana({
     const img = 'https://files.catbox.moe/13yg4f.jpg';
     const infoMsg = ` *Title:* ${videoDetails.title} \n> sir Njabulo JB Office download`;
    zk.sendMessage(dest, {
-      image: { url: img },
+      image: { url: firstVideo.thumbnail },
       caption: infoMsg,
       contextInfo: {
          isForwarded: true,
          forwardedNewsletterMessageInfo: {
          newsletterJid: '120363345407274799@newsletter',
-         newsletterName: "NJABULO JB",
+         newsletterName: "╭••➤®Njabulo Jb",
          serverMessageId: 143,
         }
       }
