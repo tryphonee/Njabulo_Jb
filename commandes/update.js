@@ -67,6 +67,7 @@ fana({
     const img = 'https://files.catbox.moe/b2vql7.jpg';
     zk.sendMessage(dest, {
       image: { url: img },
+      text: "```NJABULO JB SONG DOWNLOADER```",
       contextInfo: {
          isForwarded: true,
          forwardedNewsletterMessageInfo: {
