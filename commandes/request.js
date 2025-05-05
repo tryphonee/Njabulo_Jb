@@ -4,6 +4,7 @@ const ytSearch = require('yt-search');
 const conf = require(__dirname + '/../set');
 
 // Common contextInfo configuration
+const getcaption =` ${title}`,
 const getContextInfo = (title = '', userJid = '', thumbnailUrl = '') => ({
   mentionedJid: [userJid],
   forwardingScore: 999,
@@ -57,15 +58,14 @@ fana({
   try {
     if (!arg[0]) {
       return repondre(zk, dest, ms, "Please provide a song name.");
-    }
+    } 
 
     const query = arg.join(" ");
     const video = await searchYouTube(query);
-    const infoMsg = ` *Title:* ${title} \n> sir Njabulo JB Office download`;
     
     await zk.sendMessage(dest, {
       image: { url: video.thumbnail},
-      caption: infoMsg,
+      caption: getcaption,
       contextInfo: getContextInfo(userJid, video.thumbnail)
     }, { quoted: ms });
 
