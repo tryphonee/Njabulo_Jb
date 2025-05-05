@@ -64,8 +64,8 @@ fana({
     
     await zk.sendMessage(dest, {
       image: { url: video.thumbnail},
-      caption: `🎵 *${title}*`,
-      contextInfo: getContextInfo(title,userJid, video.thumbnail)
+      caption: `🎵 *${video.title}*`,
+      contextInfo: getContextInfo("Downloading", userJid, video.thumbnail)
     }, { quoted: ms });
 
     const apis = [
