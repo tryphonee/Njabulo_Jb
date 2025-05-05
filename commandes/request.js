@@ -47,7 +47,7 @@ async function downloadFromApis(apis) {
 
 // Audio download command
 fana({
-  nomCom: "pl",
+  nomCom: "play",
   aliases: ["song", "playdoc", "audio", "mp3"],
   categorie: "download",
   reaction: "🎸"
@@ -96,3 +96,53 @@ fana({
   }
 });
 
+fana({
+  nomCom: "video",
+  aliases: ["videodoc", "film", "mp4"],
+  categorie: "download",
+  reaction: "🎬"
+}, async (dest, zk, commandOptions) => {
+  const { arg, ms, userJid } = commandOptions;
+
+  try {
+    if (!arg[0]) {
+      return repondre(zk, dest, ms, "Please provide a video name.");
+    }
+
+    const query = arg.join(" ");
+    const video = await searchYouTube(query);
+    
+    await zk.sendMessage(dest, {
+      image: { url: video.thumbnail},
+      caption: `🎵 *${video.title}*`,
+      contextInfo: getContextInfo("Downloading", userJid, video.thumbnail)
+    }, { quoted: ms });
+
+    const apis = [
+      `https://api.davidcyriltech.my.id/download/ytmp4?url=${encodeURIComponent(video.url)}`,
+      `https://www.dark-yasiya-api.site/download/ytmp4?url=${encodeURIComponent(video.url)}`,
+      `https://api.giftedtech.web.id/api/download/dlmp4?url=${encodeURIComponent(video.url)}&apikey=gifted-md`,
+      `https://api.dreaded.site/api/ytdl/video?url=${encodeURIComponent(video.url)}`
+    ];
+
+    const downloadData = await downloadFromApis(apis);
+    const { download_url, title } = downloadData.result;
+
+    const messagePayloads = [
+      {
+        video: { url: download_url },
+        mimetype: 'video/mp4',
+        caption: `🎥 *${title}*`,
+      }
+    ];
+
+    for (const payload of messagePayloads) {
+      await zk.sendMessage(dest, payload, { quoted: ms });
+    }
+
+  } catch (error) {
+    console.error('Video download error:', error);
+    repondre(zk, dest, ms, `Download failed: ${error.message}`);
+  }
+});
+      
