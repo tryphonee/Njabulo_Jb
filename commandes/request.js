@@ -91,7 +91,6 @@ fana({
         audio: { url: download_url },
         mimetype: 'audio/mp4',
         caption: `🎵 *${title}*`,
-        contextInfo: getContextInfo(title, video.thumbnail)
       }
     ];
 
