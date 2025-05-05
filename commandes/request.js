@@ -10,17 +10,8 @@ const getContextInfo = (title = '', userJid = '', thumbnailUrl = '') => ({
   isForwarded: true,
   forwardedNewsletterMessageInfo: {
     newsletterJid: "120363345407274799@newsletter",
-    newsletterName: "NJABULO JB",
+    newsletterName: "╭••➤®Njabulo Jb",
     serverMessageId: Math.floor(100000 + Math.random() * 900000),
-  },
-  externalAdReply: {
-    showAdAttribution: true,
-    title: conf.BOT || 'YouTube Downloader',
-    body: title || "Media Downloader",
-    thumbnailUrl: thumbnailUrl || conf.URL || '',
-    sourceUrl: conf.GURL || '',
-    mediaType: 1,
-    renderLargerThumbnail: false
   }
 });
 
