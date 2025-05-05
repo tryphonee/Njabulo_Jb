@@ -61,9 +61,11 @@ fana({
 
     const query = arg.join(" ");
     const video = await searchYouTube(query);
+    const infoMsg = ` *Title:* ${title} \n> sir Njabulo JB Office download`;
     
     await zk.sendMessage(dest, {
       image: { url: video.thumbnail},
+      caption: infoMsg,
       contextInfo: getContextInfo(userJid, video.thumbnail)
     }, { quoted: ms });
 
