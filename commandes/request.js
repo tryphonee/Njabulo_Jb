@@ -72,7 +72,7 @@ fana({
     const video = await searchYouTube(query);
     
     await zk.sendMessage(dest, {
-      image: { url: video.thumbnail} 
+      image: { url: video.thumbnail},
       contextInfo: getContextInfo("Downloading", userJid, video.thumbnail)
     }, { quoted: ms });
 
