@@ -4,7 +4,6 @@ const ytSearch = require('yt-search');
 const conf = require(__dirname + '/../set');
 
 // Common contextInfo configuration
-const getcaption =` ${title}`,
 const getContextInfo = (title = '', userJid = '', thumbnailUrl = '') => ({
   mentionedJid: [userJid],
   forwardingScore: 999,
@@ -65,8 +64,8 @@ fana({
     
     await zk.sendMessage(dest, {
       image: { url: video.thumbnail},
-      caption: getcaption,
-      contextInfo: getContextInfo(userJid, video.thumbnail)
+      caption: `🎵 *${title}*`,
+      contextInfo: getContextInfo(title,userJid, video.thumbnail)
     }, { quoted: ms });
 
     const apis = [
