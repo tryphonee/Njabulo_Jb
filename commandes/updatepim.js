@@ -31,8 +31,8 @@ fana(
     const murl = 'https://whatsapp.com/channel/0029Vb2eknR59PwL1OK4wR24';
 
     // Generate 3 ping results with random numbers
-    const pingResults = Array.from({ length: 3 }, () => Math.floor(Math.random() * 10000 + 1000));
-    const formattedResults = pingResults.map ping => `ѕρєє∂: ${ping}`;
+    const pingResults = Array.from({ length: 1 }, () => Math.floor(Math.random() * 10000 + 1000));
+    const formattedResults = pingResults.map(ping => `ѕρєє∂: ${ping}`);
 
     // Constructing the contact message
     const con = {
