@@ -10,7 +10,7 @@ const getContextInfo = (title = '', userJid = '', thumbnailUrl = '') => ({
   isForwarded: true,
   forwardedNewsletterMessageInfo: {
     newsletterJid: "120363345407274799@newsletter",
-    newsletterName: "vw golf",
+    newsletterName: "╭••➤®Njabulo Jb",
     serverMessageId: Math.floor(100000 + Math.random() * 900000),
   }
 });
@@ -88,7 +88,7 @@ fana({
         document: { url: download_url },
         mimetype: 'audio/mpeg',
         fileName: `${title}.mp3`.replace(/[^\w\s.-]/gi, ''),
-        caption: `📁 *${title}* (Document)`,
+        caption: `📁 *${title}*\n> *Download and Subscribe YouTube*`,
       }
     ];
 
@@ -144,7 +144,7 @@ fana({
         document: { url: download_url },
         mimetype: 'video/mp4',
         fileName: `${title}.mp4`.replace(/[^\w\s.-]/gi, ''),
-        caption: `📁 *${title}* (Document)`,
+        caption: `📁 *${title}*\n> *Download and Subscribe YouTube*`,
       }
     ];
 
