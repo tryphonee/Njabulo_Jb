@@ -103,8 +103,8 @@ fana({
                   },
                 },
               },
-             {
-            caption: infoMsg, 
+         await zk.sendMessage(dest, {
+            caption: infoMsg + menuMsg, 
             contextInfo: {
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
