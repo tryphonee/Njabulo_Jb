@@ -4,21 +4,14 @@ const ytSearch = require('yt-search');
 const conf = require(__dirname + '/../set');
 
 // Common contextInfo configuration
-const getContextInfo = (title = '', thumbnailUrl = '') => ({
+const getContextInfo = (title = '', userJid = '', thumbnailUrl = '') => ({
   mentionedJid: [userJid],
   forwardingScore: 999,
   isForwarded: true,
   forwardedNewsletterMessageInfo: {
+    newsletterJid: "120363345407274799@newsletter",
+    newsletterName: "vw golf",
     serverMessageId: Math.floor(100000 + Math.random() * 900000),
-  },
-  externalAdReply: {
-    showAdAttribution: true,
-    title: conf.BOT || 'YouTube Downloader',
-    body: title || "Media Downloader",
-    thumbnailUrl: thumbnailUrl || conf.URL || '',
-    sourceUrl: conf.GURL || '',
-    mediaType: 1,
-    renderLargerThumbnail: false
   }
 });
 
@@ -70,8 +63,9 @@ fana({
     const video = await searchYouTube(query);
     
     await zk.sendMessage(dest, {
-      text: "⏳loading•••••••••••••\n\n⌚ wait are second•••••••••••••\n*🎧vw golf youtube downloaded you audio*✓",
-      contextInfo: getContextInfo("vw golf music", video.thumbnail)
+      image: {url:video.thumbnail},
+      caption: `🎵 *Wait ${video.title}*`,
+      contextInfo: getContextInfo("vw golf music", userJid, video.thumbnail)
     }, { quoted: ms });
 
     const apis = [
@@ -89,14 +83,12 @@ fana({
         audio: { url: download_url },
         mimetype: 'audio/mp4',
         caption: `🎵 *${title}*`,
-        contextInfo: getContextInfo(title, video.thumbnail)
       },
       {
         document: { url: download_url },
         mimetype: 'audio/mpeg',
         fileName: `${title}.mp3`.replace(/[^\w\s.-]/gi, ''),
         caption: `📁 *${title}* (Document)`,
-        contextInfo: getContextInfo(title, video.thumbnail)
       }
     ];
 
@@ -127,8 +119,9 @@ fana({
     const video = await searchYouTube(query);
     
     await zk.sendMessage(dest, {
-      text: "⏳loading•••••••••••••\n\n⌚ wait are second•••••••••••••\n*🎥vw golf youtube downloaded you video*✓",
-      contextInfo: getContextInfo("vw golf video", video.thumbnail)
+      image: {url:video.thumbnail},
+      caption: `🎵 *${video.title}*`,
+      contextInfo: getContextInfo("vw golf video", userJid, video.thumbnail)
     }, { quoted: ms });
 
     const apis = [
@@ -146,14 +139,12 @@ fana({
         video: { url: download_url },
         mimetype: 'video/mp4',
         caption: `🎥 *${title}*`,
-        contextInfo: getContextInfo(title, video.thumbnail)
       },
       {
         document: { url: download_url },
         mimetype: 'video/mp4',
         fileName: `${title}.mp4`.replace(/[^\w\s.-]/gi, ''),
         caption: `📁 *${title}* (Document)`,
-        contextInfo: getContextInfo(title, video.thumbnail)
       }
     ];
 
