@@ -60,7 +60,7 @@ fana(
          isForwarded: true,
          forwardedNewsletterMessageInfo: {
          newsletterJid: '120363345407274799@newsletter',
-         newsletterName: "vw golf",
+         newsletterName: "╭••➤®Njabulo Jb",
          serverMessageId: 143,
         },
         forwardingScore: 999, // Score to indicate it has been forwarded
@@ -116,7 +116,7 @@ fana(
 
     // Reply with uptime
     await zk.sendMessage(dest, {
-      text: `*NJABULO JB UPTIME* 🕒\n\nRuntime: ${formattedRuntime}`,
+      text: `*ηנαвυℓσ נв υρтιмє* 🕒\n\nRuntime: ${formattedRuntime}`,
       contextInfo: {
       isForwarded: true,
         forwardedNewsletterMessageInfo: {
@@ -126,8 +126,8 @@ fana(
           },
           forwardingScore: 999, // Score to indicate it has been forwarded
         externalAdReply: {
-          title: "NJABULO JB- System Uptime",
-          body: `Bot has been running for: ${formattedRuntime}`,
+          title: "нαρριηєѕѕ вσт σηℓιηє",
+          body: `вσт нαѕ вєєη яυηηιηg ƒσя: ${formattedRuntime}`,
           thumbnailUrl: img,
           sourceUrl: murl,
           mediaType: 1,
