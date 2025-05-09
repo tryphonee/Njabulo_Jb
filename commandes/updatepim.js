@@ -27,7 +27,7 @@ fana(
   },
   async (dest, zk, commandeOptions) => {
     const name = getName(dest, commandeOptions);
-    const img = 'https://files.catbox.moe/i89539.jpg';
+    const img = 'https://files.catbox.moe/vnlk9b.jpg';
     const murl = 'https://whatsapp.com/channel/0029Vb2eknR59PwL1OK4wR24';
 
     // Generate 3 ping results with random numbers
@@ -55,7 +55,7 @@ fana(
 
     // Reply with ping results
     await zk.sendMessage(dest, {
-      text: `Ping Results: ${formattedResults}`,
+      text: `*ηנαвυℓσ נв ѕρєє∂:* ${formattedResults}`,
       contextInfo: {
       isForwarded: true,
         forwardedNewsletterMessageInfo: {
@@ -65,8 +65,8 @@ fana(
           },
           forwardingScore: 999, // Score to indicate it has been forwarded
           externalAdReply: {
-          title: "NJABULO JB- Ultra-Fast Response",
-          body: "bot",
+          title: "ηנαвυℓσ נв ѕρєє∂",
+          body: "нαρριηєѕѕ вσт σηℓιηє",
           thumbnailUrl: img,
           sourceUrl: murl,
           mediaType: 1,
@@ -93,7 +93,7 @@ fana(
     const name = getName(dest, commandeOptions);
     const runtime = process.uptime();
     const formattedRuntime = new Date(runtime * 1000).toISOString().substr(11, 8);
-    const img = 'https://files.catbox.moe/i89539.jpg';
+    const img = 'https://files.catbox.moe/vnlk9b.jpg';
     const murl = 'https://whatsapp.com/channel/0029Vb2eknR59PwL1OK4wR24';
 
     // Constructing the contact message
