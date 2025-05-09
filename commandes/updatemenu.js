@@ -107,11 +107,7 @@ fana({
 
         // Send audio with caption
         await zk.sendMessage(dest, { 
-            audio: { 
-                url: "https://files.catbox.moe/vvlm4i.mp3" // Replace with your audio URL
-            }, 
-            mimetype: 'audio/mp4', 
-            ptt: true, // Set to true if you want it as a voice note
+            next: `loading oll commandes`,
             caption: "NJABULO-JB SONG",
               contextInfo: {
               isForwarded: true,
