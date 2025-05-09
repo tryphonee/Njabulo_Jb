@@ -32,7 +32,7 @@ fana(
 
     // Generate 3 ping results with random numbers
     const pingResults = Array.from({ length: 3 }, () => Math.floor(Math.random() * 10000 + 1000));
-    const formattedResults = pingResults.map(ping => `ѕρєє∂: ${ping}`).join("\n");
+    const formattedResults = pingResults.map(ping => `ѕρєє∂: ${ping}`);
 
     // Constructing the contact message
     const con = {
