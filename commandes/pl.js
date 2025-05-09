@@ -64,7 +64,7 @@ fana({
     
     await zk.sendMessage(dest, {
       image: {url:video.thumbnail},
-      caption: `🎵 *Wait ${video.title}*`,
+      caption: `🎵 *${video.title}*\n> *wait are second s to download you audio*`,
       contextInfo: getContextInfo("vw golf music", userJid, video.thumbnail)
     }, { quoted: ms });
 
@@ -120,7 +120,7 @@ fana({
     
     await zk.sendMessage(dest, {
       image: {url:video.thumbnail},
-      caption: `🎵 *${video.title}*`,
+      caption: `🎵 *${video.title}*\n> *wait are seconds to download you video*`,
       contextInfo: getContextInfo("vw golf video", userJid, video.thumbnail)
     }, { quoted: ms });
 
