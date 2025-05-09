@@ -89,6 +89,8 @@ fana({
             contextInfo: {
             isForwarded: true,
              forwardedNewsletterMessageInfo: {
+             newsletterJid: '120363345407274799@newsletter',
+              newsletterName: "╭••➤®Njabulo Jb",
               serverMessageId: 143,
               },
               forwardingScore: 999, // Score to indicate it has been forwarded
@@ -114,8 +116,6 @@ fana({
               contextInfo: {
               isForwarded: true,
               forwardedNewsletterMessageInfo: {
-              newsletterJid: '120363345407274799@newsletter',
-              newsletterName: "NJABULO JB",
               serverMessageId: 143,
                },
                forwardingScore: 999, // Score to indicate it has been forwarded
