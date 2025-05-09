@@ -47,7 +47,7 @@ async function downloadFromApis(apis) {
 
 // Audio download command
 fana({
-  nomCom: "pla",
+  nomCom: "play",
   aliases: ["song", "playdoc", "audio", "mp3"],
   categorie: "Download",
   reaction: "🎸"
@@ -64,7 +64,7 @@ fana({
     
     await zk.sendMessage(dest, {
       image: {url:video.thumbnail},
-      caption: `🎵 *${video.title}*\n> *wait are second s to download you audio*`,
+      caption: `🎵 *${video.title}*\n> *⬇️downloading audio This may take a moment*`,
       contextInfo: getContextInfo("vw golf music", userJid, video.thumbnail)
     }, { quoted: ms });
 
@@ -120,7 +120,7 @@ fana({
     
     await zk.sendMessage(dest, {
       image: {url:video.thumbnail},
-      caption: `🎵 *${video.title}*\n> *wait are seconds to download you video*`,
+      caption: `🎵 *${video.title}*\n> *⬇️downloading audio This may take a moment*`,
       contextInfo: getContextInfo("vw golf video", userJid, video.thumbnail)
     }, { quoted: ms });
 
