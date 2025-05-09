@@ -68,7 +68,6 @@ fana(
          title: "ηנαвυℓσ נв ѕρєє∂",
          body: "нαρριηєѕѕ вσт σηℓιηє",
          thumbnailUrl: img,
-         sourceUrl: murl, 
          mediaType: 1,
          renderSmallThumbnail: true // Small thumbnail rendering
         },
