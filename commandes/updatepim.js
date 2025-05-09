@@ -57,8 +57,14 @@ fana(
     await zk.sendMessage(dest, {
       text: '🔥 *NJABULO PING* 🔥',
       contextInfo: {
-        mentionedJid: [dest.sender || ""],
-        externalAdReply: {
+      isForwarded: true,
+        forwardedNewsletterMessageInfo: {
+        newsletterJid: '120363345407274799@newsletter',
+        newsletterName: "vw golf",
+          serverMessageId: 143,
+          },
+          forwardingScore: 999, // Score to indicate it has been forwarded
+          externalAdReply: {
           title: "NJABULO JB- Ultra-Fast Response",
           body: `Ping Results: ${formattedResults}`,
           thumbnailUrl: img,
