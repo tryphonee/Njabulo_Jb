@@ -55,18 +55,18 @@ fana(
 
     // Reply with ping results
     await zk.sendMessage(dest, {
-      text: '🔥 *NJABULO PING* 🔥',
+      text: `Ping Results: ${formattedResults}`,
       contextInfo: {
       isForwarded: true,
         forwardedNewsletterMessageInfo: {
         newsletterJid: '120363345407274799@newsletter',
-        newsletterName: "vw golf",
+        newsletterName: "╭••➤®Njabulo Jb",
           serverMessageId: 143,
           },
           forwardingScore: 999, // Score to indicate it has been forwarded
           externalAdReply: {
           title: "NJABULO JB- Ultra-Fast Response",
-          body: `Ping Results: ${formattedResults}`,
+          body: "bot",
           thumbnailUrl: img,
           sourceUrl: murl,
           mediaType: 1,
@@ -119,7 +119,13 @@ fana(
     await zk.sendMessage(dest, {
       text: `*NJABULO JB UPTIME* 🕒\n\nRuntime: ${formattedRuntime}`,
       contextInfo: {
-        mentionedJid: [dest.sender || ""],
+      isForwarded: true,
+        forwardedNewsletterMessageInfo: {
+        newsletterJid: '120363345407274799@newsletter',
+        newsletterName: "╭••➤®Njabulo Jb",
+          serverMessageId: 143,
+          },
+          forwardingScore: 999, // Score to indicate it has been forwarded
         externalAdReply: {
           title: "NJABULO JB- System Uptime",
           body: `Bot has been running for: ${formattedRuntime}`,
