@@ -99,7 +99,6 @@ fana({
                     body: "📃Command List",
                     thumbnailUrl: imgs,
                     mediaType: 1,
-                    mediaUrl: "",
                     sourceUrl: ""
                  }
               }
