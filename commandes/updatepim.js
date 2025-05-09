@@ -57,20 +57,20 @@ fana(
     await zk.sendMessage(dest, {
       text: `*ηנαвυℓσ נв:* ${formattedResults}`,
       contextInfo: {
-      isForwarded: true,
-        forwardedNewsletterMessageInfo: {
-        newsletterJid: '120363345407274799@newsletter',
-        newsletterName: "╭••➤®Njabulo Jb",
-          serverMessageId: 143,
-          },
-          forwardingScore: 999, // Score to indicate it has been forwarded
-          externalAdReply: {
-          title: "ηנαвυℓσ נв ѕρєє∂",
-          body: "нαρριηєѕѕ вσт σηℓιηє",
-          thumbnailUrl: img,
-          sourceUrl: murl,
-          mediaType: 1,
-          renderLargerThumbnail: false,
+         isForwarded: true,
+         forwardedNewsletterMessageInfo: {
+         newsletterJid: '120363345407274799@newsletter',
+         newsletterName: "vw golf",
+         serverMessageId: 143,
+        },
+        forwardingScore: 999, // Score to indicate it has been forwarded
+         externalAdReply: {
+         title: "ηנαвυℓσ נв ѕρєє∂",
+         body: "нαρριηєѕѕ вσт σηℓιηє",
+         thumbnailUrl: img,
+         sourceUrl: murl, 
+         mediaType: 1,
+         renderSmallThumbnail: true // Small thumbnail rendering
         },
       },
       quoted: con,
