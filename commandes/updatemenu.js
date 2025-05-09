@@ -104,10 +104,9 @@ fana({
               }
           });
 
-        // Send audio with caption
+        // Send infoMsg with caption
         await zk.sendMessage(dest, { 
-            next: `loading oll commandes`,
-            caption: "NJABULO-JB SONG",
+           caption: infoMsg,
               contextInfo: {
               isForwarded: true,
               forwardedNewsletterMessageInfo: {
