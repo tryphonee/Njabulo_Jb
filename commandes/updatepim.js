@@ -27,7 +27,7 @@ fana(
   },
   async (dest, zk, commandeOptions) => {
     const name = getName(dest, commandeOptions);
-    const img = 'https://files.catbox.moe/vnlk9b.jpg';
+    const img = 'https://files.catbox.moe/pi53ft.jpg';
     const murl = 'https://whatsapp.com/channel/0029Vb2eknR59PwL1OK4wR24';
 
     // Generate 3 ping results with random numbers
@@ -92,7 +92,7 @@ fana(
     const name = getName(dest, commandeOptions);
     const runtime = process.uptime();
     const formattedRuntime = new Date(runtime * 1000).toISOString().substr(11, 8);
-    const img = 'https://files.catbox.moe/vnlk9b.jpg';
+    const img = 'https://files.catbox.moe/pi53ft.jpg';
     const murl = 'https://whatsapp.com/channel/0029Vb2eknR59PwL1OK4wR24';
 
     // Constructing the contact message
