@@ -1,6 +1,6 @@
 {
   "name": "Njabulo_Jb",
-  "description": "Alpha is a multidevice WhatsApp bot built to make your WhatsApp enjoyable.",
+  "description": "Njabulo Jb is a multidevice WhatsApp bot built to make your WhatsApp enjoyable.",
   "keywords": [
     "bot",
     "node",
@@ -25,7 +25,7 @@
     
     "ANTICALL_MSG": {
       "description": "Type your anticall message to always send when calls are declined. You can leave it blank",
-      "value": "This is Keith personal assistant kindly leave a message",
+      "value": "This is Njabulo Jb personal assistant kindly leave a message",
       "required": false
     },
     "BOT_NAME": {
