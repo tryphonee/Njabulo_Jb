@@ -37,9 +37,9 @@ fana({ nomCom: "pig", categorie: "General" }, async (dest, zk, commandeOptions) 
                    forwardingScore: 999, // Score to indicate it has been forwarded
                    externalAdReply: {
                     title: "Njabulo Jb",
-                    body: "WhatsApp.business.com",
+                    body: "ɴᴊᴀʙᴜʟᴏ ᴊʙ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ",
                     thumbnailUrl: THUMBNAIL_URL,
-                    sourceUrl: 'https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T', // Add source URL if necessary
+                    sourceUrl: 'https://github.com/NjabuloJ/Njabulo-Jb', // Add source URL if necessary
                     mediaType: 1,
                     renderSmallThumbnail: true // Small thumbnail rendering
                 }
