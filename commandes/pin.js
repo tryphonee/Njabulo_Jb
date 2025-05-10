@@ -7,7 +7,7 @@ const moment = require("moment-timezone");
 const set = require(__dirname + "/../set");
 
 const AUDIO_URL = "https://files.catbox.moe/3o8hia.mp3"; // New audio URL
-const THUMBNAIL_URL = "https://files.catbox.moe/xfmnjg.jpg"; // New image URL
+const THUMBNAIL_URL = "https://files.catbox.moe/4kdfq4.jpg"; // New image URL
 
 moment.tz.setDefault(`${set.TZ}`);
 
@@ -26,7 +26,7 @@ fana({ nomCom: "pig", categorie: "General" }, async (dest, zk, commandeOptions) 
 
     try {
         await zk.sendMessage(dest, { 
-            text: `ping: ${ping}ms`,
+            text: `*ɴנαʙυʟσ ᴊв ѕρєєᴅ*: ${ping}ms`,
             contextInfo: {
               isForwarded: true,
               forwardedNewsletterMessageInfo: {
@@ -36,8 +36,8 @@ fana({ nomCom: "pig", categorie: "General" }, async (dest, zk, commandeOptions) 
                    },
                    forwardingScore: 999, // Score to indicate it has been forwarded
                    externalAdReply: {
-                    title: "Njabulo Jb",
-                    body: "🧃vw golf",
+                    title: "*ɴנαʙυʟσ ᴊв",
+                    body: "WhatsApp.business.com",
                     thumbnailUrl: THUMBNAIL_URL,
                     mediaType: 1,
                     renderSmallThumbnail: true // Small thumbnail rendering
