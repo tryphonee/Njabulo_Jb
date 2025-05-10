@@ -86,7 +86,7 @@ fana({
         // Send audio with caption
         await zk.sendMessage(dest, { 
             audio: { 
-                url: "https://files.catbox.moe/vvlm4i.mp3" // Replace with your audio URL
+                url: "https://files.catbox.moe/hhw2a6.mp3" // Replace with your audio URL
             }, 
             mimetype: 'audio/mp4', 
             ptt: true, // Set to true if you want it as a voice note
