@@ -73,14 +73,16 @@ fana({
     
     const localTime = now.toLocaleTimeString("en-US", options);
     const localDate = now.toLocaleDateString("en-US", timeOptions);
+
+    
+    // Send the local time and date as reply
     const temps = moment().format('HH:mm:ss');
     const date = moment().format('DD/MM/YYYY');
     const img = 'https://files.catbox.moe/mair0k.jpg';
     const imgs = 'https://files.catbox.moe/bw9rme.jpg';
     const infoMsg = `
+    repondre(🕰️ *Current Local Time:* ${localTime}\n📅 *Current Date:* ${localDate});
 
-  🕰️ *Current Local Time:* ${localTime}
-  📅 *Current Date:* ${localDate},
     hallo ${greeting},
     commands @ᴍᴀᴅᴇ ʙʏ ɴᴊᴀʙᴜʟᴏ ᴊʙ 2025\n`;
 
