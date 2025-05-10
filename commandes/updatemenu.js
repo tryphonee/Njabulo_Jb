@@ -105,7 +105,7 @@ fana({
               }
           });
 
-        // Send menu with caption
+        // Send infoMsg + menuMsg, with caption
         await zk.sendMessage(dest, { 
         caption: infoMsg + menuMsg,
               contextInfo: {
