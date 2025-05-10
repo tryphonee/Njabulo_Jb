@@ -33,7 +33,7 @@ fana({ nomCom: 'uptime',
       
     try {
         await zk.sendMessage(dest, { 
-        text: `${runtime}`,
+        text: `uptime: ${runtime}`,
           contextInfo: {
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
