@@ -21,6 +21,11 @@
       "description": "Your contact status will be read automatically (type 'yes' to activate or 'no' to deactivate; don't write in capital letters)",
       "value": "yes",
       "required": false
+   },
+    "PM_PERMIT": {
+      "description": "Restrict other users from using your bot in private messages (type 'yes' to activate or 'no' to deactivate; don't write in capital letters)",
+      "value": "no",
+      "required": false
     },
       "ANTI_DELETE_MESSAGE": {
       "description": "Enable anti-delete message (set 'yes' to activate or 'no' to deactivate)",
