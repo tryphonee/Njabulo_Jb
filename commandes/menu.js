@@ -58,7 +58,7 @@ fana({
     const infoMsg = `
 
     hallo ${greeting},
-    commands @ᴍᴀᴅᴇ ʙʏ ɴᴊᴀʙᴜʟᴏ ᴊʙ 2025\n`;
+    *ʜᴀʟʟᴏ ᴛyᴩᴇ [.ᴩʟᴜɢɪɴꜱ] ᴛᴏ ꜱᴇᴇ ᴏʟʟ ᴄᴏᴍᴍᴀɴᴅᴇꜱ*\n`;
 
     try {
         await zk.sendMessage(dest, { 
@@ -74,7 +74,7 @@ fana({
               forwardingScore: 999, // Score to indicate it has been forwarded
               externalAdReply: {
                title: "ηנαвυℓσ נв ρℓυﻭιηѕ ¢м∂",
-               body: "ʜᴀʟʟᴏ ᴛyᴩᴇ [.ᴩʟᴜɢɪɴꜱ] ᴛᴏ ꜱᴇᴇ ᴏʟʟ ᴄᴏᴍᴍᴀɴᴅᴇꜱ",
+               body: "нαℓℓσ туρє [.ᴩʟᴜɢɪɴꜱ] тσ ѕєє σℓℓ ¢σммαη∂єѕ",
                thumbnailUrl: 'https://files.catbox.moe/xgg5lt.jpg', // Add thumbnail URL if required 
               sourceUrl: 'https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T', // Add source URL if necessary
                mediaType: 1,
