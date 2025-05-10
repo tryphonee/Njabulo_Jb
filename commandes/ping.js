@@ -25,7 +25,7 @@ fana({ nomCom: "pin", categorie: "General" }, async (dest, zk, commandeOptions) 
 
     try {
         await zk.sendMessage(dest, { 
-          caption: ping,
+          caption: `↪️𝘁𝗶𝗺𝗲 𝗽𝗶𝗻𝗴 ${ping}ms`,
             contextInfo: {
               isForwarded: true,
               forwardedNewsletterMessageInfo: {
