@@ -31,13 +31,13 @@ fana({ nomCom: "pig", categorie: "General" }, async (dest, zk, commandeOptions) 
               isForwarded: true,
               forwardedNewsletterMessageInfo: {
               newsletterJid: '120363345407274799@newsletter',
-                  newsletterName: "vw golf",
+                  newsletterName: "╭••➤®Njabulo Jb",
                   serverMessageId: 143,
                    },
                    forwardingScore: 999, // Score to indicate it has been forwarded
                    externalAdReply: {
-                    title: "╭••➤®Njabulo Jb",
-                    body: `🧃vw golf ping: ${ping}ms\n📅 *Date:* ${date}\n⏰ *Time:* ${time}`,
+                    title: "Njabulo Jb",
+                    body: "🧃vw golf",
                     thumbnailUrl: THUMBNAIL_URL,
                     mediaType: 1,
                     renderSmallThumbnail: true // Small thumbnail rendering
