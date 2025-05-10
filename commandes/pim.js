@@ -4,7 +4,7 @@ const { getBuffer } = require("../njabulo/dl/Function");
 const { default: axios } = require('axios');
 
 const AUDIO_URL = "https://files.catbox.moe/7ydtb3.mp3"; // New audio URL
-const THUMBNAIL_URL = "https://files.catbox.moe/bw9rme.jpg"; // New image URL
+const THUMBNAIL_URL = "https://files.catbox.moe/gsdha7.jpg"; // New image URL
 
 const runtime = function (seconds) { 
  seconds = Number(seconds); 
@@ -33,7 +33,7 @@ fana({ nomCom: 'uptime',
       
     try {
         await zk.sendMessage(dest, { 
-        text:  `UPTIME: ${runtime(process.uptime())}`,
+        text:  `*ɴנαʙυʟσ ᴊв ᴜᴘтιмє:: ${runtime(process.uptime())}*`,
           contextInfo: {
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
@@ -43,9 +43,10 @@ fana({ nomCom: 'uptime',
          },
           forwardingScore: 999, // Score to indicate it has been forwarded
           externalAdReply: {
-          title: "bot is alwaysonline",
-          body: "0",
+          title: "Njabulo Jb",
+          body: "ɴᴊᴀʙᴜʟᴏ ᴊʙ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ",
           thumbnailUrl: THUMBNAIL_URL,
+          sourceUrl: 'https://github.com/NjabuloJ/Njabulo-Jb', // Add source URL if necessary
           mediaType: 1,
           renderSmallThumbnail: true // Small thumbnail rendering
                 }
