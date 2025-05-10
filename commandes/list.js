@@ -25,7 +25,7 @@ const toFancyLowercaseFont = (text) => {
 };
 
 fana({ 
-    nomCom: "list", 
+    nomCom: "script", 
     categorie: "General", 
     reaction: "🧃", 
     nomFichier: __filename 
