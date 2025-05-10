@@ -55,7 +55,9 @@ fana({
     const date = moment().format('DD/MM/YYYY');
     const img = 'https://files.catbox.moe/mair0k.jpg';
     const imgs = 'https://files.catbox.moe/bw9rme.jpg';
-    const infoMsg = 'commands @ᴍᴀᴅᴇ ʙʏ ɴᴊᴀʙᴜʟᴏ ᴊʙ 2025\n';
+    const infoMsg = `
+    good ${greeting},
+    commands @ᴍᴀᴅᴇ ʙʏ ɴᴊᴀʙᴜʟᴏ ᴊʙ 2025\n`;
 
     try {
         await zk.sendMessage(dest, { 
@@ -67,15 +69,15 @@ fana({
              newsletterJid: '120363345407274799@newsletter',
               newsletterName: "╭••➤®Njabulo Jb",
               serverMessageId: 143,
-              },
-              forwardingScore: 999, // Score to indicate it has been forwarded
-                externalAdReply: {
-                    title: "💬ɴᴊᴀʙᴜʟᴏ ᴊʙ",
-                    body: "📃Command List",
-                    thumbnailUrl: imgs,
-                    mediaType: 1,
-                    mediaUrl: "",
-                    sourceUrl: ""
+               },
+               forwardingScore: 999, // Score to indicate it has been forwarded
+              externalAdReply: {
+               title: "ɳᴊᴀʙᴜʟᴏ ᴊʙ σғғɪᴄᴇ",
+               body: "fast via",
+               thumbnailUrl: 'https://files.catbox.moe/95sweb.jpg', // Add thumbnail URL if required 
+              sourceUrl: 'https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T', // Add source URL if necessary
+               mediaType: 1,
+               renderLargerThumbnail: true
                  }
               }
           });
