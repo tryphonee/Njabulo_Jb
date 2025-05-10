@@ -21,12 +21,11 @@ const getTimeAndDate = () => {
 // Ping Command
 fana({ nomCom: "pin", categorie: "General" }, async (dest, zk, commandeOptions) => {
     let { ms } = commandeOptions;
-    const { time, date } = getTimeAndDate();
     const ping = Math.floor(Math.random() * 100) + 1; // Generate a random ping between 1ms - 100ms
 
     try {
         await zk.sendMessage(dest, { 
-          caption: `🧃vw golf ping: ${ping}ms\n📅 *Date:* ${date}\n⏰ *Time:* ${time}`,
+          caption: ping,
             contextInfo: {
               isForwarded: true,
               forwardedNewsletterMessageInfo: {
