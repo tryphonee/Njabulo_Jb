@@ -33,7 +33,7 @@ fana({ nomCom: 'uptime',
       
     try {
         await zk.sendMessage(dest, { 
-        text: `uptime: ${runtime}`,
+        text:  `UPTIME: ${runtime(process.uptime())}`,
           contextInfo: {
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
@@ -44,7 +44,7 @@ fana({ nomCom: 'uptime',
           forwardingScore: 999, // Score to indicate it has been forwarded
           externalAdReply: {
           title: "bot is alwaysonline",
-          body: "bot",
+          body: "0",
           thumbnailUrl: THUMBNAIL_URL,
           mediaType: 1,
           renderSmallThumbnail: true // Small thumbnail rendering
