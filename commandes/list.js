@@ -44,14 +44,7 @@ fana({
         coms[com.categorie].push(com.nomCom);
     });
 
-    moment.tz.setDefault("Africa/Dar_es_Salaam");
-    const hour = moment().hour();
-    let greeting = "ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ";
-    if (hour >= 12 && hour < 18) greeting = "ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ!";
-    else if (hour >= 18) greeting = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ!";
-    else if (hour >= 22 || hour < 5) greeting = "ɢᴏᴏᴅ ɴɪɢʜᴛ";
-
-     // Get current date and time
+    // Get current date and time
     const now = new Date();
     
     // Get local time and date in the specified timezone
@@ -71,6 +64,13 @@ fana({
       day: "numeric" 
     };
 
+    moment.tz.setDefault("Africa/Dar_es_Salaam");
+    const hour = moment().hour();
+    let greeting = "ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ";
+    if (hour >= 12 && hour < 18) greeting = "ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ!";
+    else if (hour >= 18) greeting = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ!";
+    else if (hour >= 22 || hour < 5) greeting = "ɢᴏᴏᴅ ɴɪɢʜᴛ";
+    
     const localTime = now.toLocaleTimeString("en-US", options);
     const localDate = now.toLocaleDateString("en-US", timeOptions);
     const temps = moment().format('HH:mm:ss');
