@@ -73,9 +73,9 @@ fana({
               },
               forwardingScore: 999, // Score to indicate it has been forwarded
               externalAdReply: {
-               title: "ɳᴊᴀʙᴜʟᴏ ᴊʙ σғғɪᴄᴇ",
-               body: "fast via",
-               thumbnailUrl: 'https://files.catbox.moe/95sweb.jpg', // Add thumbnail URL if required 
+               title: "ηנαвυℓσ נв ρℓυﻭιηѕ ¢м∂",
+               body: "ʜᴀʟʟᴏ ᴛyᴩᴇ [.ᴩʟᴜɢɪɴꜱ] ᴛᴏ ꜱᴇᴇ ᴏʟʟ ᴄᴏᴍᴍᴀɴᴅᴇꜱ",
+               thumbnailUrl: 'https://files.catbox.moe/xgg5lt.jpg', // Add thumbnail URL if required 
               sourceUrl: 'https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T', // Add source URL if necessary
                mediaType: 1,
                renderLargerThumbnail: true
