@@ -26,7 +26,7 @@ fana({ nomCom: "pig", categorie: "General" }, async (dest, zk, commandeOptions) 
 
     try {
         await zk.sendMessage(dest, { 
-            next: "•",
+            text: "•",
             contextInfo: {
               isForwarded: true,
               forwardedNewsletterMessageInfo: {
