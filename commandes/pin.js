@@ -26,7 +26,7 @@ fana({ nomCom: "pig", categorie: "General" }, async (dest, zk, commandeOptions) 
 
     try {
         await zk.sendMessage(dest, { 
-            text: "•",
+            text: `ping: ${ping}ms`,
             contextInfo: {
               isForwarded: true,
               forwardedNewsletterMessageInfo: {
@@ -36,7 +36,7 @@ fana({ nomCom: "pig", categorie: "General" }, async (dest, zk, commandeOptions) 
                    },
                    forwardingScore: 999, // Score to indicate it has been forwarded
                    externalAdReply: {
-                    title: "VW GOLF",
+                    title: "╭••➤®Njabulo Jb",
                     body: `🧃vw golf ping: ${ping}ms\n📅 *Date:* ${date}\n⏰ *Time:* ${time}`,
                     thumbnailUrl: THUMBNAIL_URL,
                     mediaType: 1,
