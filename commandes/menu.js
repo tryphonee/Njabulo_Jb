@@ -63,9 +63,38 @@ fana({ nomCom: "pl", categorie: "General" }, async (dest, zk, commandeOptions) =
 
     try {
         if (imageUrl.match(/\.(mp4|gif)$/i)) {
-            await zk.sendMessage(dest, { video: { url: imageUrl }, caption: infoMsg + menuMsg, gifPlayback: true }, { quoted: ms });
+            await zk.sendMessage(dest, { 
+                video: { url: imageUrl }, 
+                caption: infoMsg + menuMsg, 
+                gifPlayback: true, 
+               contextInfo: {
+                externalAdReply: {
+                    title: "𝗡𝗝𝗔𝗕𝗨𝗟𝗢 𝗝𝗕 𝗠𝗘𝗡𝗨 𝗟𝗜𝗦𝗧",
+                    body: "Tap here my friend join channel update",
+                    thumbnailUrl: "https://files.catbox.moe/60hwdx.jpeg",
+                    sourceUrl: "https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T",
+                    mediaType: 1,
+                    renderLargerThumbnail: true
+                 },
+                },
+            }, { quoted: ms });
+        } else {
         } else if (imageUrl.match(/\.(jpeg|png|jpg)$/i)) {
-            await zk.sendMessage(dest, { image: { url: imageUrl }, caption: infoMsg + menuMsg }, { quoted: ms });
+            await zk.sendMessage(dest, { 
+            image: { url: imageUrl }, 
+            caption: infoMsg + menuMsg, 
+               contextInfo: {
+                externalAdReply: {
+                    title: "𝗡𝗝𝗔𝗕𝗨𝗟𝗢 𝗝𝗕 𝗠𝗘𝗡𝗨 𝗟𝗜𝗦𝗧",
+                    body: "Tap here my friend join channel update",
+                    thumbnailUrl: "https://files.catbox.moe/60hwdx.jpeg",
+                    sourceUrl: "https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T",
+                    mediaType: 1,
+                    renderLargerThumbnail: true
+                 },
+                },
+            }, { quoted: ms });
+        } else {
         } else {
             repondre(infoMsg + menuMsg);
         }
