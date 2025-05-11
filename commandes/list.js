@@ -139,6 +139,7 @@ fana({
              },
             },
         }, { quoted: ms });
+      }
     } catch (e) {
         console.log("🥵🥵 Error sending audio: " + e);
         repondre("🥵🥵 Error sending audio: " + e);
