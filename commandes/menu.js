@@ -26,6 +26,8 @@ fana({ nomCom: "pl", categorie: "General" }, async (dest, zk, commandeOptions) =
 
     const time = moment().format('HH:mm:ss');
     const date = moment().format('DD/MM/YYYY');
+    const img = 'https://files.catbox.moe/jcylyv.jpg';
+    const imageUrl = 'https://files.catbox.moe/at9zzt.jpg';
 
     let infoMsg = `
 ╭━━✧𝐂𝐑𝐈𝐒𝐒  𝐕𝐌𝐃✧━━❖
@@ -59,8 +61,6 @@ fana({ nomCom: "pl", categorie: "General" }, async (dest, zk, commandeOptions) =
 
     menuMsg += `\n> @𝐌𝐀𝐃𝐄 𝐁𝐘 𝐂𝐑𝐈𝐒𝐒 𝐕𝐄𝐕𝐎`;
 
-    var imageUrl = mybotpic();
-
     try {
         if (imageUrl.match(/\.(mp4|gif)$/i)) {
             await zk.sendMessage(dest, { 
@@ -71,15 +71,13 @@ fana({ nomCom: "pl", categorie: "General" }, async (dest, zk, commandeOptions) =
                 externalAdReply: {
                     title: "𝗡𝗝𝗔𝗕𝗨𝗟𝗢 𝗝𝗕 𝗠𝗘𝗡𝗨 𝗟𝗜𝗦𝗧",
                     body: "Tap here my friend join channel update",
-                    thumbnailUrl: "https://files.catbox.moe/60hwdx.jpeg",
-                    sourceUrl: "https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T",
+                    thumbnailUrl: img,
                     mediaType: 1,
                     renderLargerThumbnail: true
                  },
                 },
             }, { quoted: ms });
         } else {
-        } else if (imageUrl.match(/\.(jpeg|png|jpg)$/i)) {
             await zk.sendMessage(dest, { 
             image: { url: imageUrl }, 
             caption: infoMsg + menuMsg, 
@@ -87,14 +85,12 @@ fana({ nomCom: "pl", categorie: "General" }, async (dest, zk, commandeOptions) =
                 externalAdReply: {
                     title: "𝗡𝗝𝗔𝗕𝗨𝗟𝗢 𝗝𝗕 𝗠𝗘𝗡𝗨 𝗟𝗜𝗦𝗧",
                     body: "Tap here my friend join channel update",
-                    thumbnailUrl: "https://files.catbox.moe/60hwdx.jpeg",
-                    sourceUrl: "https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T",
+                    thumbnailUrl: img,
                     mediaType: 1,
                     renderLargerThumbnail: true
                  },
                 },
             }, { quoted: ms });
-        } else {
         } else {
             repondre(infoMsg + menuMsg);
         }
