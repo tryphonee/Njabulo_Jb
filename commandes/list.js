@@ -104,15 +104,10 @@ fana({
                sourceUrl: 'https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T', // Add source URL if necessary
                mediaType: 1,
                renderLargerThumbnail: true 
-                  },
-                },
-            }, { quoted: ms });
-        }
-    } catch (e) {
-        console.log("🥵🥵 Error sending menu: " + e);
-        repondre("🥵🥵 Error sending menu: " + e);
-    }
-
+              }
+            }
+        });
+        
     // List of audio URLs
     const audioUrls = [
         "https://files.catbox.moe/wsyxi0.mp3",
@@ -136,12 +131,14 @@ fana({
              newsletterJid: '120363345407274799@newsletter',
               newsletterName: "╭••➤®Njabulo Jb",
               serverMessageId: 143,
-             },
-            },
-        }, { quoted: ms });
-      }
+             }
+            }
+        });
+
     } catch (e) {
-        console.log("🥵🥵 Error sending audio: " + e);
-        repondre("🥵🥵 Error sending audio: " + e);
+        console.log("Error fetching data:", error);
+        repondre("❌ Error fetching repository data. Please try again later.");
     }
 });
+
+      
