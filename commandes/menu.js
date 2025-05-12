@@ -72,9 +72,9 @@ fana({ nomCom: "pl", categorie: "General" }, async (dest, zk, commandeOptions) =
                     externalAdReply: {
                         title: "ᴄᴀsᴇʏʀʜᴏᴅᴇs ᴛᴇᴄʜ",
                         body: "Tap here to Join our official channel!",
-                        mediaType: 1,
                         thumbnailUrl: conf.GURL,
                         sourceUrl: "https://whatsapp.com/channel/0029VakUEfb4o7qVdkwPk83E",
+                        mediaType: 1,             
                         showAdAttribution: true,
                         [renderType]: true, // Apply correct thumbnail size
                     },
@@ -89,9 +89,9 @@ fana({ nomCom: "pl", categorie: "General" }, async (dest, zk, commandeOptions) =
                     externalAdReply: {
                         title: "ᴄᴀsᴇʏʀʜᴏᴅᴇs ᴛᴇᴄʜ",
                         body: "Tap here to Join our official channel!",
-                        mediaType: 1,
                         thumbnailUrl: conf.GURL,
                         sourceUrl: "https://whatsapp.com/channel/0029VakUEfb4o7qVdkwPk83E",
+                        mediaType: 1,
                         showAdAttribution: true,
                         [renderType]: true, // Apply correct thumbnail size
                     },
