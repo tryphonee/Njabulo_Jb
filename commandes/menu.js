@@ -62,7 +62,6 @@ fana({ nomCom: "pl", categorie: "General" }, async (dest, zk, commandeOptions) =
     menuMsg += `\n> @𝐌𝐀𝐃𝐄 𝐁𝐘 𝐂𝐑𝐈𝐒𝐒 𝐕𝐄𝐕𝐎`;
 
   try {
-        if (mediaUrl.match(/\.(mp4|gif)$/i)) {
             await zk.sendMessage(dest, {
                 video: { url: mediaUrl },
                 caption: infoMsg + menuMsg,
