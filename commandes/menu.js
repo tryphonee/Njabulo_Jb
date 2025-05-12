@@ -58,7 +58,7 @@ fana({ nomCom: "pl", categorie: "General" }, async (dest, zk, commandeOptions) =
     try {
         if (mediaUrl.match(/\.(mp4|gif)$/i)) {
             await zk.sendMessage(dest, {
-                caption: infoMsg + menuMsg,
+                caption: infoMsg,
                 footer: "*CASEYRHODES-XMD*, developed by CASEYRHODES",
                 gifPlayback: true,
                 contextInfo: {
