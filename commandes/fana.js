@@ -1,6 +1,6 @@
 const util = require('util');
 const fs = require('fs-extra');
-const { fana } = require(__dirname + "/../njabulo/zokou");
+const { fana } = require(__dirname + "/../njabulo/fana");
 const { format } = require(__dirname + "/../fana/mesfonctions");
 const os = require("os");
 const conf = require(__dirname + "/../set");
@@ -11,7 +11,7 @@ const readmore = more.repeat(4001)
 
 fana({ nomCom: "nu", categorie: "General" }, async (dest, zk, commandeOptions) => {
     let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
-    let { cm } = require(__dirname + "/../framework//fana");
+    let { cm } = require(__dirname + "/../njabulo//fana");
     var coms = {};
     var mode = "public";
     
