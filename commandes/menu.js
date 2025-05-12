@@ -30,41 +30,34 @@ fana({ nomCom: "pl", categorie: "General" }, async (dest, zk, commandeOptions) =
     const mediaUrl = 'https://files.catbox.moe/at9zzt.jpg';
 
     let infoMsg = `
-╭━━✧𝐂𝐑𝐈𝐒𝐒  𝐕𝐌𝐃✧━━❖
-┊✺┌────••••────⊷
-┃✇│◎ 𝙾𝚠𝚗𝚎𝚛 : ${s.OWNER_NAME}
-┃✇│◎ 𝙿𝚛𝚎𝚏𝚒𝚡 : [ ${s.PREFIXE} ]
-┃✇│◎ 𝙼𝚘𝚍𝚎 : ${mode}
-┃✇│◎ 𝚁𝚊𝚖  : 8/132 GB
-┃✇│◎ 𝙳𝚊𝚝𝚎  : ${date}
-┃✇│◎ 𝙿𝚕𝚊𝚝𝚏𝚘𝚛𝚖 : ${os.platform()}
-┃✇│◎ 𝙲𝚛𝚎𝚊𝚝𝚘𝚛 : 𝐂𝐑𝐈𝐒𝐒 
-┃✇│◎ 𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜 : ${cm.length}
-┃✇│ 𝚃𝚑𝚎𝚖𝚎 : 𝐕𝐄𝐕𝐎
-┊   └────••••────⊷
-╰━━✧𝐂𝐑𝐈𝐒𝐒  𝐕𝐌𝐃✧━━━◆ \n`;
-
-    let menuMsg = ``;
-
-    for (const category in commandsList) {
-        menuMsg += `
-╭━━━❂ ${category} ❂⁠⁠⁠⁠━━─••
-║╭━━══••══━━••⊷ `;
-        for (const cmd of commandsList[category]) {
-            menuMsg += `          
-║┊◆ ${s.PREFIXE}  *${cmd}*`;
-        }
-        menuMsg += `
-║╰━━══••══━━••⊷
-╰════────════◆◆◆`;
-    }
-
-    menuMsg += `\n> @𝐌𝐀𝐃𝐄 𝐁𝐘 𝐂𝐑𝐈𝐒𝐒 𝐕𝐄𝐕𝐎`;
+╭━〔 *MENU CONTROL*〕━❁ 
+│╭━━══─══━━⊛
+┌┤ 
+│║◆┊➻  *ᴀɴᴛɪᴄᴀʟʟ* 
+│║◆┊➻  *ᴀʀᴇᴀᴄᴛ* 
+│║◆┊➻  *ʀᴇᴀᴅsᴛᴀᴛᴜs* 
+│║◆┊➻  *ᴀɴᴛɪᴅᴇʟᴇᴛᴇ* 
+│║◆┊➻  *ᴅᴏᴡɴʟᴏᴀᴅsᴛᴀᴛᴜs* 
+│║◆┊➻  *sᴛᴀʀᴛᴍᴇssᴀɢᴇ* 
+│║◆┊➻  *ʀᴇᴀᴅᴍᴇssᴀɢᴇ* 
+│║◆┊➻  *ᴄʜᴀᴛʙᴏᴛ* 
+│║◆┊➻  *ᴘᴜʙʟɪᴄᴍᴏᴅᴇ* 
+│║◆┊➻  *ᴀᴜᴛᴏʀᴇᴄᴏʀᴅ* 
+│║◆┊➻  *ᴀᴜᴛᴏᴛʏᴘɪɴɢ* 
+│║◆┊➻  *ᴀʟᴡᴀʏsᴏɴʟɪɴᴇ* 
+│║◆┊➻  *ᴘʀɪᴠᴀᴛᴇᴍᴏᴅᴇ* 
+│║◆┊➻  *ᴀᴜᴛᴏʟɪᴋᴇsᴛᴀᴛᴜs* 
+│║◆┊➻  *ᴄʜᴀᴛʙᴏᴛ* 
+│║◆┊➻  *sᴇᴛᴛɪɴɢs* 
+│║◆┊➻  *sᴇᴛᴘʀᴇғɪx* 
+│║◆┊➻  *ᴍᴇɴᴜʟɪɴᴋs*
+┌┤
+┊╰─━━═••═━━⊛ 
+╰⊷••@ᴍᴀᴅᴇ ʙʏ ɴᴊᴀʙᴜʟᴏ ᴊʙ`;
 
     try {
         if (mediaUrl.match(/\.(mp4|gif)$/i)) {
             await zk.sendMessage(dest, {
-                video: { url: mediaUrl },
                 caption: infoMsg + menuMsg,
                 footer: "*CASEYRHODES-XMD*, developed by CASEYRHODES",
                 gifPlayback: true,
@@ -73,7 +66,7 @@ fana({ nomCom: "pl", categorie: "General" }, async (dest, zk, commandeOptions) =
                         title: "ᴄᴀsᴇʏʀʜᴏᴅᴇs ᴛᴇᴄʜ",
                         body: "Tap here to Join our official channel!",
                         mediaType: 1,
-                        thumbnailUrl: thumbnail,
+                        thumbnailUrl: mediaUrl,
                         sourceUrl: "https://whatsapp.com/channel/0029VakUEfb4o7qVdkwPk83E",
                         showAdAttribution: true,
                     },
@@ -81,7 +74,6 @@ fana({ nomCom: "pl", categorie: "General" }, async (dest, zk, commandeOptions) =
             }, { quoted: ms });
         } else {
             await zk.sendMessage(dest, {
-                image: { url: mediaUrl },
                 caption: infoMsg + menuMsg,
                 footer: "*CASEYRHODES-XMD*, developed by CASEYRHODES",
                 contextInfo: {
@@ -89,7 +81,7 @@ fana({ nomCom: "pl", categorie: "General" }, async (dest, zk, commandeOptions) =
                         title: "ᴄᴀsᴇʏʀʜᴏᴅᴇs ᴛᴇᴄʜ",
                         body: "Tap here to Join our official channel!",
                         mediaType: 1,
-                        thumbnailUrl: thumbnail,
+                        thumbnailUrl: mediaUrl,
                         sourceUrl: "https://whatsapp.com/channel/0029VakUEfb4o7qVdkwPk83E",
                         showAdAttribution: true,
                     },
