@@ -32,7 +32,7 @@ fana({ nomCom: "menu4", categorie: "General" }, async (dest, zk, commandeOptions
         greeting = "Good Night 🌌";
     }
 
-    let infoMsg = `*╭━━〔 ɴנαʙυʟσ ᴊв 〕━━❁*
+    let infoMsg = `*╭━━━〔 *Njabulo_Jb 〕━━━❁𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭*
 *│╭━━══─══━━⊛*
 *┌┤*          
 *│║❖┊➻ʙᴏᴛ ɴᴀᴍᴇ :  ɴᴊᴀʙᴜʟᴏ ᴊʙ*
@@ -85,7 +85,7 @@ fana({ nomCom: "menu4", categorie: "General" }, async (dest, zk, commandeOptions
             await zk.sendMessage(dest, {
                 video: { url: mediaUrl },
                 caption: infoMsg,
-                footer: "*CASEYRHODES-XMD*, developed by CASEYRHODES",
+                footer: "*Njabulo Jb*, developed by Njabulo",
                 gifPlayback: true,
                 contextInfo: {
                 isForwarded: true,
@@ -110,7 +110,7 @@ fana({ nomCom: "menu4", categorie: "General" }, async (dest, zk, commandeOptions
             await zk.sendMessage(dest, {
                 image: { url: mediaUrl },
                 caption: infoMsg,
-                footer: "*CASEYRHODES-XMD*, developed by CASEYRHODES",
+                footer: "*Njabulo_Jb*, developed by Njabulo",
                 contextInfo: {
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
