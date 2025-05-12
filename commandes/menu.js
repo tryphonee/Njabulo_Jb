@@ -53,12 +53,14 @@ fana({ nomCom: "pl", categorie: "General" }, async (dest, zk, commandeOptions) =
 │║◆┊➻  *ᴍᴇɴᴜʟɪɴᴋs*
 ┌┤
 ┊╰─━━═••═━━⊛ 
-╰⊷••@ᴍᴀᴅᴇ ʙʏ ɴᴊᴀʙᴜʟᴏ ᴊʙ`;
-
+╰⊷••@ᴍᴀᴅᴇ ʙʏ ɴᴊᴀʙᴜʟᴏ ᴊ`;
+    menuMsg += `
+> @ᴍᴀᴅᴇ ʙʏ ɴᴊᴀʙᴜʟᴏ ᴊʙ 2025\n`;
+        
     try {
         if (mediaUrl.match(/\.(mp4|gif)$/i)) {
             await zk.sendMessage(dest, {
-                caption: infoMsg,
+                caption: infoMsg + menuMsg,
                 footer: "*CASEYRHODES-XMD*, developed by CASEYRHODES",
                 gifPlayback: true,
                 contextInfo: {
@@ -74,7 +76,7 @@ fana({ nomCom: "pl", categorie: "General" }, async (dest, zk, commandeOptions) =
             }, { quoted: ms });
         } else {
             await zk.sendMessage(dest, {
-                caption: infoMsg,
+                caption: infoMsg + menuMsg,
                 footer: "*CASEYRHODES-XMD*, developed by CASEYRHODES",
                 contextInfo: {
                     externalAdReply: {
