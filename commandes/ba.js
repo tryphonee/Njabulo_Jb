@@ -23,11 +23,11 @@ fana({ nomCom: "menu4", categorie: "General" }, async (dest, zk, commandeOptions
 
     // Generate greeting based on time of day
     const hour = moment().hour();
-    let greeting = "🌅Good Morning my brother 🌄";
+    let greeting = "Good Morning";
     if (hour >= 12 && hour < 18) {
-        greeting = "🌄Good afternnon!🌿";
+        greeting = "Good afternnon!";
     } else if (hour >= 18) {
-        greeting = "🌇Good Everning! 🌙";
+        greeting = "Good Everning!";
     } else if (hour >= 22 || hour < 5) {
         greeting = "Good Night 🌌";
     }
@@ -38,13 +38,13 @@ fana({ nomCom: "menu4", categorie: "General" }, async (dest, zk, commandeOptions
 *│║*
 *┌┤*          
 *│║❖┊➻ʙᴏᴛ ɴᴀᴍᴇ :  ɴᴊᴀʙᴜʟᴏ ᴊʙ*
-*│║❖┊➻ᴘʀᴇғɪx :* [ ${s.PREFIXE} ]
-*│║❖┊➻ᴍᴏᴅᴇ :* ${mode}
-ᴅᴀᴛᴇ  :* ${date}
-*│║❖┊➻ᴘʟᴀᴛғᴏʀᴍ :* ${os.platform()}
+*│║❖┊➻ᴘʀᴇғɪx : [ ${s.PREFIXE} ]*
+*│║❖┊➻ᴍᴏᴅᴇ : ${mode}*
+*│║❖┊➻ᴅᴀᴛᴇ  : ${date}*
+*│║❖┊➻ᴘʟᴀᴛғᴏʀᴍ : ${os.platform()}*
 *│║❖┊➻ᴏᴡɴᴇʀ ɪs : ɴᴊᴀʙᴜʟᴏ ᴊʙ*
-*│║❖┊➻ᴘʟᴜɢɪɴs ᴄᴍᴅ :* ${cm.length}       
-*│║❖┊➻ ${greeting}         
+*│║❖┊➻ᴘʟᴜɢɪɴs ᴄᴍᴅ : ${cm.length}*      
+*│║❖┊➻ ${greeting}*        
 *│║❖┊➻𝗠𝗘𝗡𝗨-𝗔𝗜*
 *│║❖┊➻𝗠𝗘𝗡𝗨-𝗚𝗘𝗡𝗘𝗥𝗔𝗟*
 *│║❖┊➻𝗠𝗘𝗡𝗨-𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗*
