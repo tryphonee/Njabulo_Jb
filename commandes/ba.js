@@ -162,7 +162,6 @@ fana({ nomCom: "menu4", categorie: "General" }, async (dest, zk, commandeOptions
            },
          },
        }, { quoted: ms });
-     } else {
     } catch (e) {
         console.log("🥵🥵 Error sending audio: " + e);
         repondre("🥵🥵 Error sending audio: " + e);
