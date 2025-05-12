@@ -6,7 +6,7 @@ const os = require("os");
 const moment = require("moment-timezone");
 const s = require(__dirname + "/../set");
 
-fana({ nomCom: "menu4", categorie: "General" }, async (dest, zk, commandeOptions) => {
+fana({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions) => {
     let { ms, repondre, prefixe, nomAuteurMessage, mybotpic } = commandeOptions;
     let { cm } = require(__dirname + "/../njabulo//fana");
     var coms = {};
@@ -32,8 +32,8 @@ fana({ nomCom: "menu4", categorie: "General" }, async (dest, zk, commandeOptions
         greeting = "Good Night 🌌";
     }
 
-    let infoMsg = `*╭━━═━〔 Njabulo_Jb 〕━━═━❁* 𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭
-*│╭━━══─══━━⊛*
+    let infoMsg = `*╭⊷•━━═━〔 Njabulo_Jb 〕━━═━❁ 𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭*
+*┊╭⊷•━━══─══━━⊛*
 *┌┤*          
 *│║❖┊➻ʙᴏᴛ ɴᴀᴍᴇ :  ɴᴊᴀʙᴜʟᴏ ᴊʙ*
 *│║❖┊➻ᴘʀᴇғɪx : [ ${s.PREFIXE} ]*
