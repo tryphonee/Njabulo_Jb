@@ -27,7 +27,7 @@ fana({ nomCom: "pl", categorie: "General" }, async (dest, zk, commandeOptions) =
     const time = moment().format('HH:mm:ss');
     const date = moment().format('DD/MM/YYYY');
     const img = 'https://files.catbox.moe/jcylyv.jpg';
-    const imageUrl = 'https://files.catbox.moe/at9zzt.jpg';
+    const mediaUrl = 'https://files.catbox.moe/at9zzt.jpg';
 
     let infoMsg = `
 ╭━━✧𝐂𝐑𝐈𝐒𝐒  𝐕𝐌𝐃✧━━❖
@@ -62,24 +62,42 @@ fana({ nomCom: "pl", categorie: "General" }, async (dest, zk, commandeOptions) =
     menuMsg += `\n> @𝐌𝐀𝐃𝐄 𝐁𝐘 𝐂𝐑𝐈𝐒𝐒 𝐕𝐄𝐕𝐎`;
 
       try {
+        if (mediaUrl.match(/\.(mp4|gif)$/i)) {
             await zk.sendMessage(dest, {
-                video: { url: imageUrl },
-                caption: infoMsg + menuMsg,
-                footer: "*CASEYRHODES-XMD*, developed by CASEYRHODES",
+                video: { url: mediaUrl },
+                caption: infoMsg,
+                footer: "ᴍᴀᴅᴇ ʙʏ ɴᴊᴀʙᴜʟᴏ ᴊʙ",
                 gifPlayback: true,
                 contextInfo: {
                     externalAdReply: {
-                        title: "ᴄᴀsᴇʏʀʜᴏᴅᴇs ᴛᴇᴄʜ",
-                        body: "Tap here to Join our official channel!",
-                        thumbnailUrl: conf.GURL,
+                        title: "ɴᴊᴀʙᴜʟᴏ ᴊʙ",
+                        body: "𝚊𝚕𝚠𝚊𝚢𝚜•••𝚘𝚗𝚕𝚒𝚗𝚎!",
                         mediaType: 1,
-                        sourceUrl: "https://whatsapp.com/channel/0029VakUEfb4o7qVdkwPk83E",             
+                        thumbnailUrl: "https://files.catbox.moe/60hwdx.jpeg"
+                        sourceUrl: "https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T",
                         showAdAttribution: true,
                         [renderType]: true, // Apply correct thumbnail size
                     },
                 },
             }, { quoted: ms });
         } else {
+            await zk.sendMessage(dest, {
+                image: { url: mediaUrl },
+                caption: infoMsg,
+                footer: "ᴍᴀᴅᴇ ʙʏ ɴᴊᴀʙᴜʟᴏ ᴊʙ",
+                contextInfo: {
+                    externalAdReply: {
+                        title: "ɴᴊᴀʙᴜʟᴏ ᴊʙ",
+                        body: "𝚊𝚕𝚠𝚊𝚢𝚜•••𝚘𝚗𝚕𝚒𝚗𝚎!",
+                        mediaType: 1,
+                        thumbnailUrl: thumbnail,
+                        sourceUrl: "https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T",
+                        showAdAttribution: true,
+                        [renderType]: true, // Apply correct thumbnail size
+                    },
+                },
+            }, { quoted: ms });
+        }
     } catch (e) {
         console.log("🥵🥵 Error sending menu: " + e);
         repondre("🥵🥵 Error sending menu: " + e);
