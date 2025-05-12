@@ -64,7 +64,7 @@ fana({
     
     await zk.sendMessage(dest, {
       image: {url:video.thumbnail},
-      caption: `╭─═════════════⪼ \n┃❍litle: ${video.title}\n┃❍ *Quality:* HD\n┃❍⬇️downloading audio Thist\n╰═════════════๏`,
+      caption: `*╭═══════════════⪼* \n*┃❍litle:* ${video.title}\n┃❍ *Quality:* HD\n*┃❍YouTube :* wait downloading audio\n*╰═══════════════๏*`,
       contextInfo: getContextInfo("vw golf music", userJid, video.thumbnail)
     }, { quoted: ms });
 
