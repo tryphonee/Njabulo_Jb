@@ -32,16 +32,13 @@ fana({ nomCom: "menu4", categorie: "General" }, async (dest, zk, commandeOptions
         greeting = "Good Night 🌌";
     }
 
-    let infoMsg = `
-*╭━━〔 ɴנαʙυʟσ ᴊв 〕━━❁*
+    let infoMsg = `*╭━━〔 ɴנαʙυʟσ ᴊв 〕━━❁*
 *│╭━━══─══━━⊛*
-*│║*
 *┌┤*          
 *│║❖┊➻ʙᴏᴛ ɴᴀᴍᴇ :  ɴᴊᴀʙᴜʟᴏ ᴊʙ*
 *│║❖┊➻ᴘʀᴇғɪx : [ ${s.PREFIXE} ]*
 *│║❖┊➻ᴍᴏᴅᴇ : ${mode}*
-*│║❖┊➻ᴅᴀᴛᴇ  : ${date}*   
-*│║❖┊➻ ${greeting}*        
+*│║❖┊➻ᴅᴀᴛᴇ  : ${date}*          
 *│║❖┊➻𝗠𝗘𝗡𝗨-𝗔𝗜*
 *│║❖┊➻𝗠𝗘𝗡𝗨-𝗚𝗘𝗡𝗘𝗥𝗔𝗟*
 *│║❖┊➻𝗠𝗘𝗡𝗨-𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗*
