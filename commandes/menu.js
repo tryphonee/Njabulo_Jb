@@ -61,61 +61,68 @@ fana({ nomCom: "pl", categorie: "General" }, async (dest, zk, commandeOptions) =
 
     menuMsg += `\n> @𝐌𝐀𝐃𝐄 𝐁𝐘 𝐂𝐑𝐈𝐒𝐒 𝐕𝐄𝐕𝐎`;
 
-    try {
-        if (imageUrl.match(/\.(mp4|gif)$/i)) {
-            await zk.sendMessage(dest, { 
-                video: { url: imageUrl }, 
-                caption: infoMsg + menuMsg, 
-                gifPlayback: true, 
-               contextInfo: {
-                externalAdReply: {
-                    title: "𝗡𝗝𝗔𝗕𝗨𝗟𝗢 𝗝𝗕 𝗠𝗘𝗡𝗨 𝗟𝗜𝗦𝗧",
-                    body: "Tap here my friend join channel update",
-                    thumbnailUrl: img,
-                    mediaType: 1,
-                    renderLargerThumbnail: true
-                 },
+  try {
+        if (mediaUrl.match(/\.(mp4|gif)$/i)) {
+            await zk.sendMessage(dest, {
+                video: { url: mediaUrl },
+                caption: infoMsg + menuMsg,
+                footer: "*CASEYRHODES-XMD*, developed by CASEYRHODES",
+                gifPlayback: true,
+                contextInfo: {
+                    externalAdReply: {
+                        title: "ᴄᴀsᴇʏʀʜᴏᴅᴇs ᴛᴇᴄʜ",
+                        body: "Tap here to Join our official channel!",
+                        mediaType: 1,
+                        thumbnailUrl: conf.GURL,
+                        sourceUrl: "https://whatsapp.com/channel/0029VakUEfb4o7qVdkwPk83E",
+                        showAdAttribution: true,
+                        [renderType]: true, // Apply correct thumbnail size
+                    },
                 },
             }, { quoted: ms });
         } else {
-            await zk.sendMessage(dest, { 
-            image: { url: imageUrl }, 
-            caption: infoMsg + menuMsg, 
-               contextInfo: {
-                externalAdReply: {
-                    title: "𝗡𝗝𝗔𝗕𝗨𝗟𝗢 𝗝𝗕 𝗠𝗘𝗡𝗨 𝗟𝗜𝗦𝗧",
-                    body: "Tap here my friend join channel update",
-                    thumbnailUrl: img,
-                    mediaType: 1,
-                    renderLargerThumbnail: true
-                 },
+            await zk.sendMessage(dest, {
+                image: { url: mediaUrl },
+                caption: infoMsg + menuMsg,
+                footer: "*CASEYRHODES-XMD*, developed by CASEYRHODES",
+                contextInfo: {
+                    externalAdReply: {
+                        title: "ᴄᴀsᴇʏʀʜᴏᴅᴇs ᴛᴇᴄʜ",
+                        body: "Tap here to Join our official channel!",
+                        mediaType: 1,
+                        thumbnailUrl: conf.GURL,
+                        sourceUrl: "https://whatsapp.com/channel/0029VakUEfb4o7qVdkwPk83E",
+                        showAdAttribution: true,
+                        [renderType]: true, // Apply correct thumbnail size
+                    },
                 },
             }, { quoted: ms });
-        } else {
-            repondre(infoMsg + menuMsg);
         }
-
-        // Download and send audio
-        const audioUrl = "https://files.catbox.moe/xci982.mp3";
-        const audioPath = "./temp_audio.mp3";
-
-        const response = await axios({
-            url: audioUrl,
-            method: "GET",
-            responseType: "stream",
-        });
-
-        const writer = fs.createWriteStream(audioPath);
-        response.data.pipe(writer);
-
-        writer.on("finish", async () => {
-            await zk.sendMessage(dest, { audio: { url: audioPath }, mimetype: "audio/mp4", ptt: true }, { quoted: ms });
-            fs.unlinkSync(audioPath); // Delete the audio file after sending
-        });
-
     } catch (e) {
-        console.log("🥵🥵 Menu error: " + e);
-        repondre("🥵🥵 Menu error: " + e);
+        console.log("🥵🥵 Error sending menu: " + e);
+        repondre("🥵🥵 Error sending menu: " + e);
+    }
+
+    // List of audio URLs
+    const audioUrls = [
+        "https://files.catbox.moe/wsyxi0.mp3",
+        "https://files.catbox.moe/w2k8g2.mp3",
+        "https://files.catbox.moe/cpjbnl.mp3",
+        "https://files.catbox.moe/y6fph9.mp3",
+        "https://files.catbox.moe/moctzu.mp3" // New song added
+    ];
+
+    // Select a random audio file
+    const randomAudioUrl = audioUrls[Math.floor(Math.random() * audioUrls.length)];
+
+    try {
+        await zk.sendMessage(dest, {
+            audio: { url: randomAudioUrl },
+            mimetype: 'audio/mpeg',
+            ptt: true, // Send as a voice note
+        }, { quoted: ms });
+    } catch (e) {
+        console.log("🥵🥵 Error sending audio: " + e);
+        repondre("🥵🥵 Error sending audio: " + e);
     }
 });
-         
