@@ -61,7 +61,6 @@ fana({
 
     const query = arg.join(" ");
     const video = await searchYouTube(query);
-    const videoThumbnail = firstVideo.thumbnail;
     
     await zk.sendMessage(dest, {
       image: {url:video.thumbnail},
@@ -78,8 +77,7 @@ fana({
 
     const downloadData = await downloadFromApis(apis);
     const { download_url, title } = downloadData.result;
-    const videoThumbnail = firstVideo.thumbnail;
-
+    
     const messagePayloads = [
       {
         audio: { url: download_url },
