@@ -94,6 +94,13 @@ fana({ nomCom: "menu4", categorie: "General" }, async (dest, zk, commandeOptions
                 footer: "*CASEYRHODES-XMD*, developed by CASEYRHODES",
                 gifPlayback: true,
                 contextInfo: {
+                isForwarded: true,
+                forwardedNewsletterMessageInfo: {
+                newsletterJid: '120363345407274799@newsletter',
+                newsletterName: "NJABULO JB",
+               serverMessageId: 143,
+               },
+               forwardingScore: 999, // Score to indicate it has been forwarded
                     externalAdReply: {
                         title: "ᴄᴀsᴇʏʀʜᴏᴅᴇs ᴛᴇᴄʜ",
                         body: "Tap here to Join our official channel!",
@@ -111,6 +118,13 @@ fana({ nomCom: "menu4", categorie: "General" }, async (dest, zk, commandeOptions
                 caption: infoMsg,
                 footer: "*CASEYRHODES-XMD*, developed by CASEYRHODES",
                 contextInfo: {
+                isForwarded: true,
+                forwardedNewsletterMessageInfo: {
+                 newsletterJid: '120363345407274799@newsletter',
+                 newsletterName: "NJABULO JB",
+                serverMessageId: 143,
+                },
+                 forwardingScore: 999, // Score to indicate it has been forwarded
                     externalAdReply: {
                         title: "ᴄᴀsᴇʏʀʜᴏᴅᴇs ᴛᴇᴄʜ",
                         body: "Tap here to Join our official channel!",
