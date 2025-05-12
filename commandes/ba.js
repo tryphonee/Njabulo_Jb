@@ -40,10 +40,7 @@ fana({ nomCom: "menu4", categorie: "General" }, async (dest, zk, commandeOptions
 *│║❖┊➻ʙᴏᴛ ɴᴀᴍᴇ :  ɴᴊᴀʙᴜʟᴏ ᴊʙ*
 *│║❖┊➻ᴘʀᴇғɪx : [ ${s.PREFIXE} ]*
 *│║❖┊➻ᴍᴏᴅᴇ : ${mode}*
-*│║❖┊➻ᴅᴀᴛᴇ  : ${date}*
-*│║❖┊➻ᴘʟᴀᴛғᴏʀᴍ : ${os.platform()}*
-*│║❖┊➻ᴏᴡɴᴇʀ ɪs : ɴᴊᴀʙᴜʟᴏ ᴊʙ*
-*│║❖┊➻ᴘʟᴜɢɪɴs ᴄᴍᴅ : ${cm.length}*      
+*│║❖┊➻ᴅᴀᴛᴇ  : ${date}*   
 *│║❖┊➻ ${greeting}*        
 *│║❖┊➻𝗠𝗘𝗡𝗨-𝗔𝗜*
 *│║❖┊➻𝗠𝗘𝗡𝗨-𝗚𝗘𝗡𝗘𝗥𝗔𝗟*
@@ -97,7 +94,7 @@ fana({ nomCom: "menu4", categorie: "General" }, async (dest, zk, commandeOptions
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                 newsletterJid: '120363345407274799@newsletter',
-                newsletterName: "NJABULO JB",
+                newsletterName: "╭••➤®Njabulo Jb",
                serverMessageId: 143,
                },
                forwardingScore: 999, // Score to indicate it has been forwarded
@@ -121,7 +118,7 @@ fana({ nomCom: "menu4", categorie: "General" }, async (dest, zk, commandeOptions
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                  newsletterJid: '120363345407274799@newsletter',
-                 newsletterName: "NJABULO JB",
+                 newsletterName: "╭••➤®Njabulo Jb",
                 serverMessageId: 143,
                 },
                  forwardingScore: 999, // Score to indicate it has been forwarded
