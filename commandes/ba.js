@@ -159,7 +159,10 @@ fana({ nomCom: "menu4", categorie: "General" }, async (dest, zk, commandeOptions
              newsletterJid: '120363345407274799@newsletter',
              newsletterName: "╭••➤®Njabulo Jb",
              serverMessageId: 143,
-        }, { quoted: ms });
+           },
+         },
+       }, { quoted: ms });
+     }
     } catch (e) {
         console.log("🥵🥵 Error sending audio: " + e);
         repondre("🥵🥵 Error sending audio: " + e);
