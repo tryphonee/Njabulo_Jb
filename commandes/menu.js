@@ -65,7 +65,7 @@ fana({ nomCom: "pl", categorie: "General" }, async (dest, zk, commandeOptions) =
         if (mediaUrl.match(/\.(mp4|gif)$/i)) {
             await zk.sendMessage(dest, {
                 video: { url: mediaUrl },
-                caption: infoMsg,
+                caption: infoMsg + menuMsg,
                 footer: "ᴍᴀᴅᴇ ʙʏ ɴᴊᴀʙᴜʟᴏ ᴊʙ",
                 gifPlayback: true,
                 contextInfo: {
@@ -83,7 +83,7 @@ fana({ nomCom: "pl", categorie: "General" }, async (dest, zk, commandeOptions) =
         } else {
             await zk.sendMessage(dest, {
                 image: { url: mediaUrl },
-                caption: infoMsg,
+                caption: infoMsg + menuMsg,
                 footer: "ᴍᴀᴅᴇ ʙʏ ɴᴊᴀʙᴜʟᴏ ᴊʙ",
                 contextInfo: {
                     externalAdReply: {
