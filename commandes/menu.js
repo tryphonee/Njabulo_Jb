@@ -61,9 +61,9 @@ fana({ nomCom: "pl", categorie: "General" }, async (dest, zk, commandeOptions) =
 
     menuMsg += `\n> @𝐌𝐀𝐃𝐄 𝐁𝐘 𝐂𝐑𝐈𝐒𝐒 𝐕𝐄𝐕𝐎`;
 
-  try {
+      try {
             await zk.sendMessage(dest, {
-                video: { url: mediaUrl },
+                video: { url: imageUrl },
                 caption: infoMsg + menuMsg,
                 footer: "*CASEYRHODES-XMD*, developed by CASEYRHODES",
                 gifPlayback: true,
@@ -72,31 +72,14 @@ fana({ nomCom: "pl", categorie: "General" }, async (dest, zk, commandeOptions) =
                         title: "ᴄᴀsᴇʏʀʜᴏᴅᴇs ᴛᴇᴄʜ",
                         body: "Tap here to Join our official channel!",
                         thumbnailUrl: conf.GURL,
-                        sourceUrl: "https://whatsapp.com/channel/0029VakUEfb4o7qVdkwPk83E",
-                        mediaType: 1,             
+                        mediaType: 1,
+                        sourceUrl: "https://whatsapp.com/channel/0029VakUEfb4o7qVdkwPk83E",             
                         showAdAttribution: true,
                         [renderType]: true, // Apply correct thumbnail size
                     },
                 },
             }, { quoted: ms });
         } else {
-            await zk.sendMessage(dest, {
-                image: { url: mediaUrl },
-                caption: infoMsg + menuMsg,
-                footer: "*CASEYRHODES-XMD*, developed by CASEYRHODES",
-                contextInfo: {
-                    externalAdReply: {
-                        title: "ᴄᴀsᴇʏʀʜᴏᴅᴇs ᴛᴇᴄʜ",
-                        body: "Tap here to Join our official channel!",
-                        thumbnailUrl: conf.GURL,
-                        sourceUrl: "https://whatsapp.com/channel/0029VakUEfb4o7qVdkwPk83E",
-                        mediaType: 1,
-                        showAdAttribution: true,
-                        [renderType]: true, // Apply correct thumbnail size
-                    },
-                },
-            }, { quoted: ms });
-        }
     } catch (e) {
         console.log("🥵🥵 Error sending menu: " + e);
         repondre("🥵🥵 Error sending menu: " + e);
