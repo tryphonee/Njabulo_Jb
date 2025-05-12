@@ -61,10 +61,11 @@ fana({
 
     const query = arg.join(" ");
     const video = await searchYouTube(query);
+    const videoThumbnail = firstVideo.thumbnail;
     
     await zk.sendMessage(dest, {
       image: {url:video.thumbnail},
-      caption: `╭─═════════════⊷\n┃❍${video.title}\n┃❍ ${Video.timestamp}\n┃❍⬇️downloading audio Thist\n╰═════════════⊷`,
+      caption: `╭─═════════════⊷\n┃❍${video.title}\n┃❍${farstVideo.timestamp}\n┃❍⬇️downloading audio Thist\n╰═════════════⊷`,
       contextInfo: getContextInfo("vw golf music", userJid, video.thumbnail)
     }, { quoted: ms });
 
@@ -77,6 +78,7 @@ fana({
 
     const downloadData = await downloadFromApis(apis);
     const { download_url, title } = downloadData.result;
+    const videoThumbnail = firstVideo.thumbnail;
 
     const messagePayloads = [
       {
@@ -102,62 +104,3 @@ fana({
   }
 });
 
-fana({
-  nomCom: "vid",
-  aliases: ["videodoc", "film", "mp4"],
-  categorie: "Download",
-  reaction: "🎬"
-}, async (dest, zk, commandOptions) => {
-  const { arg, ms, userJid } = commandOptions;
-
-  try {
-    if (!arg[0]) {
-      return repondre(zk, dest, ms, "Please provide a video name.");
-    }
-
-    const query = arg.join(" ");
-    const video = await searchYouTube(query);
-    
-    await zk.sendMessage(dest, {
-      image: {url:video.thumbnail},
-      caption: `🎵 *${video.title}*\n> *⬇️downloading audio This may take a moment*`,
-      contextInfo: getContextInfo("vw golf video", userJid, video.thumbnail)
-    }, { quoted: ms });
-
-    const apis = [
-      `https://api.davidcyriltech.my.id/download/ytmp4?url=${encodeURIComponent(video.url)}`,
-      `https://www.dark-yasiya-api.site/download/ytmp4?url=${encodeURIComponent(video.url)}`,
-      `https://api.giftedtech.web.id/api/download/dlmp4?url=${encodeURIComponent(video.url)}&apikey=gifted-md`,
-      `https://api.dreaded.site/api/ytdl/video?url=${encodeURIComponent(video.url)}`
-    ];
-
-    const downloadData = await downloadFromApis(apis);
-    const { download_url, title } = downloadData.result;
-
-    const messagePayloads = [
-      {
-        video: { url: download_url },
-        mimetype: 'video/mp4',
-        caption: `🎥 *${title}*`,
-      },
-      {
-        document: { url: download_url },
-        mimetype: 'video/mp4',
-        fileName: `${title}.mp4`.replace(/[^\w\s.-]/gi, ''),
-        caption: `📁 *${title}*\n> *Download and Subscribe YouTube*`,
-      }
-    ];
-
-    for (const payload of messagePayloads) {
-      await zk.sendMessage(dest, payload, { quoted: ms });
-    }
-
-  } catch (error) {
-    console.error('Video download error:', error);
-    repondre(zk, dest, ms, `Download failed: ${error.message}`);
-  }
-});
-
-
-
-      
