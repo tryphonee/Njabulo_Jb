@@ -42,7 +42,7 @@ fana({ nomCom: "menu-seach", categorie: "General" }, async (dest, zk, commandeOp
 // Créer une date et une heure en GMT
 const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
-const imgs = 'https://files.catbox.moe/at9zzt.jpg';
+const imgs = 'https://files.catbox.moe/ie3hml.jpg';
 
 let infoMsg =  `
 ╭⊷•═〔 *MENU-SEACH* 〕━═━❁
@@ -76,8 +76,8 @@ let menuMsg = `
               },
               forwardingScore: 999, // Score to indicate it has been forwarded
                 externalAdReply: {
-                    title: "🧃ɴᴊᴀʙᴜʟᴏ ᴊʙ",
-                    body: "🧃Command List",
+                    title: "Njabulo Jb",
+                    body: "Command List",
                     thumbnailUrl: imgs,
                     mediaType: 1,
                     mediaUrl: "",
@@ -92,8 +92,8 @@ let menuMsg = `
 
     // List of audio URLs
     const audioUrls = [
-        "https://files.catbox.moe/uz4apw.mp3",
-        "https://files.catbox.moe/cup6rc.mp3" // New song added
+        "https://files.catbox.moe/0bzr3x.mp3",
+        "https://files.catbox.moe/0bzr3x.mp3" // New song added
     ];
 
     // Select a random audio file
