@@ -6,7 +6,7 @@ const os = require("os");
 const moment = require("moment-timezone");
 const s = require(__dirname + "/../set");
 
-fana({ nomCom: "Menu-control", categorie: "General" }, async (dest, zk, commandeOptions) => {
+fana({ nomCom: "menu-control", categorie: "General" }, async (dest, zk, commandeOptions) => {
     let { ms, repondre, prefixe, nomAuteurMessage, mybotpic } = commandeOptions;
     let { cm } = require(__dirname + "/../njabulo//fana");
     var coms = {};
