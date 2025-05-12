@@ -26,7 +26,7 @@ fana({ nomCom: "pl", categorie: "General" }, async (dest, zk, commandeOptions) =
 
     const time = moment().format('HH:mm:ss');
     const date = moment().format('DD/MM/YYYY');
-    const img = 'https://files.catbox.moe/jcylyv.jpg';
+    const thumbnail = 'https://files.catbox.moe/jcylyv.jpg';
     const mediaUrl = 'https://files.catbox.moe/at9zzt.jpg';
 
     let infoMsg = `
@@ -61,20 +61,20 @@ fana({ nomCom: "pl", categorie: "General" }, async (dest, zk, commandeOptions) =
 
     menuMsg += `\n> @𝐌𝐀𝐃𝐄 𝐁𝐘 𝐂𝐑𝐈𝐒𝐒 𝐕𝐄𝐕𝐎`;
 
-      try {
+    try {
         if (mediaUrl.match(/\.(mp4|gif)$/i)) {
             await zk.sendMessage(dest, {
                 video: { url: mediaUrl },
                 caption: infoMsg + menuMsg,
-                footer: "ᴍᴀᴅᴇ ʙʏ ɴᴊᴀʙᴜʟᴏ ᴊʙ",
+                footer: "*CASEYRHODES-XMD*, developed by CASEYRHODES",
                 gifPlayback: true,
                 contextInfo: {
                     externalAdReply: {
-                        title: "ɴᴊᴀʙᴜʟᴏ ᴊʙ",
-                        body: "𝚊𝚕𝚠𝚊𝚢𝚜•••𝚘𝚗𝚕𝚒𝚗𝚎!",
+                        title: "ᴄᴀsᴇʏʀʜᴏᴅᴇs ᴛᴇᴄʜ",
+                        body: "Tap here to Join our official channel!",
                         mediaType: 1,
-                        thumbnailUrl: "https://files.catbox.moe/60hwdx.jpeg"
-                        sourceUrl: "https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T",
+                        thumbnailUrl: thumbnail,
+                        sourceUrl: "https://whatsapp.com/channel/0029VakUEfb4o7qVdkwPk83E",
                         showAdAttribution: true,
                         [renderType]: true, // Apply correct thumbnail size
                     },
@@ -84,14 +84,14 @@ fana({ nomCom: "pl", categorie: "General" }, async (dest, zk, commandeOptions) =
             await zk.sendMessage(dest, {
                 image: { url: mediaUrl },
                 caption: infoMsg + menuMsg,
-                footer: "ᴍᴀᴅᴇ ʙʏ ɴᴊᴀʙᴜʟᴏ ᴊʙ",
+                footer: "*CASEYRHODES-XMD*, developed by CASEYRHODES",
                 contextInfo: {
                     externalAdReply: {
-                        title: "ɴᴊᴀʙᴜʟᴏ ᴊʙ",
-                        body: "𝚊𝚕𝚠𝚊𝚢𝚜•••𝚘𝚗𝚕𝚒𝚗𝚎!",
+                        title: "ᴄᴀsᴇʏʀʜᴏᴅᴇs ᴛᴇᴄʜ",
+                        body: "Tap here to Join our official channel!",
                         mediaType: 1,
                         thumbnailUrl: thumbnail,
-                        sourceUrl: "https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T",
+                        sourceUrl: "https://whatsapp.com/channel/0029VakUEfb4o7qVdkwPk83E",
                         showAdAttribution: true,
                         [renderType]: true, // Apply correct thumbnail size
                     },
