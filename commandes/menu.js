@@ -76,7 +76,6 @@ fana({ nomCom: "pl", categorie: "General" }, async (dest, zk, commandeOptions) =
                         thumbnailUrl: thumbnail,
                         sourceUrl: "https://whatsapp.com/channel/0029VakUEfb4o7qVdkwPk83E",
                         showAdAttribution: true,
-                        [renderType]: true, // Apply correct thumbnail size
                     },
                 },
             }, { quoted: ms });
@@ -93,7 +92,6 @@ fana({ nomCom: "pl", categorie: "General" }, async (dest, zk, commandeOptions) =
                         thumbnailUrl: thumbnail,
                         sourceUrl: "https://whatsapp.com/channel/0029VakUEfb4o7qVdkwPk83E",
                         showAdAttribution: true,
-                        [renderType]: true, // Apply correct thumbnail size
                     },
                 },
             }, { quoted: ms });
