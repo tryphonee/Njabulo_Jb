@@ -61,15 +61,15 @@ fana({ nomCom: "menu4", categorie: "General" }, async (dest, zk, commandeOptions
 
     // Two sets of images to display randomly
     const extraImages1 = [
-        "https://i.ibb.co/n6rw805/694affc7ca5a5fb0cb58c2b4533f962d.jpg",
-        "https://i.ibb.co/n6rw805/694affc7ca5a5fb0cb58c2b4533f962d.jpg",
-        "https://i.ibb.co/n6rw805/694affc7ca5a5fb0cb58c2b4533f962d.jpg"
+        "https://files.catbox.moe/ihr36r.jpg",
+        "https://files.catbox.moe/de5as2.jpg",
+        "https://files.catbox.moe/2bpymq.jpg"
     ];
 
     const extraImages2 = [
-        "https://i.ibb.co/n6rw805/694affc7ca5a5fb0cb58c2b4533f962d.jpg",
-        "https://i.ibb.co/n6rw805/694affc7ca5a5fb0cb58c2b4533f962d.jpg",
-        "https://i.ibb.co/n6rw805/694affc7ca5a5fb0cb58c2b4533f962d.jpg"
+        "https://files.catbox.moe/ihr36r.jpg",
+        "https://files.catbox.moe/de5as2.jpg",
+        "https://files.catbox.moe/2bpymq.jpg"
     ];
 
     // Randomly select which menu to show
