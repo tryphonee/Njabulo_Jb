@@ -110,6 +110,14 @@ let menuMsg = `
             audio: { url: randomAudioUrl },
             mimetype: 'audio/mpeg',
             ptt: true, // Send as a voice note
+            contextInfo: {
+            isForwarded: true,
+             forwardedNewsletterMessageInfo: {
+              newsletterJid: '120363345407274799@newsletter',
+              newsletterName: "╭╼••➤©Njabulo Jb",
+              serverMessageId: 143,
+               },
+             },
         }, { quoted: ms });
     } catch (e) {
         console.log("🥵🥵 Error sending audio: " + e);
