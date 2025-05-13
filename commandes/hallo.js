@@ -32,8 +32,8 @@ fana({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions)
         greeting = "Good Night 🌌";
     }
 
-    let infoMsg = `*╭────〔NJABULO_JB〕──────⪼* 𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭𑲭
-*│╭━━━━━━━━⊷*
+    let infoMsg = `*╭⊷••───〔NJABULO_JB〕──────⪼*
+*┊╭━━━━━━━━⊷*
 *┌┤  •╭────────⪼*         
 *│║❖┊➠ʙᴏᴛ ɴᴀᴍᴇ :  ɴᴊᴀʙᴜʟᴏ ᴊʙ*
 *│║❖┊➠ᴘʀᴇғɪx : [ ${s.PREFIXE} ]*
