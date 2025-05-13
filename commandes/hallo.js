@@ -99,7 +99,7 @@ fana({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions)
                },
                forwardingScore: 999, // Score to indicate it has been forwarded
                     externalAdReply: {
-                        title: "Njabulo Jb menu list",
+                        title: "Njabulo Jb",
                         body: "ɴᴊᴀʙᴜʟᴏ ᴊʙ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ",
                         mediaType: 1,
                         thumbnailUrl: thumbnail,
@@ -123,7 +123,7 @@ fana({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions)
                 },
                  forwardingScore: 999, // Score to indicate it has been forwarded
                     externalAdReply: {
-                        title: "Njabulo Jb menu list",
+                        title: "Njabulo Jb",
                         body: "ɴᴊᴀʙᴜʟᴏ ᴊʙ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ",
                         mediaType: 1,
                         thumbnailUrl: thumbnail,
@@ -156,6 +156,14 @@ fana({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions)
             audio: { url: randomAudioUrl },
             mimetype: 'audio/mpeg',
             ptt: true, // Send as a voice note
+             contextInfo: {
+                isForwarded: true,
+                forwardedNewsletterMessageInfo: {
+                 newsletterJid: '120363345407274799@newsletter',
+                 newsletterName: "╭••➤®Njabulo Jb",
+                serverMessageId: 143,
+              },
+            },
         }, { quoted: ms });
     } catch (e) {
         console.log("🥵🥵 Error sending audio: " + e);
