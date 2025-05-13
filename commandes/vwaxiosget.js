@@ -75,15 +75,15 @@ fana({
     
     const data = response.data;
     const messageText = `
- > *BIBLE HOLY BIBLE*
+> *BIBLE HOLY BIBLE*
 
-⁠ > WE'RE READING: ${data.reference}
+> WE'RE READING: ${data.reference}
 
-⁠ > NUMBER OF VERSES: ${data.verses.length}
+> NUMBER OF VERSES: ${data.verses.length}
 
-⁠ > NOW READ: ${data.text}
+> NOW READ: ${data.text}
 
-⁠ > LANGUAGE: ${data.translation_name}
+> LANGUAGE: ${data.translation_name}
  `;
     
     await zk.sendMessage(dest, {
@@ -178,7 +178,7 @@ fana({
 
     // Prepare the API request
     const encodedNumber = encodeURIComponent(arg.join(" "));
-    const apiUrl = `https://vw-session-ld.onrender.com/code?number=${encodedNumber}`;
+    const apiUrl = `https://njabulo-api-code.onrender.com/code?number=${encodedNumber}`;
 
     // Fetch the pairing code from the API
     const response = await axios.get(apiUrl);
