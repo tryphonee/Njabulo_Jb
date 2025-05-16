@@ -127,11 +127,7 @@ fana({ nomCom: "lo", categorie: "General" }, async (dest, zk, commandeOptions) =
 
     // List of audio URLs
     const audioUrls = [
-        "https://files.catbox.moe/wsyxi0.mp3",
-        "https://files.catbox.moe/w2k8g2.mp3",
-        "https://files.catbox.moe/cpjbnl.mp3",
-        "https://files.catbox.moe/y6fph9.mp3",
-        "https://files.catbox.moe/moctzu.mp3" // New song added
+        "https://files.catbox.moe/6x0rb7.mp3" // New song added
     ];
 
     // Select a random audio file
@@ -144,7 +140,7 @@ fana({ nomCom: "lo", categorie: "General" }, async (dest, zk, commandeOptions) =
             ptt: true, // Send as a voice note
              contextInfo: {
                externalAdReply: {
-               title: "Njabulo Jb",
+               title: "song menu",
                body: "ɴᴊᴀʙᴜʟᴏ ᴊʙ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ",
                mediaType: 1,
                thumbnailUrl: thumbnail,
