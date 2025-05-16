@@ -74,36 +74,16 @@ ${commandList}`;
     try {
         if (mediaUrl.match(/\.(mp4|gif)$/i)) {
             await zk.sendMessage(dest, {
-                video: { url: mediaUrl },
                 caption: infoMsg,
                 footer: "*Njabulo Jb*, developed by Njabulo",
                 gifPlayback: true,
-                contextInfo: {
-                    externalAdReply: {
-                        title: "Njabulo Jb",
-                        body: "ɴᴊᴀʙᴜʟᴏ ᴊʙ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ",
-                        mediaType: 1,
-                        thumbnailUrl: thumbnail,
-                        sourceUrl: "https://github.com/NjabuloJ/Njabulo-Jb",
-                        showAdAttribution: true,
-                        [renderType]: true, // Apply correct thumbnail size
                     },
                 },
             }, { quoted: ms });
         } else {
             await zk.sendMessage(dest, {
-                image: { url: mediaUrl },
                 caption: infoMsg,
                 footer: "*Njabulo_Jb*, developed by Njabulo",
-                contextInfo: {
-                    externalAdReply: {
-                        title: "Njabulo Jb",
-                        body: "ɴᴊᴀʙᴜʟᴏ ᴊʙ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ",
-                        mediaType: 1,
-                        thumbnailUrl: thumbnail,
-                        sourceUrl: "https://github.com/NjabuloJ/Njabulo-Jb",
-                        showAdAttribution: true,
-                        [renderType]: true, // Apply correct thumbnail size
                     },
                 },
             }, { quoted: ms });
