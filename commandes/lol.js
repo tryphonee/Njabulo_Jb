@@ -58,15 +58,15 @@ fana({ nomCom: "li", categorie: "General" }, async (dest, zk, commandeOptions) =
 
     // Two sets of images to display randomly
     const extraImages1 = [
-        "https://files.catbox.moe/ihr36r.jpg",
-        "https://files.catbox.moe/de5as2.jpg",
-        "https://files.catbox.moe/2bpymq.jpg"
+        "https://files.catbox.moe/nj1w1s.jpg",
+        "https://files.catbox.moe/znvqsv.jpg",
+        "https://files.catbox.moe/nj1w1s.jpg"
     ];
 
     const extraImages2 = [
-        "https://files.catbox.moe/ihr36r.jpg",
-        "https://files.catbox.moe/de5as2.jpg",
-        "https://files.catbox.moe/2bpymq.jpg"
+        "https://files.catbox.moe/znvqsv.jpg",
+        "https://files.catbox.moe/nj1w1s.jpg",
+        "https://files.catbox.moe/znvqsv.jpg"
     ];
 
     // Randomly select which menu to show
@@ -143,11 +143,14 @@ fana({ nomCom: "li", categorie: "General" }, async (dest, zk, commandeOptions) =
             mimetype: 'audio/mpeg',
             ptt: true, // Send as a voice note
              contextInfo: {
-                isForwarded: true,
-                forwardedNewsletterMessageInfo: {
-                 newsletterJid: '120363345407274799@newsletter',
-                 newsletterName: "╭••➤®Njabulo Jb",
-                serverMessageId: 143,
+               externalAdReply: {
+               title: "Njabulo Jb",
+               body: "ɴᴊᴀʙᴜʟᴏ ᴊʙ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ",
+               mediaType: 1,
+               thumbnailUrl: thumbnail,
+               sourceUrl: "https://github.com/NjabuloJ/Njabulo-Jb",
+               showAdAttribution: true,
+              [renderType]: true, // Apply correct thumbnail size
               },
             },
         }, { quoted: ms });
