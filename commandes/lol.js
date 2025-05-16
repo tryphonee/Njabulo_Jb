@@ -23,13 +23,13 @@ fana({ nomCom: "li", categorie: "General" }, async (dest, zk, commandeOptions) =
 
     // Generate greeting based on time of day
     const hour = moment().hour();
-    let greeting = "Morning";
+    let greeting = "Good Morning";
     if (hour >= 12 && hour < 18) {
-        greeting = "afternnon!";
+        greeting = "Good afternnon!";
     } else if (hour >= 18) {
-        greeting = "Everning!";
+        greeting = "Good Everning!";
     } else if (hour >= 22 || hour < 5) {
-        greeting = "Night 🌌";
+        greeting = "Good Night 🌌";
     }
 
     let infoMsg = `╭───────────⊷
