@@ -60,6 +60,7 @@ fana({ nomCom: "ow", categorie: "General", reaction: "❣️" }, async (dest, zk
            mediaType: 1,
           renderSmallThumbnail: true // Small thumbnail rendering
         },
+       },
     },{quoted:ms});
   }
 });
