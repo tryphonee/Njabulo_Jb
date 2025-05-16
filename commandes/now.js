@@ -31,15 +31,8 @@ fana({ nomCom: "on", categorie: "General", reaction: "🚘" }, async (dest, zk, 
         {
           image : { url : mybotpic() },
           caption : msg,
-          mentions : mentionedJid,
+          mentions : `${mentionedJid}`;
            contextInfo: {
-           isForwarded: true,
-           forwardedNewsletterMessageInfo: {
-           newsletterJid: '120363345407274799@newsletter',
-           newsletterName: "NJABULO JB",
-           serverMessageId: 143,
-           },
-           forwardingScore: 999, // Score to indicate it has been forwarded
            externalAdReply: {
            title: "🦋ɴᴊᴀʙᴜʟᴏ ᴊʙ🦋",
            body: "message on",
