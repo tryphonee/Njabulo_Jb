@@ -31,21 +31,8 @@ fana({ nomCom: "ow", categorie: "General", reaction: "❣️" }, async (dest, zk
         {
           image : { url : mybotpic() },
           caption : msg,
-          mentions : mentionedJid
-        }
-      )
-  } else {
-    const vcard =
-        'BEGIN:VCARD\n' + // metadata of the contact card
-        'VERSION:3.0\n' +
-        'FN:' + conf.OWNER_NAME + '\n' + // full name
-        'ORG:undefined;\n' + // the organization of the contact
-        'TEL;type=CELL;type=VOICE;waid=' + conf.NUMERO_OWNER + ':+' + conf.NUMERO_OWNER + '\n' + // WhatsApp ID + phone number
-        'END:VCARD';
-    zk.sendMessage(dest, {
-       displayName: conf.OWNER_NAME,
-       contacts: [{ vcard }],
-       contextInfo: {
+          mentions : mentionedJid,
+            contextInfo: {
         isForwarded: true,
          forwardedNewsletterMessageInfo: {
           newsletterJid: '120363345407274799@newsletter',
@@ -59,9 +46,19 @@ fana({ nomCom: "ow", categorie: "General", reaction: "❣️" }, async (dest, zk
            thumbnailUrl: conf.URL,
            mediaType: 1,
           renderSmallThumbnail: true // Small thumbnail rendering
-         },
-        },
-       },
+        }
+      )
+  } else {
+    const vcard =
+        'BEGIN:VCARD\n' + // metadata of the contact card
+        'VERSION:3.0\n' +
+        'FN:' + conf.OWNER_NAME + '\n' + // full name
+        'ORG:undefined;\n' + // the organization of the contact
+        'TEL;type=CELL;type=VOICE;waid=' + conf.NUMERO_OWNER + ':+' + conf.NUMERO_OWNER + '\n' + // WhatsApp ID + phone number
+        'END:VCARD';
+    zk.sendMessage(dest, {
+       displayName: conf.OWNER_NAME,
+       contacts: [{ vcard }],
     },{quoted:ms});
   }
 });
