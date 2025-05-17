@@ -59,6 +59,7 @@ fana({ nomCom: "ow", categorie: "General", reaction: "❣️" }, async (dest, zk
            thumbnailUrl: conf.URL,
            mediaType: 1,
           renderSmallThumbnail: true // Small thumbnail rendering
+         },
         },
        },
     },{quoted:ms});
