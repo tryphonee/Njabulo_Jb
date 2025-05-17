@@ -32,20 +32,6 @@ fana({ nomCom: "ow", categorie: "General", reaction: "❣️" }, async (dest, zk
           image : { url : mybotpic() },
           caption : msg,
           mentions : mentionedJid,
-            contextInfo: {
-        isForwarded: true,
-         forwardedNewsletterMessageInfo: {
-          newsletterJid: '120363345407274799@newsletter',
-          newsletterName: "╭••➤®Njabulo Jb",
-          serverMessageId: 143,
-           },
-           forwardingScore: 999, // Score to indicate it has been forwarded
-           externalAdReply: {
-           title: conf.OWNER_NAME,
-           body: "📃online is alwaysonline",
-           thumbnailUrl: conf.URL,
-           mediaType: 1,
-          renderSmallThumbnail: true // Small thumbnail rendering
         }
       )
   } else {
@@ -59,6 +45,15 @@ fana({ nomCom: "ow", categorie: "General", reaction: "❣️" }, async (dest, zk
     zk.sendMessage(dest, {
        displayName: conf.OWNER_NAME,
        contacts: [{ vcard }],
+        contextInfo: {
+           externalAdReply: {
+           title: "jb",
+           body: "📃online is alwaysonline",
+           thumbnailUrl: conf.URL,
+           mediaType: 1,
+          renderSmallThumbnail: true // Small thumbnail rendering
+          },
+        },
+      },
     },{quoted:ms});
-  }
 });
