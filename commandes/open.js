@@ -79,7 +79,9 @@ fana({ nomCom: "open", aliases: ["send", "keep"], categorie: "General" }, async 
             newsletterJid: '120363345407274799@newsletter',
             newsletterName: "╭••➤®Njabulo Jb",
             serverMessageId: 143,
-          });
+            }
+          }
+       });
     } catch (error) {
       console.error("Error processing the message:", error);
       repondre('An error occurred while processing your request.');
